@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+/* /\* Import ET Book styles */
+/*    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css *\/ */
+
+/* @font-face { */
+/*     font-family: "et-book"; */
+/*     src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot"); */
+/*     src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg"); */
+/*     font-weight: normal; */
+/*     font-style: normal; */
+/*     font-display: swap; */
+/* } */
+
+/* @font-face { */
+/*     font-family: "et-book"; */
+/*     src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot"); */
+/*     src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg"); */
+/*     font-weight: normal; */
+/*     font-style: italic; */
+/*     font-display: swap; */
+/* } */
+
+/* @font-face { */
+/*     font-family: "et-book"; */
+/*     src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot"); */
+/*     src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg"); */
+/*     font-weight: bold; */
+/*     font-style: normal; */
+/*     font-display: swap; */
+/* } */
+
+/* @font-face { */
+/*     font-family: "et-book-roman-old-style"; */
+/*     src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot"); */
+/*     src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg"); */
+/*     font-weight: normal; */
+/*     font-style: normal; */
+/*     font-display: swap; */
+/* } */
+
+/* ----- Color suggestions ------- */
+
+/* Lightblue: #b4d5fe */
+/* Red ink: #ae0000 */
+/* Lightgray (darkmode) : #ddd */
+/* Darkgray: #808080 */
+/* Medium green: #30853B Note: Very similar to "green", maybe a tad lighter/grayish?*/
+/* Like Airforce Blue: #0080C8  */
+
+/* Define colors: */
+
+:root {
+    --color-paper:#fffff8;
+    --color-text:#111;
+    --color-link:#111; /* #0080C8; */
+    --color-redink:#ae0000;
+    --color-greenink:green;
+}
+
+/* From inspected quarto html: */
+/* --bs-gray: #6c757d; */
+/* --bs-gray-100: #f8f9fa; */
+/* --bs-gray-200: #e9ecef; */
+/* --bs-gray-300: #dee2e6; */
+/* --bs-gray-400: #ced4da; */
+/* --bs-gray-500: #adb5bd; */
+/* --bs-gray-600: #6c757d; */
+/* --bs-gray-700: #495057; */
+/* --bs-gray-800: #343a40; */
+/* --bs-gray-900: #212529; */
+/* --bs-gray-dark: #343a40; */
+/* --bs-green: #198754 */
+
+
+/* Tufte CSS styles */
+
+/* html { */
+/*     font-size: 12px; */
+/* } */
+/* Note: Set this in quarto options instead? */
+
+body {
+    /* width: 87.5%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding-left: 12.5%; */
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: var(--color-paper);
+    color: var(--color-text);
+    /* max-width: 1400px; */
+    /* counter-reset: sidenote-counter; */
+}
+
+/* Nice font for tufte from: https://rstudio.github.io/tufte/envisioned/?_gl=1*1i6iad4*_ga*MTM2MzA4NDQyMC4xNzI5NjM5NDYz*_ga_2C0WZ1JHG0*MTcyOTgwMjY2NC4yLjEuMTcyOTgwMjY5My4wLjAuMA.. */
+/* "Roboto Condensed", Arial, Helvetica, sans-serif */
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+/* ---Headings---- */
+
+h1 {
+    font-weight: 400;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+.chapter-number {
+    color: #ccc; /* OR USE  --bs-gray-400; */
+}
+
+.header-section-number {
+    color: #ccc; /* OR USE  --bs-gray-400; */
+}
+
+/* ----Misc--- */
+
+.numeral {
+    font-family: et-book-roman-old-style;
+}
+
+.danger {
+    color: red;
+}
+
+
+.footnote-ref {
+    color: #ae0000;
+}
+
+/* --------- Margin -------- */
+
+/* Note: If you'd like to place ancillary information in the margin without the sidenote mark (the superscript number), you can use apply the `column-margin` class to the element. */
+
+li[id^='fn']{ /* list with id that starts with "fn" (footnote texts)*/
+    color: #ae0000;
+    font-size: 0.6rem;
+}
+
+
+/* div[id^='fn']{ /\* div with id that starts with "fn" (footnote texts)*\/ */
+/*     color: #ae0000; */
+/*     font-size: 0.6rem; */
+/* } */
+
+div[id^='fn'] >p { /* div with id that starts with "fn" (footnote texts)*/
+    color: #ae0000;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+/* .column-margin { */
+/*    font-size: 0.6rem; */
+/* } */
+/* Note: This catches margin text eg arbitrary margin content text */
+
+
+/* .no-row-height.column-margin.column-container >div >p { */
+/*     font-size: 2rem; */
+/* } */
+/* Note: This catches all (?) margin text */
+	   
+/* --------Hyperlinks-------- */
+
+.quarto-xref { /* Internal reference eg to sections */
+    color: var(--color-link);
+    font-style: normal;	   
+}
+
+a:visited[href=http] {
+  color: yellow; /* Problem: Will apply to sidebar eg chapters visited also */
+  text-decoration-color: hotpink; /* Line under link color */
+}
+
+/* -------- Navbar --------- */
+
+.navbar {
+    /* background-color: #fffff8 !important; /\*  *\/ */
+    /* font-family: "Roboto Condensed", "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, sans; */
+    background-color: #fffff8;
+}
+
+.navbar .menu-text {
+    color: black !important;
+}
+
+.navbar .navbar-title {
+    color: black !important;
+    /* font-style: italic; */
+    /* font-size: 1.4rem; */
+}
+
+/* -----Sidebar----- */
+
+
+/* .quarto-sidebar { */
+/*     background-color: var(--color-paper)     */
+/* }		      */
+/* Note: Changed in scss instead */
+	      
+/* .sidebar .li { */
+/*     color: green; */
+/*     margin-top: 1.4rem; */
+/*     margin-bottom: 1.4rem; */
+/* } */
+
+.toc-active {
+    color: darkgray !important;
+    margin-top: 2rem;
+    /* font-size: 1.4rem; */
+}
+
+
+
+
+/* /\* change the background color *\/ */
+/* .navbar-custom { */
+/*     background-color: #4433cc; */
+/* } */
+
+/* /\* change the brand and text color *\/ */
+/* .navbar-custom .navbar-brand, */
+/* .navbar-custom .navbar-text { */
+/*     color: #ffcc00; */
+/* } */
+
+/* /\* change the link color *\/ */
+/* .navbar-custom .navbar-nav .nav-link { */
+/*     color: #ffbb00; */
+/* } */
+
+/* /\* change the color of active or hovered links *\/ */
+/* .navbar-custom .nav-item.active .nav-link, */
+/* .navbar-custom .nav-item:focus .nav-link, */
+/* .navbar-custom .nav-item:hover .nav-link { */
+/*     color: pink; */
+/* } */
+
+
+/* Nice steelblue color : #164a58 */
+
+article {
+    padding: 5rem 0rem;
+}
+
+section {
+    padding-top: 0.8rem; /* was 1.0 */
+    padding-bottom: 0.8rem;
+}
+
+/* p, */
+/* dl, */
+/* ol, */
+/* ul { */
+/*     font-size: 1.4rem; */
+/*     line-height: 2rem; */
+/* } */
+
+/* p { */
+/*     margin-top: 1.4rem; */
+/*     margin-bottom: 1.4rem; */
+/*     padding-right: 0; */
+/*     vertical-align: baseline; */
+/* } */
+
+
+/* TABLES */
+
+/* Note: kabled tables are formated by quarto and difficult to change. So this will probably only affect hand-written tables */
+/* Borders below table header and groups: */
+table {
+    border: 5px solid;
+    border-collapse: collapse;
+    border-color: black;
+    text-align: left;
+    background-color: #fffff8 !important;
+    color: black !important;
+}
+thead > tr{
+    border-bottom: 1px solid;
+    text-align: left;
+    background-color: #fffff8 !important;
+}
+tbody{
+    border-bottom: 1px solid;
+}
+
+/* Padding */
+th, td{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+
+
+
+
+
+/* /\* Chapter Epigraphs *\/ */
+/* div.epigraph { */
+/*     margin: 5em 0; */
+/* } */
+
+/* div.epigraph > blockquote { */
+/*     margin-top: 3em; */
+/*     margin-bottom: 3em; */
+/* } */
+
+/* div.epigraph > blockquote, */
+/* div.epigraph > blockquote > p { */
+/*     font-style: italic; */
+/* } */
+
+/* div.epigraph > blockquote > footer { */
+/*     font-style: normal; */
+/* } */
+
+/* div.epigraph > blockquote > footer > cite { */
+/*     font-style: italic; */
+/* } */
+/* /\* end chapter epigraphs styles *\/ */
+
+/* blockquote { */
+/*     font-size: 1.4rem; */
+/* } */
+
+/* blockquote p { */
+/*     width: 55%; */
+/*     margin-right: 40px; */
+/* } */
+
+/* blockquote footer { */
+/*     width: 55%; */
+/*     font-size: 1.1rem; */
+/*     text-align: right; */
+/* } */
+
+/* section > p, */
+/* section > footer, */
+/* section > table { */
+/*     width: 55%; */
+/* } */
+
+
+/* /\* 50 + 5 == 55, to be the same width as paragraph *\/ */
+/* section > dl, */
+/* section > ol, */
+/* section > ul { */
+/*     width: 50%; */
+/*     -webkit-padding-start: 5%; */
+/* } */
+
+/* dt:not(:first-child), */
+/* li:not(:first-child) { */
+/*     margin-top: 0.25rem; */
+/* } */
+
+/* figure { */
+/*     padding: 0; */
+/*     border: 0; */
+/*     font-size: 100%; */
+/*     font: inherit; */
+/*     vertical-align: baseline; */
+/*     max-width: 55%; */
+/*     -webkit-margin-start: 0; */
+/*     -webkit-margin-end: 0; */
+/*     margin: 0 0 3em 0; */
+/* } */
+
+/* figcaption { */
+/*     float: right; */
+/*     clear: right; */
+/*     margin-top: 0; */
+/*     margin-bottom: 0; */
+/*     font-size: 1.1rem; */
+/*     line-height: 1.6; */
+/*     vertical-align: baseline; */
+/*     position: relative; */
+/*     max-width: 40%; */
+/* } */
+
+/* figure.fullwidth figcaption { */
+/*     margin-right: 24%; */
+/* } */

@@ -1,0 +1,292 @@
+[
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "1  Översikt",
+    "section": "",
+    "text": "```{r}\nsource('prepare.r')\n```\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\n\nNedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i Section 12.1\n\nCrossref chapter (tagged sec- on level 1 heading): Chapter 2\nCrossref section (tagged sec- on level 2 heading): Section 2.2.\nCrossref Appendix (tagged sec- on level 1 heading): Appendix A\nCrossref sub section: Section 2.2.1 Note: Seems to work even though subsection numbers are not shown.\nLink: Cider Workshop on Google groups\nDe andra avsnitten innehåller:\n\nOrdbok: Förklaring av begrepp och förkortningar.\nJäsning: Jäst, Dynamik, långsam jäsning, jästnäring\nMusten: Pressning, maceration, balansering\nSocker: Effekt av socker, sötning.\nTekniker: Pastörisering, svavling etc\nHantering: Jäskärl, Omtappning, mognad, butejering\nSmak: Sötma, att påverka smaken, polyfenoler\nProblem\nÄpplen: Sorter, plockning, mognad\nPäron\nFruktvin\nTabeller: Referenstabeller (mer utförliga, sökbara) och figurer\nResurser\nBibliografi\nHemsidan: Hur hemsidan är gjord. Quarto.\nLoggbok: Min egen loggbok\n\n\nVARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.",
+    "crumbs": [
+      "Prolog",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Översikt</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html",
+    "href": "basics.html",
+    "title": "2  Grunderna",
+    "section": "",
+    "text": "2.1 Processen\nOm jäsningen avstannar i förtid (innan SG sjunkit till &lt;06) kan det bero på att jästen har brist på näring. Då kan man tillsätta jästnäring och eventuellt en gnutta jäst. Stannar den mellan 01-05 kan kvarvarande sockerhalt bero på icke-fermenterbara sockerarter i musten. Det testas genom att till en portion tillsätta jästnäring, ny jäst, och därefter slutjäsa i rumstemperatur. Efter två veckor mäts SG och motsvarar då minsta möjliga sockerhalt.\nOvanstående metod ger en torr, bubblig (om du tillsatt socker vid buteljering) cider. Vill man ha en söt cider kan man avdöda jästen vid buteljering och tillsätta socker. Vill man ha en cider som är både söt och bubblig (troligen är en måttlig sötma fördelaktigt för smaken) krävs litet krångligare metoder, eller så kan en liten mängd xylitol tillsättas (&lt;10g/L).",
+    "crumbs": [
+      "Prolog",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Grunderna</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html#processen",
+    "href": "basics.html#processen",
+    "title": "2  Grunderna",
+    "section": "",
+    "text": "Plockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\nAvdödning av befintliga mikroorganismer2 genom pastörisering3 (uppvärmning) eller svavling 4.\nUppstart. Tillsätt bryggerijäst (vinjäst eller ciderjäst) enligt instruktionerna på jästförpackningen. Låt jäsa 24-48 tim i ca 20 grader med lufttillgång för att gynna bryggerijästen [Risk för överbefolkning vid hög temp?].\nHuvudjäsning (ca 4-12 veckor) i rena kärl, lämna gott om utrymme för skum (fyll till ca 80%). Sätt på vattenlås/jäsrör när du ser att jäsningen kommit igång ordentligt (kolsyrebubblor och skum, ofta inom ett dygn men kan ta några dagar om du använt sulfit). Ställ kärlen i temperatur 14-20C. Man kan omtappa flera gånger under denna jäsning för att få en klarar cider, det ger också långsammare jäsning.\nFölj sockerhalten (SG) tex 1 gång per vecka. Ej helt nödvändigt men underlättar. SG brukar sjunka ganska snabbt första dagarna/veckorna och sedan mer långsamt.\nOmtappa och fyll upp5. När jäsningen lugnat sig (vid SG &lt;06) omtappa till nya jäskärl6. Den klara vätskan tappas om och bottensatsen lämnas. Försök att undvika syresättning av musten vid och efter omtappning eftersom det ökar risken för kontaminering/dålig smak. Kärlen fylls nästan helt upp (tex med must från en annan flaska du jäst eller inköpt cider). Lämna 2-3 cm luftspalt i flaskhalsen. Omtappa utan plask (tex genom att använda pumphävert med slangens utlopp i botten av mottagarkärlet). Sätt på jäsrör.\nFortsatt jäsning. Följ gärna sockerhalten (SG) en gång per månad för att enklare avgöra när det är dags att buteljera. Eventuellt görs fler omtappningar för att göra cidern klarare.\n\nButeljering. När SG sjunkit till &lt;00-05 eller SG sjunker med &lt;1 per vecka (max 2 per 3 v) har jäsningen i princip avstannat och buteljering kan ske 7. När du buteljerar så tappar du den klara drycken ovanför sedimentet på flaska. Vill du ha en bubblig cider kan du jäsa till SG &lt;0 och sedan tillsätta socker (tex 6 g/L) vid buteljeringen. Använd flaskor som tål tryck 8 . Förslut med tex plastkork och ståltråd (typ champagne), ölkapsyl eller snäpplock. Istället för att buteljera direkt kan du lagra cidern i större kärl som fylls nästan helt upp och försluts helt (utan sockertillsats) och buteljera senare.\nKolsyrejäsning. Om du tillsatt socker vid buteljeringen tar det ca 2 veckor för jästen att förbruka detta och bilda kolsyra av sockret.\nMognad. För att utveckla smaken rekommederas mognadstid. Optimal smak anses inträffa ca 12 månader efter pressning, därefter kanske något sämre smak, men beror på vilken frukt och metod som använts.\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.2 Avdödning är egentligen inte nödvändigt eftersom vinjästen oftast vinner över de andra mikroorganismerna, men kan vara en fördel för ett säkrare resultat.3 För pastörisering, värm till tex 63C i 20 minuter, högre temperaturer och längre tid ger mer “kokt” smak.4 Svavling görs för att missgynna andra mikroorganismer än vinjästen (den tål svavlingen bättre). Man tillsätter då metabisulfit, ej vinsvavla eftersom det dödar vinjästen. Tänk på att vädra ur svavlet ett dygn innan vinjästen tillsätts. Dosen som skall användas beror på vilket pH musten har, men det går också att svavla mer försiktigt (tex med 25 ppm SO_{2}) om man inte vill ha total avdödning. Se http://www.cider.org.uk/sulphite.html för dosering.5 Omtappning är inte strikt nödvändigt, man kan nöja sig med att fylla upp kärlen, men omtappning ger klarare och troligen godare cider.6 Det är okej att omtappa tidigare, men är inte nödvändigt. Enligt vissa blir det godare om man omtappar inom 4 veckor så att musten inte står för länge på sedimentet som bildas.7 Är du osäker på om jäsningen avstannat tillräckligt kan du provjäsa en del i 20 grader i 2-3 veckor och fortsätta följa SG för att avgöra minimum SG som kan uppnås.8 Använder du glasflaskor kan det vara bra att köpa champagneflaskor som tål extra tryck, för att ha marginal.\nObs! Fyll aldrig levande must (den lever så länge du inte avdödat den säkert) i förslutna flaskor, då kan det bli farliga “flaskbomber” pga det höga tryck som bildas av kolsyran som jästen producerar. Skall du spara levande juice så kan den frysas, men tänk då på att den kan jäsa efter att den tagits fram.",
+    "crumbs": [
+      "Prolog",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Grunderna</span>"
+    ]
+  },
+  {
+    "objectID": "basics.html#sec-basics-material",
+    "href": "basics.html#sec-basics-material",
+    "title": "2  Grunderna",
+    "section": "2.2 Material",
+    "text": "2.2 Material\n\nDu behöver\n\nÄpplen (av 10 L äpplen blir ca 2.5 L must och av det kanske 2 L cider)\nFruktpress\nHink och grov träpinne (tex en slät byggregel 1 m) för mosning av frukten\nKärl att samla juicen i. Gärna något med volymangivelse så du ser mängden.\nFrystorkad vin- eller ciderjäst (ej öljäst)\n\nRena jäskärl med kork som passar för jäsrör (tex 5L glasburkar, damejeanner, plasthink med lock)\nJäsrör (vattenlås), ett per jäskärl\n\nFlaskor att senare tappa den jästa drycken på samt lämplig förslutning för dessa\nHydrometer för mätning av sockerhalt (ej helt nödvändigt men rekommenderas starkt) - Ett 100 ml mätglas underlättar användningen av hydrometern (den behöver viss höjd på vätskan för att inte slå i botten)\n\n\n\nSådant som underlättar\n\nPumphävert (underlättar omtappning)\nTermometer (tex en ugnstermometer)\nHushållsvåg (för uppmätning av tex socker)\nMetabisulfit (för att hämma vildjästen och andra oönskade mikroorganismer)\npH-remsor med pH-spann som täcker pH 3.0-4.0 (för att dosera sulfit korrekt och eventuellt följa syrahalten under jäsning)\nPektolas (för att unvika strimmor i drycken)\nRengöringsmedel (tex StarSan)\nVanliga hushållsmått (tesked, matsked, deciliter, liter)\nHushållsvåg (tex för att mäta upp sockertillsats)\nGrov sil, gärna med tillhörande tratt\nJästnäring (YAN eller DAP) och extra jäst (för att omstarta avstannad jäsning)\nStrösocker (för justering av sockerhalten)\n\n\n\nExtra\n\nRefraktometer (för att enklare följa sockerhalten)\nStor gryta och ugnstermometer om du skall pastörisera",
+    "crumbs": [
+      "Prolog",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Grunderna</span>"
+    ]
+  },
+  {
+    "objectID": "constituents.html",
+    "href": "constituents.html",
+    "title": "3  Sammansättning",
+    "section": "",
+    "text": "Syra, socker, fenoler, citrat",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sammansättning</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html",
+    "href": "yeast.html",
+    "title": "7  Jäst",
+    "section": "",
+    "text": "7.1 Jästens biologi\nHere",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#pitching",
+    "href": "yeast.html#pitching",
+    "title": "7  Jäst",
+    "section": "7.2 Pitching",
+    "text": "7.2 Pitching",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#hydrering",
+    "href": "yeast.html#hydrering",
+    "title": "7  Jäst",
+    "section": "7.3 Hydrering",
+    "text": "7.3 Hydrering",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#jästsorter",
+    "href": "yeast.html#jästsorter",
+    "title": "7  Jäst",
+    "section": "7.4 Jästsorter",
+    "text": "7.4 Jästsorter",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "options.html",
+    "href": "options.html",
+    "title": "12  Alternativ",
+    "section": "",
+    "text": "12.1 Alternativ\nHär listas i ordningsföljd de möjliga steg som man kan lägga till för att påverka förloppet. De är i tidsordning.",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Alternativ</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html",
+    "href": "style-test.html",
+    "title": "16  Style",
+    "section": "",
+    "text": "16.1 Notes on quarto\nDid you know you can ignore files by setting a .quartoignore file?\nCrossref: Section 12.1",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#heading-2",
+    "href": "style-test.html#heading-2",
+    "title": "16  Style",
+    "section": "16.2 Heading 2",
+    "text": "16.2 Heading 2\nText and footnote\n\nPlockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.\nQuote text here\n\n\n\n\n\n\nArbitrary margin content\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#lists",
+    "href": "style-test.html#lists",
+    "title": "16  Style",
+    "section": "16.3 Lists",
+    "text": "16.3 Lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nTask 1\nTask 2\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\nterm\n\ndefinition",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "tables.html",
+    "href": "tables.html",
+    "title": "Appendix A — Tabeller",
+    "section": "",
+    "text": "Här finns mer utförliga och detaljerade tabeller samt en del figurer.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Tabeller</span>"
+    ]
+  },
+  {
+    "objectID": "terminology.html",
+    "href": "terminology.html",
+    "title": "Appendix B — Ordbok",
+    "section": "",
+    "text": "B.1 If you haven’t read James Crowden’s Cider Country, I would urge you to do so – it is one of the best books ever written on cider and is fascinating throughout, but worth the entry fee for the meticulously-researched section on the invention of ‘traditional method’ drinks alone.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
+    ]
+  },
+  {
+    "objectID": "terminology.html#socker-sg-20-sweet-addera-40-gl-15-medium-sweet-30-gl-10-medium-dry-20-gl",
+    "href": "terminology.html#socker-sg-20-sweet-addera-40-gl-15-medium-sweet-30-gl-10-medium-dry-20-gl",
+    "title": "Appendix B — Ordbok",
+    "section": "B.2 Socker: SG 20 (sweet, addera 40 g/L), 15 (medium sweet, 30 g/L), 10 (medium dry 20 g/L),",
+    "text": "B.2 Socker: SG 20 (sweet, addera 40 g/L), 15 (medium sweet, 30 g/L), 10 (medium dry 20 g/L),",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
+    ]
+  },
+  {
+    "objectID": "terminology.html#toread-httpscider-review.com20230930a-word-on-champagne-method-ciders-and-two-very-different-examples",
+    "href": "terminology.html#toread-httpscider-review.com20230930a-word-on-champagne-method-ciders-and-two-very-different-examples",
+    "title": "Appendix B — Ordbok",
+    "section": "B.3 TOREAD: https://cider-review.com/2023/09/30/a-word-on-champagne-method-ciders-and-two-very-different-examples/",
+    "text": "B.3 TOREAD: https://cider-review.com/2023/09/30/a-word-on-champagne-method-ciders-and-two-very-different-examples/",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
+    ]
+  },
+  {
+    "objectID": "bibliography.html",
+    "href": "bibliography.html",
+    "title": "Appendix D — Bibliografi",
+    "section": "",
+    "text": "D.1 References",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
+    ]
+  },
+  {
+    "objectID": "bibliography.html#figurer",
+    "href": "bibliography.html#figurer",
+    "title": "Appendix D — Bibliografi",
+    "section": "D.2 Figurer",
+    "text": "D.2 Figurer",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
+    ]
+  },
+  {
+    "objectID": "bibliography.html#todo",
+    "href": "bibliography.html#todo",
+    "title": "Appendix D — Bibliografi",
+    "section": "D.3 Todo",
+    "text": "D.3 Todo\nAdd index? See",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ciderkollen",
+    "section": "",
+    "text": "1 Prolog\nAnteckningar om att göra äppelcider och “Perry” (päroncider). Även en del om andra fruktviner.\nOrd i texten som är kursiverade återfinns i avsnittet Ordbok.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÄppelträd ‘Särsö’",
+    "crumbs": [
+      "Prolog"
+    ]
+  },
+  {
+    "objectID": "must.html",
+    "href": "must.html",
+    "title": "Must",
+    "section": "",
+    "text": "Pressning, balansering, val av äpplen etc\nMaceration\nPlockning och mognad",
+    "crumbs": [
+      "Must"
+    ]
+  },
+  {
+    "objectID": "fermentation.html",
+    "href": "fermentation.html",
+    "title": "Jäsning",
+    "section": "",
+    "text": "Preface to this part.",
+    "crumbs": [
+      "Jäsning"
+    ]
+  },
+  {
+    "objectID": "handling.html",
+    "href": "handling.html",
+    "title": "Hantering",
+    "section": "",
+    "text": "Omtappning, mognad på batch, buteljering, mognad på flaska, lagring",
+    "crumbs": [
+      "Hantering"
+    ]
+  },
+  {
+    "objectID": "techniques.html",
+    "href": "techniques.html",
+    "title": "Tekniker",
+    "section": "",
+    "text": "Svavling, Pastörisering, mm",
+    "crumbs": [
+      "Tekniker"
+    ]
+  },
+  {
+    "objectID": "variations.html",
+    "href": "variations.html",
+    "title": "Variationer",
+    "section": "",
+    "text": "Variationer som kan göras för att uppnålika resultat.\nLångsamjäsning/Keeving, maceration, påverka smak",
+    "crumbs": [
+      "Variationer"
+    ]
+  },
+  {
+    "objectID": "unsorted.html",
+    "href": "unsorted.html",
+    "title": "Osorterat",
+    "section": "",
+    "text": "Information som ännu ej sorterats in i specifikt avsnitt.",
+    "crumbs": [
+      "Osorterat"
+    ]
+  }
+]
