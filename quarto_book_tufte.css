@@ -253,7 +253,7 @@ a:visited[href=http] {
 
 .toc-active {
     color: darkgray !important;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* font-size: 1.4rem; */
 }
 
@@ -315,10 +315,10 @@ section {
 
 /* Note: kabled tables are formated by quarto and difficult to change. So this will probably only affect hand-written tables */
 /* Borders below table header and groups: */
-table {
-    border: 5px solid;
+table { /* Note added th td */
+    border: 1px solid;
     border-collapse: collapse;
-    border-color: black;
+    border-color: black !important;
     text-align: left;
     background-color: #fffff8 !important;
     color: black !important;
@@ -338,6 +338,29 @@ th, td{
     padding-right: 0.5em;
 }
 
+/* .ficaption{ /\* Also for tables *\/ */
+/*     color: black !important; */
+/*     text-align: left !important; */
+/* } */
+
+/* Remove horizontal lines and hide stripes (not solved)*/
+
+th, td {
+    border-collapse: collapse;
+}
+
+td{
+    border:1px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+/* tr.odd { */
+/*     background-color: white !important; */
+/*     opacity: .1; */
+/* } */
 
 
 

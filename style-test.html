@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>16&nbsp; Style – Ciderkollen</title>
+<title>17&nbsp; Style – Ciderkollen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,6 +89,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="quarto_book_tufte.css">
 </head>
@@ -82,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./creation.html">Quarto</a></li><li class="breadcrumb-item"><a href="./style-test.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Style</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./creation.html">Quarto</a></li><li class="breadcrumb-item"><a href="./style-test.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -150,20 +199,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./adjustment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Justering</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./apples.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Äpplen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Äpplen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./polyphenols.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polyfenoler</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Polyfenoler</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sugar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Socker</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Socker</span></span></a>
   </div>
 </li>
       </ul>
@@ -180,7 +235,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./yeast.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Jäst</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: Jäst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./carbonation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kolsyrning</span></span></a>
   </div>
 </li>
       </ul>
@@ -197,13 +258,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./racking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Omtappning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Omtappning</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./bottling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
   </div>
 </li>
       </ul>
@@ -220,13 +281,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pasteurization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sulphiting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Sulphiting</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Sulphiting</span></span></a>
   </div>
 </li>
       </ul>
@@ -243,19 +304,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./flavor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./carbonation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Kolsyrning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
   </div>
 </li>
       </ul>
@@ -272,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tosort.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
   </div>
 </li>
       </ul>
@@ -289,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./style-test.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Style</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></span></a>
   </div>
 </li>
       </ul>
@@ -335,9 +390,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Denna sida</h2>
    
   <ul>
-  <li><a href="#notes-on-quarto" id="toc-notes-on-quarto" class="nav-link active" data-scroll-target="#notes-on-quarto"><span class="header-section-number">16.1</span> Notes on quarto</a></li>
-  <li><a href="#heading-2" id="toc-heading-2" class="nav-link" data-scroll-target="#heading-2"><span class="header-section-number">16.2</span> Heading 2</a></li>
-  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">16.3</span> Lists</a></li>
+  <li><a href="#notes-on-quarto" id="toc-notes-on-quarto" class="nav-link active" data-scroll-target="#notes-on-quarto"><span class="header-section-number">17.1</span> Notes on quarto</a></li>
+  <li><a href="#heading-2" id="toc-heading-2" class="nav-link" data-scroll-target="#heading-2"><span class="header-section-number">17.2</span> Heading 2</a></li>
+  <li><a href="#markdown-table" id="toc-markdown-table" class="nav-link" data-scroll-target="#markdown-table"><span class="header-section-number">17.3</span> Markdown table</a></li>
+  <li><a href="#markdown-table-in-margin" id="toc-markdown-table-in-margin" class="nav-link" data-scroll-target="#markdown-table-in-margin"><span class="header-section-number">17.4</span> Markdown table in margin</a></li>
+  <li><a href="#knitr-table" id="toc-knitr-table" class="nav-link" data-scroll-target="#knitr-table"><span class="header-section-number">17.5</span> Knitr table</a></li>
+  <li><a href="#grid-table" id="toc-grid-table" class="nav-link" data-scroll-target="#grid-table"><span class="header-section-number">17.6</span> Grid table</a></li>
+  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">17.7</span> Footnotes</a></li>
+  <li><a href="#margin-figures" id="toc-margin-figures" class="nav-link" data-scroll-target="#margin-figures"><span class="header-section-number">17.8</span> Margin Figures</a></li>
+  <li><a href="#image" id="toc-image" class="nav-link" data-scroll-target="#image"><span class="header-section-number">17.9</span> Image</a></li>
+  <li><a href="#arbitrary-margin-content" id="toc-arbitrary-margin-content" class="nav-link" data-scroll-target="#arbitrary-margin-content"><span class="header-section-number">17.10</span> Arbitrary Margin Content</a></li>
+  <li><a href="#asides" id="toc-asides" class="nav-link" data-scroll-target="#asides"><span class="header-section-number">17.11</span> Asides</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">17.12</span> Lists</a></li>
   </ul>
 </nav>
 </nav>
@@ -348,9 +412,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./creation.html">Quarto</a></li><li class="breadcrumb-item"><a href="./style-test.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Style</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./creation.html">Quarto</a></li><li class="breadcrumb-item"><a href="./style-test.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Style</span></h1>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></h1>
 </div>
 
 
@@ -367,13 +431,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="notes-on-quarto" class="level2" data-number="16.1">
-<h2 data-number="16.1" class="anchored" data-anchor-id="notes-on-quarto"><span class="header-section-number">16.1</span> Notes on quarto</h2>
+<p><a href="https://quarto.org/">Quarto</a> was used to produce this website. here are some examples of what can be done.</p>
+<section id="notes-on-quarto" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="notes-on-quarto"><span class="header-section-number">17.1</span> Notes on quarto</h2>
 <p>Did you know you can ignore files by setting a .quartoignore file?</p>
-<p>Crossref: <a href="options.html#sec-detailed" class="quarto-xref"><span>Section 12.1</span></a></p>
+<p>Crossref: <a href="options.html#sec-detailed" class="quarto-xref"><span>Section 14.1</span></a></p>
 </section>
-<section id="heading-2" class="level2 page-columns page-full" data-number="16.2">
-<h2 data-number="16.2" class="anchored" data-anchor-id="heading-2"><span class="header-section-number">16.2</span> Heading 2</h2>
+<section id="heading-2" class="level2 page-columns page-full" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="heading-2"><span class="header-section-number">17.2</span> Heading 2</h2>
 <p>Text and footnote</p>
 <ol type="1">
 <li><strong>Plockning och gallring</strong>. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.</li>
@@ -384,12 +449,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Quote text here</p>
 </blockquote>
 
-<!-- ## Markdown table in margin -->
-<!-- See @tbl-fruits. -->
-<!-- ::: column-margin -->
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Arbitrary margin content</p>
-</div></div><table class="table">
+</div></div></section>
+<section id="markdown-table" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="markdown-table"><span class="header-section-number">17.3</span> Markdown table</h2>
+<p>See <a href="#tbl-fruits1" class="quarto-xref">Tabell&nbsp;<span>17.1</span></a>.</p>
+<div id="tbl-fruits1" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[75,25]">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-fruits1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-bordered table-hover table">
+<colgroup>
+<col style="width: 75%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>fruit</th>
@@ -411,72 +484,196 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<!-- : Fruit prices {#tbl-fruits .bordered .hover tbl-colwidths="[75,25]" } -->
-<!-- ::: -->
-<!-- Note: Table is unnumbered. How to crossref table? -->
-<!-- ## Knitr table -->
-<!-- Note: In order for a markdown ? table to be cross-referenceable, its label must start with the tbl- prefix. -->
-<!-- See @tbl-knitr-example. -->
-<!-- ```{r } -->
-<!-- #| label: tbl-knitr-example -->
-<!-- #| tbl-cap: "Cars" -->
-<!-- #| tbl-colwidths: [60,40] -->
-<!-- ## | classes: plain -->
-<!-- knitr::kable(head(mtcars[, 1:4])) -->
-<!-- ``` -->
-<!-- ## Grid table -->
-<!-- How to crossref grid tables? -->
-<!-- See @tbl-grid -->
-<!-- +-----------+-----------+--------------------+ -->
-<!-- | Fruit     | Price     | Advantages         | -->
-<!-- +===========+===========+====================+ -->
-<!-- | Bananas   | $1.34     | - built-in wrapper | -->
-<!-- |           |           | - bright color     | -->
-<!-- +-----------+-----------+--------------------+ -->
-<!-- | Oranges   | $2.10     | - cures scurvy     | -->
-<!-- |           |           | - tasty            | -->
-<!-- +-----------+-----------+--------------------+ -->
-<!-- : Sample grid table. -->
-<!-- ## Footnotes -->
-<!-- Some text[^This is a footnote]. -->
-<!-- <\!-- [^longnote]: Here's one with multiple blocks. -\-> -->
-<!-- <\!-- Subsequent paragraphs are indented to show that they belong to the previous footnote. -\-> -->
-<!-- <\!--     The whole paragraph can be indented, or just the first line.  -\-> -->
-<!-- <\!--     In this way, multi-paragraph footnotes work like multi-paragraph list items. -\-> -->
-<!-- <\!-- This paragraph won't be part of the note, because it isn't indented. -\-> -->
-<!-- ## Margin Figures -->
-<!-- See @fig-margin. -->
-<!-- ```{r} -->
-<!-- #| label: fig-margin -->
-<!-- #| fig-cap: "MPG vs horsepower, colored by transmission." -->
-<!-- #| column: margin -->
-<!-- #| message: false -->
-<!-- library(ggplot2) -->
-<!-- mtcars2 <- mtcars -->
-<!-- mtcars2$am <- factor( -->
-<!--   mtcars$am, labels = c('automatic', 'manual') -->
-<!-- ) -->
-<!-- ggplot(mtcars2, aes(hp, mpg, color = am)) + -->
-<!--   geom_point() + geom_smooth() + -->
-<!--   theme(legend.position = 'bottom') -->
-<!-- ``` -->
-<!-- <\!-- Se @fig-yeast-metabolic-network. -\-> -->
-<!-- <\!-- ![Yeast metabolic network](../../dropbox/images/cider/yeast_metabolic_network.png){#fig-yeast-metabolic-network} -\-> -->
-<!-- <\!-- Using resource path? -\-> -->
-<!-- <\!-- Did not work -\-> -->
-<!-- <\!-- ![Yeast](yeast_metabolic_network.png) -\-> -->
-<!-- ## Arbitrary Margin Content -->
-<!-- You can include anything in the margin by places the class `.column-margin` on the element. See an example on the right about the first fundamental theorem of calculus. -->
-<!-- ::: column-margin -->
-<!-- We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$: -->
-<!-- $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$ -->
-<!-- ::: -->
-<!-- ## Asides -->
-<!-- Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number). -->
-<!-- [This is a span that has the class `aside` which places it in the margin without a footnote number.]{.aside} -->
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-fruits1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabell&nbsp;17.1. Fruit prices
+</figcaption>
+</figure>
+</div>
+<p>Note: This table has “.bordered” property.</p>
 </section>
-<section id="lists" class="level2" data-number="16.3">
-<h2 data-number="16.3" class="anchored" data-anchor-id="lists"><span class="header-section-number">16.3</span> Lists</h2>
+<section id="markdown-table-in-margin" class="level2 page-columns page-full" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="markdown-table-in-margin"><span class="header-section-number">17.4</span> Markdown table in margin</h2>
+<p>See <span class="quarto-unresolved-ref">?tbl-fruits</span>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="tbl-" class="hover quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[75,25]">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl--caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-hover table">
+<colgroup>
+<col style="width: 75%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>fruit</th>
+<th style="text-align: center;">price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>apple</td>
+<td style="text-align: center;">2.05</td>
+</tr>
+<tr class="even">
+<td>pear</td>
+<td style="text-align: center;">1.37</td>
+</tr>
+<tr class="odd">
+<td>orange</td>
+<td style="text-align: center;">3.09</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl--caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabell&nbsp;17.2. Fruit prices
+</figcaption>
+</figure>
+</div>
+</div></div><p>Note: This table works but gives warning: “FloatRefTarget elements should not be the only content in a div with column classes. This will not render as expected. Consider moving the floatref targets to their own divs and using the <code>offset</code> attribute.”</p>
+<p>A citation<span class="citation" data-cites="Lea2015">(<a href="bibliography.html#ref-Lea2015" role="doc-biblioref">Lea, 2015</a>)</span></p>
+</section>
+<section id="knitr-table" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="knitr-table"><span class="header-section-number">17.5</span> Knitr table</h2>
+<!-- Note: In order for a table to be cross-referenceable, its label must start with the tbl- prefix. -->
+<p>See <a href="#tbl-knitr" class="quarto-xref">Tabell&nbsp;<span>17.3</span></a>.</p>
+<div id="tbl-knitr" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-knitr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover cell plain table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">speed</th>
+<th style="text-align: right;">dist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-knitr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabell&nbsp;17.3. Cars
+</figcaption>
+</figure>
+</div>
+<p>PROBLEM: This table gives error. MWE works, so probably clashes with yaml options. Very curiously, the same error in MWE when citation-location: margin is enabled, but in the book, removing this does not fix the error. However, when adding a citation (!) to the document, the r code for producing a kable table does not give an error. Dont know how to explain this. SOLUTION: 1) include a citation (!) AND 2) disable citation-location: margin</p>
+<p>NO HACK: To remove stripes. 1) use html &gt; html-table-processing: none in yaml. AND 2) add to css tr.odd background-color AND 3) use output: asis. DOES NOT WORK (only adds color over the stripes</p>
+<p>NOTE: Should probably try to use GT, seems to have a workaround.</p>
+</section>
+<section id="grid-table" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="grid-table"><span class="header-section-number">17.6</span> Grid table</h2>
+<p>How to crossref grid tables? Maybe put in a labeled div.</p>
+<p>See <span class="quarto-unresolved-ref">?tbl-gridt</span></p>
+<table class="table">
+<caption>Sample grid table.{#tbl-gridt}</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fruit</th>
+<th>Price</th>
+<th>Advantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bananas</td>
+<td>$1.34</td>
+<td><ul>
+<li>built-in wrapper</li>
+<li>bright color</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Oranges</td>
+<td>$2.10</td>
+<td><ul>
+<li>cures scurvy</li>
+<li>tasty</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="margin-figures" class="level2 page-columns page-full" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="margin-figures"><span class="header-section-number">17.8</span> Margin Figures</h2>
+<p>See <a href="#fig-margin" class="quarto-xref">Figur&nbsp;<span>17.1</span></a>.</p>
+<div class="cell page-columns page-full">
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div id="fig-margin" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-margin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="style-test_files/figure-html/fig-margin-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-margin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;17.1. MPG vs horsepower, colored by transmission.
+</figcaption>
+</figure>
+</div>
+</div></div></div>
+</section>
+<section id="image" class="level2" data-number="17.9">
+<h2 data-number="17.9" class="anchored" data-anchor-id="image"><span class="header-section-number">17.9</span> Image</h2>
+<p>Se <a href="#fig-yeast-metabolic-network" class="quarto-xref">Figur&nbsp;<span>17.2</span></a>.</p>
+<div id="fig-yeast-metabolic-network" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-yeast-metabolic-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/cider/yeast_metabolic_network.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-yeast-metabolic-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;17.2. Yeast metabolic network
+</figcaption>
+</figure>
+</div>
+<!-- ![Yeast](yeast_metabolic_network.png) -->
+<p>Using symlink to images in root dir.</p>
+</section>
+<section id="arbitrary-margin-content" class="level2 page-columns page-full" data-number="17.10">
+<h2 data-number="17.10" class="anchored" data-anchor-id="arbitrary-margin-content"><span class="header-section-number">17.10</span> Arbitrary Margin Content</h2>
+<p>You can include anything in the margin by places the class <code>.column-margin</code> on the element. See an example on the right about the first fundamental theorem of calculus.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>We know from <em>the first fundamental theorem of calculus</em> that for <span class="math inline">\(x\)</span> in <span class="math inline">\([a, b]\)</span>:</p>
+<p><span class="math display">\[\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).\]</span></p>
+</div></div></section>
+<section id="asides" class="level2 page-columns page-full" data-number="17.11">
+<h2 data-number="17.11" class="anchored" data-anchor-id="asides"><span class="header-section-number">17.11</span> Asides</h2>
+<p>Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).</p>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside">This is a span that has the class <code>aside</code> which places it in the margin without a footnote number.</span></div></div>
+</section>
+<section id="lists" class="level2" data-number="17.12">
+<h2 data-number="17.12" class="anchored" data-anchor-id="lists"><span class="header-section-number">17.12</span> Lists</h2>
 <ul>
 <li>unordered list
 <ul>
@@ -516,6 +713,11 @@ definition
 </dl>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Lea2015" class="csl-entry" role="listitem">
+Lea, A., 2015. Craft cider making, 3rd ed. The Crowood Press.
+</div>
+</div>
 </section>
 
 

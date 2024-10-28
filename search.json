@@ -4,7 +4,7 @@
     "href": "overview.html",
     "title": "1  Översikt",
     "section": "",
-    "text": "```{r}\nsource('prepare.r')\n```\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\n\nNedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i Section 12.1\n\nCrossref chapter (tagged sec- on level 1 heading): Chapter 2\nCrossref section (tagged sec- on level 2 heading): Section 2.2.\nCrossref Appendix (tagged sec- on level 1 heading): Appendix A\nCrossref sub section: Section 2.2.1 Note: Seems to work even though subsection numbers are not shown.\nLink: Cider Workshop on Google groups\nDe andra avsnitten innehåller:\n\nOrdbok: Förklaring av begrepp och förkortningar.\nJäsning: Jäst, Dynamik, långsam jäsning, jästnäring\nMusten: Pressning, maceration, balansering\nSocker: Effekt av socker, sötning.\nTekniker: Pastörisering, svavling etc\nHantering: Jäskärl, Omtappning, mognad, butejering\nSmak: Sötma, att påverka smaken, polyfenoler\nProblem\nÄpplen: Sorter, plockning, mognad\nPäron\nFruktvin\nTabeller: Referenstabeller (mer utförliga, sökbara) och figurer\nResurser\nBibliografi\nHemsidan: Hur hemsidan är gjord. Quarto.\nLoggbok: Min egen loggbok\n\n\nVARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.",
+    "text": "```{r}\nsource('prepare.r')\n```\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\n\nNedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i Section 14.1\n\nCrossref chapter (tagged sec- on level 1 heading): Chapter 2\nCrossref section (tagged sec- on level 2 heading): Section 2.2.\nCrossref Appendix (tagged sec- on level 1 heading): Appendix A\nCrossref sub section: Section 2.2.1 Note: Seems to work even though subsection numbers are not shown.\nLink: Cider Workshop on Google groups\nDe andra avsnitten innehåller:\n\nOrdbok: Förklaring av begrepp och förkortningar.\nJäsning: Jäst, Dynamik, långsam jäsning, jästnäring\nMusten: Pressning, maceration, balansering\nSocker: Effekt av socker, sötning.\nTekniker: Pastörisering, svavling etc\nHantering: Jäskärl, Omtappning, mognad, butejering\nSmak: Sötma, att påverka smaken, polyfenoler\nProblem\nÄpplen: Sorter, plockning, mognad\nPäron\nFruktvin\nTabeller: Referenstabeller (mer utförliga, sökbara) och figurer\nResurser\nBibliografi\nHemsidan: Hur hemsidan är gjord. Quarto.\nLoggbok: Min egen loggbok\n\n\nVARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.",
     "crumbs": [
       "Prolog",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Översikt</span>"
@@ -55,91 +55,278 @@
     ]
   },
   {
+    "objectID": "adjustment.html",
+    "href": "adjustment.html",
+    "title": "4  Justering",
+    "section": "",
+    "text": "4.1 Justering av musten\nInnan eller under jäsning kan det ibland vara fördelaktigt att justera sådant som syra, sötma, och näringsinnehåll i musten.\nSockerhalten i musten avgör den slutliga alkoholhalten. Ett startvärde på SG mellan 1.040 och 1.070 är oftast ett lämpligt intervall. Sikta tex på 1060 i din beräkning. Detta justeras genom att tillsätta socker (ca 30g/L för varje .010 man vill höja). Se [TODO: ref sötning]\npH påverkar mustens motståndskraft mot oönskade mikroorganismer och den färdiga ciderns syrlighet (dock kan syrligheten ändras under jäsningen och uppfattas olika beroende på andra egenskaper hos drycken). Ett utgångsvärde på pH 3.2-3.8 är lagom. pH kan justeras genom att tillsätta äppelsyra (malat). Andra syror kan medföra problem\nPolyfenoler (tanniner) tillsätts ibland för att påverka smaken (Chapter 6), men oftast är det bästa sättet då att försöka få tag på äpplen som är rika i dessa.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Justering</span>"
+    ]
+  },
+  {
+    "objectID": "adjustment.html#justering-av-sockerhalt",
+    "href": "adjustment.html#justering-av-sockerhalt",
+    "title": "4  Justering",
+    "section": "4.2 Justering av sockerhalt",
+    "text": "4.2 Justering av sockerhalt\nFör att höja SG med .010 krävs tillsats av ca 30 g socker per liter must.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Justering</span>"
+    ]
+  },
+  {
+    "objectID": "adjustment.html#justering-av-syra",
+    "href": "adjustment.html#justering-av-syra",
+    "title": "4  Justering",
+    "section": "4.3 Justering av syra",
+    "text": "4.3 Justering av syra\nFör att sänka pH:\n\nÄppelsyra\nAnvänd syrligare äpplen\n\n\nEj rekommederat:\n\nTartrat: Kan ge tartratkristaller\nCitrat: Kan ge dålig smak vid malolaktisk jäsning\n\nFör att höja pH:\n\nBikarbonat (?)\nVatten",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Justering</span>"
+    ]
+  },
+  {
+    "objectID": "adjustment.html#jästnäring",
+    "href": "adjustment.html#jästnäring",
+    "title": "4  Justering",
+    "section": "4.4 Jästnäring",
+    "text": "4.4 Jästnäring\nIbland tillsäts också jästnäring i olika former. Huruvida detta är lämpligt beror på vilken typ av jäsning man önskar. Exempelvis är ibland målsättningen en långsam jäsning och utarmning av näringsämnen för att jäsningen skall avstanna vid en högre sockerhalt och då ge kvaravarande sötma i cidern. Då bör jästnäring ej tillsättas. I de flesta fall är det troligen onödigt (?). Jästnäring kan möjligen minska risken för “stressad” jäst som ger oönskade smaker, men bör då troligen tillsättas med fördröjning för att undvika alltför stor tillväxt av jästpopulationen i början (?).",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Justering</span>"
+    ]
+  },
+  {
+    "objectID": "sugar.html",
+    "href": "sugar.html",
+    "title": "7  Socker",
+    "section": "",
+    "text": "20 g/L Dry, some sweetness, mousse\n\n\n\n\n\n\nSocker g/L\nSG (*1/3)\nBar (*1/4)\nAlk (*1/20)\n\n\n\n\n4\n+1.33\n+ 1\n+ 0.2?\n\n\n10\n+3.33\n+ 2.5\n+ 0.5\n\n\n15\n+5\n+ 3.75\n+ 0.75\n\n\n20\n6.66\n+ 5\n\n\n\n24\n+8\n+ 6\n+ 1.3?\n\n\n30\n+10\n+ 7.5\n+ 1.4\n\n\n\n\n\nTabell 7.1. Effekt av socker. Multiplarna är sockermängd * multipel = effekt.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Socker</span>"
+    ]
+  },
+  {
     "objectID": "yeast.html",
     "href": "yeast.html",
-    "title": "7  Jäst",
+    "title": "8  title: Jäst",
     "section": "",
-    "text": "7.1 Jästens biologi\nHere",
+    "text": "8.1 Jästens biologi\nFigur 8.1 visar jästens tillväxtfaser och resulterande förändringar av syrgas, sockerhalt (SG), och pH i musten. P är jästpopulationen.\nmaximum yeast growth and metabolism occurring between 20 and 25C. (Merwin2007?)",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#jästens-biologi",
+    "href": "yeast.html#jästens-biologi",
+    "title": "8  title: Jäst",
+    "section": "",
+    "text": "Figur 8.1. Jästpoulationens tillväxtfaser",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#pitching",
     "href": "yeast.html#pitching",
-    "title": "7  Jäst",
-    "section": "7.2 Pitching",
-    "text": "7.2 Pitching",
+    "title": "8  title: Jäst",
+    "section": "8.2 Pitching",
+    "text": "8.2 Pitching",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#hydrering",
     "href": "yeast.html#hydrering",
-    "title": "7  Jäst",
-    "section": "7.3 Hydrering",
-    "text": "7.3 Hydrering",
+    "title": "8  title: Jäst",
+    "section": "8.3 Hydrering",
+    "text": "8.3 Hydrering",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#jästsorter",
     "href": "yeast.html#jästsorter",
-    "title": "7  Jäst",
-    "section": "7.4 Jästsorter",
-    "text": "7.4 Jästsorter",
+    "title": "8  title: Jäst",
+    "section": "8.4 Jästsorter",
+    "text": "8.4 Jästsorter",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#effekter-av-jäsning",
+    "href": "yeast.html#effekter-av-jäsning",
+    "title": "8  title: Jäst",
+    "section": "8.5 Effekter av jäsning",
+    "text": "8.5 Effekter av jäsning\n“Bottle Conditioned Cider Guide Alex Simmens, Llanblethian Orchards Fermentation and production of CO2: During fermentation yeast converts sugar to alcohol and CO2 as well as other metabolic products and new yeast cells. Pasteur studied it and produced the following relation: 100 grams of sugar yields:\n\n48.6g ethanol\n46.6g carbon dioxide\n3.2g glycerin\n0.6g succinic acid\n1.2g yeast cells\n\nLater studies showed 48g ethanol and 47g CO2 per 100g sugar to be a more correct figure” https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "carbonation.html",
+    "href": "carbonation.html",
+    "title": "9  Kolsyrning",
+    "section": "",
+    "text": "“A gentler mousse can be coaxed out at between four and five atmospheres.”\n48g ethanol and 47g CO2 per 100g sugar",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Kolsyrning</span>"
     ]
   },
   {
     "objectID": "options.html",
     "href": "options.html",
-    "title": "12  Alternativ",
+    "title": "14  Alternativ",
     "section": "",
-    "text": "12.1 Alternativ\nHär listas i ordningsföljd de möjliga steg som man kan lägga till för att påverka förloppet. De är i tidsordning.",
+    "text": "14.1 Alternativ\nHär listas i ordningsföljd de möjliga steg som man kan lägga till för att påverka förloppet. De är i tidsordning.",
     "crumbs": [
       "Variationer",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Alternativ</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Alternativ</span>"
+    ]
+  },
+  {
+    "objectID": "flavor.html",
+    "href": "flavor.html",
+    "title": "15  Att påverka smaken",
+    "section": "",
+    "text": "Smaker:\nAstringency, strävhet (tanniner)\nSyrlighet\nFyllighet\nSötma",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Att påverka smaken</span>"
     ]
   },
   {
     "objectID": "style-test.html",
     "href": "style-test.html",
-    "title": "16  Style",
+    "title": "17  Style",
     "section": "",
-    "text": "16.1 Notes on quarto\nDid you know you can ignore files by setting a .quartoignore file?\nCrossref: Section 12.1",
+    "text": "17.1 Notes on quarto\nDid you know you can ignore files by setting a .quartoignore file?\nCrossref: Section 14.1",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#heading-2",
     "href": "style-test.html#heading-2",
-    "title": "16  Style",
-    "section": "16.2 Heading 2",
-    "text": "16.2 Heading 2\nText and footnote\n\nPlockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.\nQuote text here\n\n\n\n\n\n\nArbitrary margin content\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09",
+    "title": "17  Style",
+    "section": "17.2 Heading 2",
+    "text": "17.2 Heading 2\nText and footnote\n\nPlockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.\nQuote text here\n\n\n\nArbitrary margin content",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#markdown-table",
+    "href": "style-test.html#markdown-table",
+    "title": "17  Style",
+    "section": "17.3 Markdown table",
+    "text": "17.3 Markdown table\nSee Tabell 17.1.\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 17.1. Fruit prices\n\n\n\nNote: This table has “.bordered” property.",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#markdown-table-in-margin",
+    "href": "style-test.html#markdown-table-in-margin",
+    "title": "17  Style",
+    "section": "17.4 Markdown table in margin",
+    "text": "17.4 Markdown table in margin\nSee ?tbl-fruits.\n\n\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 17.2. Fruit prices\n\n\n\nNote: This table works but gives warning: “FloatRefTarget elements should not be the only content in a div with column classes. This will not render as expected. Consider moving the floatref targets to their own divs and using the offset attribute.”\nA citation(Lea, 2015)",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#knitr-table",
+    "href": "style-test.html#knitr-table",
+    "title": "17  Style",
+    "section": "17.5 Knitr table",
+    "text": "17.5 Knitr table\n\nSee Tabell 17.3.\n\n\n\n\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10\n\n\n\n\n\nTabell 17.3. Cars\n\n\n\nPROBLEM: This table gives error. MWE works, so probably clashes with yaml options. Very curiously, the same error in MWE when citation-location: margin is enabled, but in the book, removing this does not fix the error. However, when adding a citation (!) to the document, the r code for producing a kable table does not give an error. Dont know how to explain this. SOLUTION: 1) include a citation (!) AND 2) disable citation-location: margin\nNO HACK: To remove stripes. 1) use html &gt; html-table-processing: none in yaml. AND 2) add to css tr.odd background-color AND 3) use output: asis. DOES NOT WORK (only adds color over the stripes\nNOTE: Should probably try to use GT, seems to have a workaround.",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#grid-table",
+    "href": "style-test.html#grid-table",
+    "title": "17  Style",
+    "section": "17.6 Grid table",
+    "text": "17.6 Grid table\nHow to crossref grid tables? Maybe put in a labeled div.\nSee ?tbl-gridt\n\nSample grid table.{#tbl-gridt}\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#margin-figures",
+    "href": "style-test.html#margin-figures",
+    "title": "17  Style",
+    "section": "17.8 Margin Figures",
+    "text": "17.8 Margin Figures\nSee Figur 17.1.\n\n\n\n\n\n\n\n\n\nFigur 17.1. MPG vs horsepower, colored by transmission.",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#image",
+    "href": "style-test.html#image",
+    "title": "17  Style",
+    "section": "17.9 Image",
+    "text": "17.9 Image\nSe Figur 17.2.\n\n\n\n\n\n\nFigur 17.2. Yeast metabolic network\n\n\n\n\nUsing symlink to images in root dir.",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#arbitrary-margin-content",
+    "href": "style-test.html#arbitrary-margin-content",
+    "title": "17  Style",
+    "section": "17.10 Arbitrary Margin Content",
+    "text": "17.10 Arbitrary Margin Content\nYou can include anything in the margin by places the class .column-margin on the element. See an example on the right about the first fundamental theorem of calculus.\n\n\nWe know from the first fundamental theorem of calculus that for \\(x\\) in \\([a, b]\\):\n\\[\\frac{d}{dx}\\left( \\int_{a}^{x} f(u)\\,du\\right)=f(x).\\]",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#asides",
+    "href": "style-test.html#asides",
+    "title": "17  Style",
+    "section": "17.11 Asides",
+    "text": "17.11 Asides\nAsides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).\nThis is a span that has the class aside which places it in the margin without a footnote number.",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#lists",
     "href": "style-test.html#lists",
-    "title": "16  Style",
-    "section": "16.3 Lists",
-    "text": "16.3 Lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nTask 1\nTask 2\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\nterm\n\ndefinition",
+    "title": "17  Style",
+    "section": "17.12 Lists",
+    "text": "17.12 Lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nTask 1\nTask 2\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\nterm\n\ndefinition\n\n\n\n\n\n\nLea, A., 2015. Craft cider making, 3rd ed. The Crowood Press.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
@@ -158,29 +345,7 @@
     "href": "terminology.html",
     "title": "Appendix B — Ordbok",
     "section": "",
-    "text": "B.1 If you haven’t read James Crowden’s Cider Country, I would urge you to do so – it is one of the best books ever written on cider and is fascinating throughout, but worth the entry fee for the meticulously-researched section on the invention of ‘traditional method’ drinks alone.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
-    ]
-  },
-  {
-    "objectID": "terminology.html#socker-sg-20-sweet-addera-40-gl-15-medium-sweet-30-gl-10-medium-dry-20-gl",
-    "href": "terminology.html#socker-sg-20-sweet-addera-40-gl-15-medium-sweet-30-gl-10-medium-dry-20-gl",
-    "title": "Appendix B — Ordbok",
-    "section": "B.2 Socker: SG 20 (sweet, addera 40 g/L), 15 (medium sweet, 30 g/L), 10 (medium dry 20 g/L),",
-    "text": "B.2 Socker: SG 20 (sweet, addera 40 g/L), 15 (medium sweet, 30 g/L), 10 (medium dry 20 g/L),",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
-    ]
-  },
-  {
-    "objectID": "terminology.html#toread-httpscider-review.com20230930a-word-on-champagne-method-ciders-and-two-very-different-examples",
-    "href": "terminology.html#toread-httpscider-review.com20230930a-word-on-champagne-method-ciders-and-two-very-different-examples",
-    "title": "Appendix B — Ordbok",
-    "section": "B.3 TOREAD: https://cider-review.com/2023/09/30/a-word-on-champagne-method-ciders-and-two-very-different-examples/",
-    "text": "B.3 TOREAD: https://cider-review.com/2023/09/30/a-word-on-champagne-method-ciders-and-two-very-different-examples/",
+    "text": "En ofta använt mått på sockerhalt är /specifik gravitation/ (SG), där densiteten i en vätska jämförs med densiteten för vatten (som är 1.0 vid 4C). I fruktsaft (must) motsvarar den sockerinnehållet och används för att uppskatta sen slutliga alkoholhalten samt för att följa jäsningens förlopp. Formellt anges SG med flera decimaler, tex SG 1.060. I denna text anges dock bara hundradelsdecimalen (tex när SG 60 anges är det egentligen SG 1.060 som menas).\nSyrahalt i frukt och saft representeras av /titrerbar syra/ (TA) som i princip är halten av malat (äppelsyra) och pH. Man brukar inte mäta denna. Mätning av pH kan vara användbart men är ej nödvändigt.\nBrix, Oechsele, SG, g/L.\nMLF\nYAN\nDAP\nSO2\n\nSockerinnehåll och torrhetsgrad för mousserande vin (EU)\n\n\nSocker g/L\nEtikett\n\n\n\n\n0-3\nBrut Nature\n\n\n0-6\nExtra Brut\n\n\n0-12\nBrut\n\n\n12-17\nExtra Sec\n\n\n17-32\nSec\n\n\n32-50\nDemi-Sec\n\n\n50+\nDoux\n\n\n\nSocker: SG 20 (sweet, addera 40 g/L), 15 (medium sweet, 30 g/L), 10 (medium dry 20 g/L)",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
@@ -192,6 +357,17 @@
     "title": "Appendix D — Bibliografi",
     "section": "",
     "text": "D.1 References",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
+    ]
+  },
+  {
+    "objectID": "bibliography.html#references",
+    "href": "bibliography.html#references",
+    "title": "Appendix D — Bibliografi",
+    "section": "",
+    "text": "Lea, A., 2015. Craft cider making, 3rd ed. The Crowood Press.\n\n\nMolina, A.M., Swiegers, J.H., Varela, C., Pretorius, I.S., Agosin, E.,\n2007. Influence of wine fermentation temperature on the synthesis of\nyeast-derived volatile aroma compounds. Applied Microbiology and\nBiotechnology 77, 675–687. doi:10.1007/s00253-007-1194-3",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
@@ -230,6 +406,36 @@
     ]
   },
   {
+    "objectID": "fermentation.html",
+    "href": "fermentation.html",
+    "title": "Jäsning",
+    "section": "",
+    "text": "Att följa jäsningen\nSådant som kan observeras för att följa jäsningen:",
+    "crumbs": [
+      "Jäsning"
+    ]
+  },
+  {
+    "objectID": "fermentation.html#att-följa-jäsningen",
+    "href": "fermentation.html#att-följa-jäsningen",
+    "title": "Jäsning",
+    "section": "",
+    "text": "Sockerhalt (SG, Oe\npH\nNivå av sediment\nDoft, smak\nRäkna bubblor (temperaturberoende)\nMusten klarhet\n\n\n\nFermentation speed units\nFermentation speed units (FSU) är ett koncept föreslaget av Claude Joliceur här: Fermentation speed units (FSU).\nDefinition: 1 FSU = Reduktion av densitet med 1 (SG 0.001) på 100 dagar.\nTolkning:\n\nFSU = 1: Mycket långsam fermentering. I praktiken stabil.\nFSU = 10: Långsam fermentering. Motsvarar 1 FSU reduktion per 10 dagar.\nFSU = 100: Snabb fermentering. Motsvarar 1 FSU reduktion per dag.\n\nRekommendationer för buteljering vid olika FSU (CJ):\n\n&lt;3 FSU: Mycket säkert, kan utveckla litet bubbel efter 3-4 månader i flaska.\n3-5 FSU: Blir troligen lätt bubblig.\n5-10: Mer riskabelt. Mer sannolikt fullt bubblig efter en tid i flaska.\n\nVid buteljering &gt; SG 1.010 bör slutjäsning testas först och fullvikts-champagneflaskor användas.\n\n\nNär är jäsningen klar?\nJäsningen kan avstanna när allt fermenterbart socker har förbrukats av jästen, eller när andra näringsämnen (kväve, tiamin) är förbrukade. I det senare fallet kan jäsningen avstanna trots kvarvarande socker.\nDock finns en risk att jäsningen återupptas vid stigande temperatur, vid blandning med andra (även färdigjästa) satser, eller i viss mån vid malolaktisk jäsning (vilket kan producera en del kolsyra, men troligen inte så mycket?). Man bör därför försäkra sig om att jäsningen avstannat innan buteljering, alternativt använda säker pastörisering. Faktorer såsom alkoholhalt, flasktryck, SO2 och pH kan också hämma jästen.\nFöljande kan användas (båda dessa) för att avgöra när jäsningen är klar:\n\nFölj SG-kurva för att se när det planar ut. För att testa om jäsningen är färdig för buteljering: SG sjunker &lt;1 per vecka (max 2 per 3 v). SG ligger vanligen på 1015-1010\nSlutjäsningstest. Provjäs i 20 grader i 2-3 veckor. Provjäsning med tillskott av tiamin kan även göras.\n\n\nSlutjäsningstest\nSlutjäsningstest enl CJ:\n\nMät SG.\nTappa upp några testflaskor med jäslås (eller lös kork?).\nTestflaskorna hålls i rumstemperatur i två månader.\nDärefter mäts SG i den första flaskan. Beräkna FSU.\n\nOm FSU &lt; 3 har slutligt SG troligen uppnåtts?\nVid FSU &gt;3 testa ytterligare flaskor vid 4 och 6 månader.",
+    "crumbs": [
+      "Jäsning"
+    ]
+  },
+  {
+    "objectID": "fermentation.html#att-påverka-jäsningen",
+    "href": "fermentation.html#att-påverka-jäsningen",
+    "title": "Jäsning",
+    "section": "Att påverka jäsningen",
+    "text": "Att påverka jäsningen\nJästens tillväxt och den följande jäsningens hastighet påverkas av faktorer såsom tremperatur, näringstillgång, alkoholhalt, typ av jäst, mm. Jäsningens hastighet påverkar i sin tur hur smakerna i cidern utvecklas.\nSe 8  title: Jäst för grunderna i hur jäst fungerar.\n\n\n\n\n\n\nFaktor\nKategori\nEffekt\n\n\n\n\nJästsort\nVildjäst\nLångsammare\n\n\n\nBryggerijäst\nSnabbare\n\n\nTemperatur\nLägre\nLångsammare\n\n\n\nHögre\nSnabbare\n\n\nSocker\nLägre\n\n\n\n\nHögre\n\n\n\nNäring\nLägre\n\n\n\n\nHögre\n\n\n\nAlkohol\nLägre\n\n\n\n\nHögre\nLångsammare\n\n\n\n\n\nTabell 1. Faktorer som påverkar jäsningen\n\n\n\n\nTemperatur\nTemperaturen påverkar hur snabbt jästen tillväxer i början och sedan hur snabbt jäsningen sker. Den påverkar också hur smaken utvecklas(Merwin2007?). En tidig “överbefolkning” av jäst som sedan stressas pga brist på näring eller andra effekter av den täta populationen kan troligen öka risken för oönskade smaker. Vid långsammare\nTemperaturspannet för jäsning är 10-32°C men görs vanligen i 15-25°C. Ofta rekommenderas en temperatur i lägre delen av detta intervall, men det beror också på vilken typ av smak som önskas. Man brukar avråda från jäsning i temperatur över 20°C [?].\nLägre temperatur (kring 15C, eller långsammare jäsning pga begränsad kvävetillgång) ger mer friska, fuktiga aromer. Vid vinjäsning ger höga temperaturer mer blommiga aromer samt aromer som påminner om banan eller ananas(Molina et al., 2007), vilket möjligen kan vara liknande i cider. En temperatur över 22°C ökar produktionen av vissa estrar, vilket kan ge försämrad smak. Dock finns studier som talar för att jäsning vid 20°C kan ge den smak som de flesta föredrar. Temperaturoptimum är sannolikt beroende av tex vilken jästsort som används.\nEn temperatur över °C ökar sannolikheten att malolaktisk jäsning sker.\n\n\n\n\n\n\nTemp (°C)\nEffekt\n\n\n\n\n4\nVissa (apiculata) jästsorter kan fermentera\n\n\n&lt;10\nMånga sorter av bryggerijäst avstannar\n\n\n10-14\nAnses bäst av vissa\n\n\n20\nOptimum enligt någon studie\n\n\n&gt;20\nÖkad risk för dålig smak (?)\n\n\n22\nMaximal rekommenderad temperatur\n\n\n&gt;25\nJäsningen kan avstanna\n\n\n\n\n\nTabell 2. Temperatur vid jäsning\n\n\n\n\n\n\n\n\n\n\n\nTemperature affects retention of fermentation volatiles and yeast biochemistry.\nYeast: S. cerevisiae strain EC1118, robust fermenter, and aromatically ‘neutral’ strain “Lalvin EC-1118 is the original ‘prise de mousse’. It was isolated in Champagne and its use is validated by the Comité Interprofessionnel du Vin de Champagne (CIVC). Its strong competitive character, its ability to ferment at low temperature, good flocculation and excellent alcohol tolerance, make Lalvin EC-1118 an excellent strain to be used in a wide range of applications (such as sparkling wines, fruit wines and ciders).Alcohol tolerance: 18 % Optimum fermentation temperature: 10–30 °C”\n\n\nNäring\n\n\nSocker\nCorrelation table* of the different measurements of the sugar concentration in musts: https://laffort.com/wp-content/uploads/EN_Table_Convertisseur.pdf\n\n\nLufttillgång\nI början vs senare\n\n\n\n\nMolina, A.M., Swiegers, J.H., Varela, C., Pretorius, I.S., Agosin, E., 2007. Influence of wine fermentation temperature on the synthesis of yeast-derived volatile aroma compounds. Applied Microbiology and Biotechnology 77, 675–687. doi:10.1007/s00253-007-1194-3",
+    "crumbs": [
+      "Jäsning"
+    ]
+  },
+  {
     "objectID": "must.html",
     "href": "must.html",
     "title": "Must",
@@ -237,16 +443,6 @@
     "text": "Pressning, balansering, val av äpplen etc\nMaceration\nPlockning och mognad",
     "crumbs": [
       "Must"
-    ]
-  },
-  {
-    "objectID": "fermentation.html",
-    "href": "fermentation.html",
-    "title": "Jäsning",
-    "section": "",
-    "text": "Preface to this part.",
-    "crumbs": [
-      "Jäsning"
     ]
   },
   {
@@ -264,7 +460,7 @@
     "href": "techniques.html",
     "title": "Tekniker",
     "section": "",
-    "text": "Svavling, Pastörisering, mm",
+    "text": "Refraktometer",
     "crumbs": [
       "Tekniker"
     ]
