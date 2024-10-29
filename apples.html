@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -145,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./constituents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sammansättning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Beståndsdelar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./yeast.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: Jäst</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Jäst</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -214,8 +233,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./maturation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mognad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./bottling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,13 +257,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pasteurization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sulphiting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Sulphiting</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Svavling</span></span></a>
   </div>
 </li>
       </ul>
@@ -255,13 +280,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./flavor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
   </div>
 </li>
       </ul>
@@ -278,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tosort.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
   </div>
 </li>
       </ul>
@@ -295,20 +320,49 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./style-test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Style</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
- <span class="menu-text">Appendices</span></a>
+            <a href="./other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annat</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./perry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Päroncider</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fruitwine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Fruktvin</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./applejuice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Äppeljuice</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tables.html" class="sidebar-item-text sidebar-link">
@@ -337,7 +391,24 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-    
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="-1">
+    <h2 id="toc-title">Denna sida</h2>
+   
+  <ul>
+  <li><a href="#fruktens-mognad" id="toc-fruktens-mognad" class="nav-link active" data-scroll-target="#fruktens-mognad"><span class="header-section-number">5.1</span> Fruktens mognad</a></li>
+  <li><a href="#äpplen" id="toc-äpplen" class="nav-link" data-scroll-target="#äpplen"><span class="header-section-number">5.2</span> Äpplen</a>
+  <ul class="collapse">
+  <li><a href="#val-av-äpplen-för-cider" id="toc-val-av-äpplen-för-cider" class="nav-link" data-scroll-target="#val-av-äpplen-för-cider">Val av äpplen för cider</a></li>
+  </ul></li>
+  <li><a href="#tabell-jämförelse-sorter" id="toc-tabell-jämförelse-sorter" class="nav-link" data-scroll-target="#tabell-jämförelse-sorter"><span class="header-section-number">5.3</span> Tabell jämförelse sorter</a></li>
+  <li><a href="#skörd-och-mognad" id="toc-skörd-och-mognad" class="nav-link" data-scroll-target="#skörd-och-mognad"><span class="header-section-number">5.4</span> Skörd och mognad</a>
+  <ul class="collapse">
+  <li><a href="#hur-avgöra-mognad" id="toc-hur-avgöra-mognad" class="nav-link" data-scroll-target="#hur-avgöra-mognad">Hur avgöra mognad?</a></li>
+  </ul></li>
+  <li><a href="#beskrivning-av-äppelsorter" id="toc-beskrivning-av-äppelsorter" class="nav-link" data-scroll-target="#beskrivning-av-äppelsorter"><span class="header-section-number">5.5</span> Beskrivning av äppelsorter</a></li>
+  <li><a href="#resurser" id="toc-resurser" class="nav-link" data-scroll-target="#resurser"><span class="header-section-number">5.6</span> Resurser</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -348,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./must.html">Must</a></li><li class="breadcrumb-item"><a href="./apples.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Äpplen</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Äpplen</span></h1>
+<h1 class="title"><span id="sec-apples" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Äpplen</span></span></h1>
 </div>
 
 
@@ -365,8 +436,287 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Sorter, urval, egenskper, hantering, mognad, lagring.</p>
+<section id="fruktens-mognad" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="fruktens-mognad"><span class="header-section-number">5.1</span> Fruktens mognad</h2>
+<p>Olika sorter är <em>plockmogna</em> vid olika tid. Vissa bör därefter <em>eftermogna</em> för att uppnå full arom och kan då även bli mildare i smaken (minskad beska, ökad sötma). Vissa sorter håller därefter för <em>lagring</em> i veckor eller månader (gärna kallt -1 till 4 °C).</p>
+</section>
+<section id="äpplen" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="äpplen"><span class="header-section-number">5.2</span> Äpplen</h2>
+<p>Traditionellt odlades särskilda cideräpplen, vilka inte var goda att äta färska pga mycket beska och syra, men lämpade sig väl för cider. Andra äppelsorter kan dock användas. Syrliga äpplen är att föredra och finns beska kan det ge en mer komplex smak. Söta och milda sommaräpplen anses sällan ge god cider. Höst- och vinteräpplen är ofta mer lämpliga. Sockerhalten är också viktig ifall socker ej tillsätts.</p>
+<p>I Sverige har många äpplen hög syra och låg halt tanniner. Tillräcklig syra är därför sällan ett problem. Utmaningen är snarare att hantera den högs syrligheten och att få tillräckligt med tanniner för att ge en mer komplex och fyllig smak. Optimalt är sannolikt att blanda dessa syrliga äpplen med sådana som har hög halt tanniner men låg syrlighet (“bittersweets”).</p>
+<p>Att göra cider på en enda äppelsort blir sällan lyckat, med undantag för vissa cideräpplen som ensamma kan ge en bra balans. Blandning av sorter är ofta lämpligt för god smak. Då kan sorter som inte gör sig så bra ensamma ge bra must.</p>
+<p>Cideräpplen brukar beskrivas som “bittersöta” eller “bittersura”. Kategorisering av äpplen kan göras på olika sätt, tex enligt tabellen nedan<span class="citation" data-cites="Karl2023 Charley1935">[<a href="bibliography.html#ref-Karl2023" role="doc-biblioref">1</a>,<a href="bibliography.html#ref-Charley1935" role="doc-biblioref">2</a>]</span>.</p>
+<!-- Se [@Charley1935] "The biochemist in the cider factory". -->
+<table class="table">
+<caption>Kategorisering av cideräpplen</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Malat &lt;4.5</th>
+<th>Malat &gt;4.5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tannin &lt;2</td>
+<td>Sweet</td>
+<td>Sharp</td>
+</tr>
+<tr class="even">
+<td>Tannin &gt;2</td>
+<td>Bittersweet</td>
+<td>Bittersharp</td>
+</tr>
+</tbody>
+</table>
+<p>En mer utförlig kategorisering och exempel på sorter visas i tabellen nedan.</p>
+<table class="table-hover table">
+<caption>Klassificering av äppeltyper med några exempel. För att få % tag g/L genom 10. Franska systemet inom klamrar.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Klassifikation</th>
+<th>Tannin (g/L)</th>
+<th>Malat (g/L)</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sharp/Aigre</td>
+<td>&lt;2</td>
+<td>&gt;4.5 [&gt;6.75]</td>
+<td>Malat 4.5-8 är “medium sharp”</td>
+</tr>
+<tr class="even">
+<td>Medium sharp/Acidulee</td>
+<td>&lt;2</td>
+<td>4.5-8 [4.5-6.75]</td>
+<td>Subacidic</td>
+</tr>
+<tr class="odd">
+<td>Sweet/Douce</td>
+<td>&lt;2</td>
+<td>&lt;4.5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bittersweet</td>
+<td>&gt;2 [2-3]</td>
+<td>&lt;4.5</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bittersharp</td>
+<td>&gt;2 [&gt;3]</td>
+<td>&gt;4.5 [&gt;6.75]</td>
+<td>Kingston black</td>
+</tr>
+<tr class="even">
+<td>Bitter</td>
+<td>[&gt;3]</td>
+<td>[&lt;4.5]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Dessert apples</td>
+<td>0.4-1.5</td>
+<td></td>
+<td>Cox orange Pippin</td>
+</tr>
+<tr class="even">
+<td>Cider apples</td>
+<td>1-5</td>
+<td>~6?</td>
+<td>Kingston black</td>
+</tr>
+<tr class="odd">
+<td>Kingston black</td>
+<td>2.4</td>
+<td>6.8</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Svenska äpplen, Medel (range)</td>
+<td>0.4 (0.1-0.8)</td>
+<td>8 (5-13)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Belle de Boskoop</td>
+<td>0.84</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Maglemer</td>
+<td>0.45</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Åkerö</td>
+<td>0.34</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ribston</td>
+<td>1.1</td>
+<td>6.7</td>
+<td>Cultivar Performance Database</td>
+</tr>
+<tr class="odd">
+<td>Ribston must SLU</td>
+<td>0.6</td>
+<td>12</td>
+<td>https://stud.epsilon.slu.se/2790/1/nilsson_c_110613.pdf</td>
+</tr>
+<tr class="even">
+<td>Ribston cider, SLU</td>
+<td>0.6</td>
+<td>5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section id="val-av-äpplen-för-cider" class="level3">
+<h3 class="anchored" data-anchor-id="val-av-äpplen-för-cider">Val av äpplen för cider</h3>
+<p>Ett tips är att försöka undvika att endast använda syrlig frukt. Senmognande sorter har ofta fylligare smak. Tidiga sorter har ofta mycket syra, men det finns även hos vissa senmognande. <!-- [Ref SLU: Fakta om musttillverkning: Råvara och råvarukvalitet] --></p>
+<p>Hög syra kan i viss mån balanseras av hög sötma, vilket ibland vägs in vid val av äpplen. Optimalt är då en kvot på 15–20 [^löslig torrsubstans (°Brix) / äpplesyra (%)]. Lägre värden uppfattas som syrligare och tunnare smak. För hemmabryggning är det dock möjligt att tillsätta socker istället.</p>
+<p>Ofta är det klokt att blanda äpplen med olika egenskaper för att få en must med bra egenskaper. Cideräpplet ‘Kingston black’ anses vara en standard för ett bra cideräpple. Dess must har SG 1.060, malat 0.68%, och tannin 0.24%, vilket alltså kan fungera som ett riktmärke. Som en jämförelse har de flesta äppelsorter som odlas i Sverige tannin &lt; 0.08%, dvs mindre än hälften av ‘Kingston Black’, och samtliga har TA &gt; 0.45, dvs är “sharps”.</p>
+<p><strong>Äpplen som ger god sortren must:</strong></p>
+<ul>
+<li>Sena: Aroma’, ’Belle de Boskoop’, ’Cox’s Orange’, ’Gravensteiner’, ’Rubinola’, ’Fredrik’, och ’Folke’</li>
+<li>Tidiga/medeltidiga: ’Alice’, ’Discovery’ och ’Katja’</li>
+</ul>
+<p><strong>Äpplen med relativt högt innehåll av totalfenoler:</strong></p>
+<ul>
+<li>’Belle de Boskoop’, ’Cox’s Pomona’, ’Quinte’ och ’Bramley’.</li>
+</ul>
+</section>
+</section>
+<section id="tabell-jämförelse-sorter" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="tabell-jämförelse-sorter"><span class="header-section-number">5.3</span> Tabell jämförelse sorter</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>             sort    sg    ta fenoler  prop
+           &lt;char&gt; &lt;num&gt; &lt;num&gt;   &lt;num&gt; &lt;num&gt;
+1: Three Counties  55.0   2.3     3.3     1
+2:        Ribston  48.0  11.9     0.6     1
+3:      BLANDNING  51.5   7.1     1.9     2
+4:          ideal  60.0   6.8     2.4    NA</code></pre>
+</div>
+</div>
+<p>Se <span class="quarto-unresolved-ref">?tbl-apples-long</span> för en längre lista på äpplen och deras egenskaper.</p>
+</section>
+<section id="skörd-och-mognad" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="skörd-och-mognad"><span class="header-section-number">5.4</span> Skörd och mognad</h2>
+<p>Äpplen för cider bör skördas när de är fullt plockmogna och vissa sorter är sedan lämpliga att låta eftermogna i sval, luftig miljö.</p>
+<p>Under mognadstiden på trädet går sockerhalten upp, stärkelse omvandlas till socker, syra minskar. Flyktiga ämnen (aromer?) ökar. Fenoler minskar först och ökar sedan igen (för de flesta sorter). Frukterna blir mjukare.</p>
+<p>Plockas de för tidigt kan de sakna fenoler, ha alltför hög syra, och ge en must med mycket stärkelse, vilket kan ge grumlig cider. Plockas de för sen kan man få problem med mjuka frukter som ger mos istället för must vid pressningen.</p>
+<p>När?</p>
+<p>Plockmoget</p>
+<p>Ätmoget</p>
+<p>Redo för pressning</p>
+<p>Mognad efter plockning</p>
+<p>Lagring efter mognad</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tidpunkt</th>
+<th>Socker</th>
+<th>Syra</th>
+<th>Stärkelse</th>
+<th>Flyktiga ämnen</th>
+<th>Fenoler</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Omoget</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Omoget</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Plockmoget</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ätmoget</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Förändring i kvoten fruktos/glukos/sukros</p>
+<section id="hur-avgöra-mognad" class="level3">
+<h3 class="anchored" data-anchor-id="hur-avgöra-mognad">Hur avgöra mognad?</h3>
+<ul>
+<li>Frukten börjar falla</li>
+<li>Svarta eller mörkbruna, glansiga kärnor</li>
+<li>Lossnar när frukten lyfts till 90°</li>
+<li>Jodtest, se <a href="techniques.html#sec-techniques-iodinetest" class="quarto-xref"><span>Section 2</span></a></li>
+</ul>
+</section>
+</section>
+<section id="beskrivning-av-äppelsorter" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="beskrivning-av-äppelsorter"><span class="header-section-number">5.5</span> Beskrivning av äppelsorter</h2>
+<p>Ribston: https://www.slu.se/centrumbildningar-och-projekt/programmet-for-odlad-mangfald-pom/gront-kulturarv/gront-kulturarv-sortiment/gront-kulturarv-frukt-bar/ribston/</p>
+<p>Analys och beskrivning av engelska cideräpplen som odlats i Sverige: https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf</p>
+</section>
+<section id="resurser" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="resurser"><span class="header-section-number">5.6</span> Resurser</h2>
+<p>Se <a href="https://pricklycider.com/2021/09/25/when-are-apples-ripe/">Prickly Cider, when are apples ripe?</a></p>
+<p><a href="https://stud.epsilon.slu.se/2790/1/nilsson_c_110613.pdf">Äppelsorter som är bäst till cider</a></p>
+<p><a href="https://pub.epsilon.slu.se/12448/7/rumpunen_k_150723.pdf">Äppelsorter som är bra för must</a></p>
+<p><a href="https://groups.google.com/g/cider-workshop/c/Hqz2ZkzxNKU">Bilder på cideräpllen (US), färg på must mm</a></p>
+<p><a href="https://cider.wsu.edu/ciderweb/">Cultivar performance database</a></p>
+<p>Artikel: <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1002/ppp3.10317">The biochemical and physiological basis for hard cider apple fruit quality</a></p>
+<p>Artikel: <a href="https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf">Cideräpplen i Sverige</a></p>
+<blockquote class="blockquote">
+<p>Troligen går alla sorterna att odla i zon II och merparten även i zon III. För odling i mer utsatta områden, rekommenderar vi i första hand sorter som mognar fram redan i september.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Som grundstam använder man oftast MM106 eller MM111 när cideräppleträd förökas i England eller Frankrike. I odlingarna på Balsgård och hos MarkCider har sådana träd haft lagom tillväxt och kommit ganska snabbt i bördighet för flertalet sorter. För odlingar i mer utsatta lägen i Sverige skulle nog A2 vara att föredra.</p>
+</blockquote>
+<p>Inköp av cideräpplen:</p>
+<p>Svartbäckens cideräpplen: https://shop.svartbackens.com/shop/search?s=cider%C3%A4pple Spakarps cideräpplen: https://spakarpsplantskola.se/webbshop/frukttrad-barbuskar/ciderapplen/ Cider Apples and Perry Pears: https://www.bjcp.org/exam-certification/cider-judge-program/cider-exam/7-cider-apples-and-perry-pears/</p>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Karl2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Karl AD, Zakalik DL, Cook BS, Krishna Kumar S, Peck GM. The biochemical and physiological basis for hard cider apple fruit quality. PLANTS, PEOPLE, PLANET [Internet]. 2023 [cited 2024 Sep 30];5(2):178–89. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ppp3.10317">https://onlinelibrary.wiley.com/doi/abs/10.1002/ppp3.10317</a></div>
+</div>
+<div id="ref-Charley1935" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Charley V. <a href="https://doi.org/10.1002/j.2050-0416.1935.tb05570.x">TEST</a>. Journal of the Institute of Brewing. 1935 Apr;41:62–71. </div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

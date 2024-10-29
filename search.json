@@ -4,7 +4,7 @@
     "href": "overview.html",
     "title": "1  Översikt",
     "section": "",
-    "text": "```{r}\nsource('prepare.r')\n```\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\n\nNedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i Section 14.1\n\nCrossref chapter (tagged sec- on level 1 heading): Chapter 2\nCrossref section (tagged sec- on level 2 heading): Section 2.2.\nCrossref Appendix (tagged sec- on level 1 heading): Appendix A\nCrossref sub section: Section 2.2.1 Note: Seems to work even though subsection numbers are not shown.\nLink: Cider Workshop on Google groups\nDe andra avsnitten innehåller:\n\nOrdbok: Förklaring av begrepp och förkortningar.\nJäsning: Jäst, Dynamik, långsam jäsning, jästnäring\nMusten: Pressning, maceration, balansering\nSocker: Effekt av socker, sötning.\nTekniker: Pastörisering, svavling etc\nHantering: Jäskärl, Omtappning, mognad, butejering\nSmak: Sötma, att påverka smaken, polyfenoler\nProblem\nÄpplen: Sorter, plockning, mognad\nPäron\nFruktvin\nTabeller: Referenstabeller (mer utförliga, sökbara) och figurer\nResurser\nBibliografi\nHemsidan: Hur hemsidan är gjord. Quarto.\nLoggbok: Min egen loggbok\n\n\nVARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.",
+    "text": "```{r}\nsource('prepare.r')\n```\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\n\nNedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i Section 15.1\n\nCrossref chapter (tagged sec- on level 1 heading): Chapter 2\nCrossref section (tagged sec- on level 2 heading): Section 2.2.\nCrossref Appendix (tagged sec- on level 1 heading): Appendix A\nCrossref sub section: Section 2.2.1 Note: Seems to work even though subsection numbers are not shown.\nLink: Cider Workshop on Google groups\nDe andra avsnitten innehåller:\n\nOrdbok: Förklaring av begrepp och förkortningar.\nJäsning: Jäst, Dynamik, långsam jäsning, jästnäring\nMusten: Pressning, maceration, balansering\nSocker: Effekt av socker, sötning.\nTekniker: Pastörisering, svavling etc\nHantering: Jäskärl, Omtappning, mognad, butejering\nSmak: Sötma, att påverka smaken, polyfenoler\nProblem\nÄpplen: Sorter, plockning, mognad\nPäron\nFruktvin\nTabeller: Referenstabeller (mer utförliga, sökbara) och figurer\nResurser\nBibliografi\nHemsidan: Hur hemsidan är gjord. Quarto.\nLoggbok: Min egen loggbok\n\n\nVARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.",
     "crumbs": [
       "Prolog",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Översikt</span>"
@@ -46,12 +46,23 @@
   {
     "objectID": "constituents.html",
     "href": "constituents.html",
-    "title": "3  Sammansättning",
+    "title": "3  Beståndsdelar",
     "section": "",
-    "text": "Syra, socker, fenoler, citrat",
+    "text": "3.1 Sockerarter",
     "crumbs": [
       "Must",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sammansättning</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Beståndsdelar</span>"
+    ]
+  },
+  {
+    "objectID": "constituents.html#organiska-syror",
+    "href": "constituents.html#organiska-syror",
+    "title": "3  Beståndsdelar",
+    "section": "3.2 Organiska syror",
+    "text": "3.2 Organiska syror\nIcke flyktiga",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Beståndsdelar</span>"
     ]
   },
   {
@@ -81,7 +92,7 @@
     "href": "adjustment.html#justering-av-syra",
     "title": "4  Justering",
     "section": "4.3 Justering av syra",
-    "text": "4.3 Justering av syra\nFör att sänka pH:\n\nÄppelsyra\nAnvänd syrligare äpplen\n\n\nEj rekommederat:\n\nTartrat: Kan ge tartratkristaller\nCitrat: Kan ge dålig smak vid malolaktisk jäsning\n\nFör att höja pH:\n\nBikarbonat (?)\nVatten",
+    "text": "4.3 Justering av syra\nFör att sänka pH:\n\nÄppelsyra\nAnvänd syrligare äpplen\n\n\nEj rekommederat:\n\nTartrat: Kan ge tartratkristaller\nCitrat: Kan ge dålig smak vid malolaktisk jäsning\n\nFör att höja pH:\n\nBikarbonat (?)\nKalciumkarbonat\nVatten",
     "crumbs": [
       "Must",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Justering</span>"
@@ -99,11 +110,121 @@
     ]
   },
   {
+    "objectID": "apples.html",
+    "href": "apples.html",
+    "title": "5  Äpplen",
+    "section": "",
+    "text": "5.1 Fruktens mognad\nOlika sorter är plockmogna vid olika tid. Vissa bör därefter eftermogna för att uppnå full arom och kan då även bli mildare i smaken (minskad beska, ökad sötma). Vissa sorter håller därefter för lagring i veckor eller månader (gärna kallt -1 till 4 °C).",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "apples.html#äpplen",
+    "href": "apples.html#äpplen",
+    "title": "5  Äpplen",
+    "section": "5.2 Äpplen",
+    "text": "5.2 Äpplen\nTraditionellt odlades särskilda cideräpplen, vilka inte var goda att äta färska pga mycket beska och syra, men lämpade sig väl för cider. Andra äppelsorter kan dock användas. Syrliga äpplen är att föredra och finns beska kan det ge en mer komplex smak. Söta och milda sommaräpplen anses sällan ge god cider. Höst- och vinteräpplen är ofta mer lämpliga. Sockerhalten är också viktig ifall socker ej tillsätts.\nI Sverige har många äpplen hög syra och låg halt tanniner. Tillräcklig syra är därför sällan ett problem. Utmaningen är snarare att hantera den högs syrligheten och att få tillräckligt med tanniner för att ge en mer komplex och fyllig smak. Optimalt är sannolikt att blanda dessa syrliga äpplen med sådana som har hög halt tanniner men låg syrlighet (“bittersweets”).\nAtt göra cider på en enda äppelsort blir sällan lyckat, med undantag för vissa cideräpplen som ensamma kan ge en bra balans. Blandning av sorter är ofta lämpligt för god smak. Då kan sorter som inte gör sig så bra ensamma ge bra must.\nCideräpplen brukar beskrivas som “bittersöta” eller “bittersura”. Kategorisering av äpplen kan göras på olika sätt, tex enligt tabellen nedan[1,2].\n\n\nKategorisering av cideräpplen\n\n\n\nMalat &lt;4.5\nMalat &gt;4.5\n\n\n\n\nTannin &lt;2\nSweet\nSharp\n\n\nTannin &gt;2\nBittersweet\nBittersharp\n\n\n\nEn mer utförlig kategorisering och exempel på sorter visas i tabellen nedan.\n\nKlassificering av äppeltyper med några exempel. För att få % tag g/L genom 10. Franska systemet inom klamrar.\n\n\n\n\n\n\n\n\nKlassifikation\nTannin (g/L)\nMalat (g/L)\nExample\n\n\n\n\nSharp/Aigre\n&lt;2\n&gt;4.5 [&gt;6.75]\nMalat 4.5-8 är “medium sharp”\n\n\nMedium sharp/Acidulee\n&lt;2\n4.5-8 [4.5-6.75]\nSubacidic\n\n\nSweet/Douce\n&lt;2\n&lt;4.5\n\n\n\nBittersweet\n&gt;2 [2-3]\n&lt;4.5\n\n\n\nBittersharp\n&gt;2 [&gt;3]\n&gt;4.5 [&gt;6.75]\nKingston black\n\n\nBitter\n[&gt;3]\n[&lt;4.5]\n\n\n\nDessert apples\n0.4-1.5\n\nCox orange Pippin\n\n\nCider apples\n1-5\n~6?\nKingston black\n\n\nKingston black\n2.4\n6.8\n\n\n\nSvenska äpplen, Medel (range)\n0.4 (0.1-0.8)\n8 (5-13)\n\n\n\nBelle de Boskoop\n0.84\n10\n\n\n\nMaglemer\n0.45\n8\n\n\n\nÅkerö\n0.34\n6\n\n\n\nRibston\n1.1\n6.7\nCultivar Performance Database\n\n\nRibston must SLU\n0.6\n12\nhttps://stud.epsilon.slu.se/2790/1/nilsson_c_110613.pdf\n\n\nRibston cider, SLU\n0.6\n5\n\n\n\n\n\nVal av äpplen för cider\nEtt tips är att försöka undvika att endast använda syrlig frukt. Senmognande sorter har ofta fylligare smak. Tidiga sorter har ofta mycket syra, men det finns även hos vissa senmognande. \nHög syra kan i viss mån balanseras av hög sötma, vilket ibland vägs in vid val av äpplen. Optimalt är då en kvot på 15–20 [^löslig torrsubstans (°Brix) / äpplesyra (%)]. Lägre värden uppfattas som syrligare och tunnare smak. För hemmabryggning är det dock möjligt att tillsätta socker istället.\nOfta är det klokt att blanda äpplen med olika egenskaper för att få en must med bra egenskaper. Cideräpplet ‘Kingston black’ anses vara en standard för ett bra cideräpple. Dess must har SG 1.060, malat 0.68%, och tannin 0.24%, vilket alltså kan fungera som ett riktmärke. Som en jämförelse har de flesta äppelsorter som odlas i Sverige tannin &lt; 0.08%, dvs mindre än hälften av ‘Kingston Black’, och samtliga har TA &gt; 0.45, dvs är “sharps”.\nÄpplen som ger god sortren must:\n\nSena: Aroma’, ’Belle de Boskoop’, ’Cox’s Orange’, ’Gravensteiner’, ’Rubinola’, ’Fredrik’, och ’Folke’\nTidiga/medeltidiga: ’Alice’, ’Discovery’ och ’Katja’\n\nÄpplen med relativt högt innehåll av totalfenoler:\n\n’Belle de Boskoop’, ’Cox’s Pomona’, ’Quinte’ och ’Bramley’.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "apples.html#tabell-jämförelse-sorter",
+    "href": "apples.html#tabell-jämförelse-sorter",
+    "title": "5  Äpplen",
+    "section": "5.3 Tabell jämförelse sorter",
+    "text": "5.3 Tabell jämförelse sorter\n\n\n             sort    sg    ta fenoler  prop\n           &lt;char&gt; &lt;num&gt; &lt;num&gt;   &lt;num&gt; &lt;num&gt;\n1: Three Counties  55.0   2.3     3.3     1\n2:        Ribston  48.0  11.9     0.6     1\n3:      BLANDNING  51.5   7.1     1.9     2\n4:          ideal  60.0   6.8     2.4    NA\n\n\nSe ?tbl-apples-long för en längre lista på äpplen och deras egenskaper.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "apples.html#skörd-och-mognad",
+    "href": "apples.html#skörd-och-mognad",
+    "title": "5  Äpplen",
+    "section": "5.4 Skörd och mognad",
+    "text": "5.4 Skörd och mognad\nÄpplen för cider bör skördas när de är fullt plockmogna och vissa sorter är sedan lämpliga att låta eftermogna i sval, luftig miljö.\nUnder mognadstiden på trädet går sockerhalten upp, stärkelse omvandlas till socker, syra minskar. Flyktiga ämnen (aromer?) ökar. Fenoler minskar först och ökar sedan igen (för de flesta sorter). Frukterna blir mjukare.\nPlockas de för tidigt kan de sakna fenoler, ha alltför hög syra, och ge en must med mycket stärkelse, vilket kan ge grumlig cider. Plockas de för sen kan man få problem med mjuka frukter som ger mos istället för must vid pressningen.\nNär?\nPlockmoget\nÄtmoget\nRedo för pressning\nMognad efter plockning\nLagring efter mognad\n\n\n\nTidpunkt\nSocker\nSyra\nStärkelse\nFlyktiga ämnen\nFenoler\n\n\n\n\nOmoget\n\n\n\n\n\n\n\nOmoget\n\n\n\n\n\n\n\nPlockmoget\n\n\n\n\n\n\n\nÄtmoget\n\n\n\n\n\n\n\n\nFörändring i kvoten fruktos/glukos/sukros\n\nHur avgöra mognad?\n\nFrukten börjar falla\nSvarta eller mörkbruna, glansiga kärnor\nLossnar när frukten lyfts till 90°\nJodtest, se Section 2",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "apples.html#beskrivning-av-äppelsorter",
+    "href": "apples.html#beskrivning-av-äppelsorter",
+    "title": "5  Äpplen",
+    "section": "5.5 Beskrivning av äppelsorter",
+    "text": "5.5 Beskrivning av äppelsorter\nRibston: https://www.slu.se/centrumbildningar-och-projekt/programmet-for-odlad-mangfald-pom/gront-kulturarv/gront-kulturarv-sortiment/gront-kulturarv-frukt-bar/ribston/\nAnalys och beskrivning av engelska cideräpplen som odlats i Sverige: https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "apples.html#resurser",
+    "href": "apples.html#resurser",
+    "title": "5  Äpplen",
+    "section": "5.6 Resurser",
+    "text": "5.6 Resurser\nSe Prickly Cider, when are apples ripe?\nÄppelsorter som är bäst till cider\nÄppelsorter som är bra för must\nBilder på cideräpllen (US), färg på must mm\nCultivar performance database\nArtikel: The biochemical and physiological basis for hard cider apple fruit quality\nArtikel: Cideräpplen i Sverige\n\nTroligen går alla sorterna att odla i zon II och merparten även i zon III. För odling i mer utsatta områden, rekommenderar vi i första hand sorter som mognar fram redan i september.\n\n\nSom grundstam använder man oftast MM106 eller MM111 när cideräppleträd förökas i England eller Frankrike. I odlingarna på Balsgård och hos MarkCider har sådana träd haft lagom tillväxt och kommit ganska snabbt i bördighet för flertalet sorter. För odlingar i mer utsatta lägen i Sverige skulle nog A2 vara att föredra.\n\nInköp av cideräpplen:\nSvartbäckens cideräpplen: https://shop.svartbackens.com/shop/search?s=cider%C3%A4pple Spakarps cideräpplen: https://spakarpsplantskola.se/webbshop/frukttrad-barbuskar/ciderapplen/ Cider Apples and Perry Pears: https://www.bjcp.org/exam-certification/cider-judge-program/cider-exam/7-cider-apples-and-perry-pears/\n\n\n\n\n1. Karl AD, Zakalik DL, Cook BS, Krishna Kumar S, Peck GM. The biochemical and physiological basis for hard cider apple fruit quality. PLANTS, PEOPLE, PLANET [Internet]. 2023 [cited 2024 Sep 30];5(2):178–89. Available from: https://onlinelibrary.wiley.com/doi/abs/10.1002/ppp3.10317\n\n\n2. Charley V. TEST. Journal of the Institute of Brewing. 1935 Apr;41:62–71.",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Äpplen</span>"
+    ]
+  },
+  {
+    "objectID": "polyphenols.html",
+    "href": "polyphenols.html",
+    "title": "6  Polyfenoler",
+    "section": "",
+    "text": "6.1 Fenoler i andra frukter än äpplen\nEn strategi för att balansera cidern kan vara att tillsätta juice eller vin från andra bär. Faktorer som då bör beaktas är hur mycket fenoler de tillför (kanske är flavonoler mest önskvärt, då de ger strävhet men ej bitterhet), vilken typ av fenoler, hur de påverkar syrligheten, och huruvida de innehåller citrat (som kan ge acetat vid malolaktisk jäsning).\nVad är då målsättningen? Kingston Black, som anses ha en god balans, kan vara en utgångspunkt. Målsättningen kan således vara att producera en must med 0.5% TA och 0.16% TPC. För att uppnå detta med ett dessertäpple (“sharp”) behöver fenoler tillföras och syran hållas konstant eller minskas.\nSe:\nVariation of organic acids in mature fruits of 193 pear (Pyrus spp.) cultivars https://www.sciencedirect.com/science/article/abs/pii/S0889157522001016\nDetermination of Predominant Organic Acid Components in Malus Species: Correlation with Apple Domestication: https://pmc.ncbi.nlm.nih.gov/articles/PMC6316603/",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Polyfenoler</span>"
+    ]
+  },
+  {
+    "objectID": "polyphenols.html#fenoler-i-andra-frukter-än-äpplen",
+    "href": "polyphenols.html#fenoler-i-andra-frukter-än-äpplen",
+    "title": "6  Polyfenoler",
+    "section": "",
+    "text": "Syra och fenoler i olika frukter och deras must. Citrat och sorbitol är i %. Förkortningar: TA, titratable acid; TPC, Total phenolic content. Värdena anges i procent (w/w eller w/v).\n\n\n\n\n\n\n\n\n\n\n\n\nFrukt\nKomponent\nTA\nCitrat\nTPC\nFlavanol\nSorb\nRef\n\n\n\n\nKingston Bl\nFrukt\n\n\n\n\n\n\n\n\nKingston Bl\nMust\n0.5\n\n0.16\n\n\n\n\n\nKingston Bl\nPulp\n0.1\n\n1.3\n\n\n\n\n\nDessertäpple\nFrukt\n0.5-1.2\n\n0.5-1\n\n\n\n\n\nDessertäpple\nMust\n0.6-0.9\n0.14\n0.03-0.06\n\n0.4\n\n\n\nDessertäpple\nPulp\n\n\n\n\n\n\n\n\nCideräpple\nFrukt\n\n\n\n\n\n\n\n\nCideräpple\nMust\n0.3-0.8\n\n0.2-0.4\n\n\n\n\n\nCideräpple\nPulp\n0.04-0.2\n\n1.7-2.0\n\n\n\n\n\nPäron\nMust\n\n1.05\n\n\n3.0\n\n\n\nPlommon\nMust\n\n\n\n\n\n\n\n\nKörsbär (söt)\nMust\n\n0.15\n\n\n1.6\n\n\n\nKörsbär (sur)\nMust\n\n\n\n\n\n\n\n\nElderberry\nFruit\n0.5-0.9\n0.3-0.5\n1-4\n\n0.0\n\n\n\nHawthorne\nFruit\n0.5-1.5\n4.6\n1-3\n\n\n\n\n\nAronia\nFruit\n1.0-2.5\n\n1-5\n\n\n\n\n\nRose hip\nFruit\n\n\n1-5\n\n\n\n\n\nRowan berry\nFruit\n\n\n1-3\n\n\n\n\n\nBlackcurrant\nFruit\n\n\n1-3\n\n\n\n\n\nQuince (jap.)\nFruit\n\n\n0.2-0.5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAtt öka fenolinnehållet i musten\nDen bästa strategin för att öka fenolinnehållet i musten är troligen att försöka hitta äppelsorter som är tanninrika och blanda dessa med andra sorter. Ett alternativ kan vara att blanda i slutjäst must från andra bär, såsom rönnbär (rika på polyfenoler, däribland tanniner), fläderbär, eller svartvinbär, men detta anses sällan ge en bra cider. Man bör då beakta balansen mellan syra och fenoler i den tillförda musten, så att den troligen redan syrliga cidern från dessertäpplen inte blir allför syrlig. Likaså kan tillförsel av citrat som finns i vissa frukter innebära risk för oönskade smaker om malolaktisk jäsning sker. Även typen av fenolämnen kan behöva beaktas, om man önskar en smakprofil som liknar äpplets. Mognad med ekspån, tillsats av the mm är andra ideér som kan provas. Man kan också tänka sig att göra första delen av jäsningen med tillsatta äppelskal. Detta innebär ett merarbete och eftersom skalens vikt är låg i jämförelse med musten behövs troligen en relativt stor mängd skal för att göra skillnad.\n\n\n\nMetoder för att öka fenolinnehållet i cider\n\n\n\n\n\n\n\n\n\nMetod\nEffekt\nFördelar\nHinder\nRef\n\n\n\n\nEftermognad/svettning\nÖkad extraktion (?)\nEnkelt\n\n\n\n\nHårdare pressning\nÖkad extraktion\nEnkelt\nKräver särskild press\n\n\n\nMaceration\nÖkad extraktion upp till 24h, sedan minskad\nEnkelt, ökar utbyte\nÖkar pektin, begränsad effekt\n\n\n\nUppvärmning av krosset innan pressning\n\n\n\n\n\n\nExtraktion från skal\nOlika effektivt beroende på metod\nRelativt enkelt\nKan kräva spädning, stor mängd skal behövs\n\n\n\nExtraktion från pressrester\n\n\nBitterhet från kärnor? Adsorbtion av fenoler?\n\n\n\nSamjäsning på skal\nJa?\nEnkelt\nHur effektivt? Utrymmeskrävande i kärlet\n\n\n\nExtraktion i alkohol\n\n\nKräver alkohol\n\n\n\nTillsats av annan frukt\nRimligen\nRelativt enkelt\nKan tillföra syrlighet, citrat, annan fenolprofil\n\n\n\n\n\nExtraktion av fenoler från äppelskal och pressrester\nI teorin tycks detta vara ett intressant alternativ: Fenolhalten i skal är ca 10 ggr högre (per viktenhet) än i fruktkött och resulterande must. Exempelvis 5 mg/g (0.1%) i köttet vs 50 mg/g i skalet. Om man kunde utvinna hela fenolmängden från skalet skulle det krävas 10% av mustens vikt i skal för att dubbla tannininnehållet. En mer realistisk extraktionssiffra kan vara att kanske 30% av fenolerna utvinns med metoder som är möjliga att genomföra i hemmet. Då behövs omkring 30% av mustvikten i skal för att dubbla tannininnehållet.\nFenoler kan extraheras genom upphettning, infusion i alkohol, eller andra metoder. När traditionella metoder (tex vid extraktion med etanol) används är extraktionseffekten beroende av temperatur, och högst vid 60-80 °C. Olika fenolämnen reagerer dock olika och vid högre temperaturer kan vissa fenoler brytas ned. Exemplevis minskar extraktionen av anthocyanin vid 45 °C [cite: 2]. Vid mycket höga temperaturer (150C) kan dock lignin brytas ned och då ge en ökad mängd fenoler. Tiden med hög temperatur har också betydelse. 50 °C i 25-30 minuter tycks ha liknande effekt som 100 °C i samma tidsspann.\nPressresterna anses kunna vara kontraproduktiva vid extraktion av fenoler, då dessa kan binda fenoler (i samband med oxidation?) [https://www.sciencedirect.com/science/article/pii/S0023643803002172]. Likaså avråds från långvarig (&gt;24h) maceration av liknande skäl. Således kan skalning före pressning vara fördelaktigt, men då minskar man förstås den eventuella effekten av pressning tillsammans med skalen.\n\nExtraktionsmetod. Spädning är kvoten substans:lösningsmedel (tex vatten)\n\n\n\n\n\n\n\n\n\n\n\n\nMetod\nMekanism\nEffektivitet\nTemperatur\nLösningsmedel\nSpädning\nGenomförande\nRef\n\n\n\n\nUppvärmning med omrörning\nTemperatur\n\n(30-)60(-70)\nVatten, alkohol\n1:10\n\n\n\n\nMikrovågsugn\nTemperatur, celldestruktion\nTPC +56%; Flav +17%\n(50-)60(-70)\n\n1:20\n\n\n\n\nUltraljud\n\n\n?\nInget?\n0?\n\n\n\n\nFrysning-upptining (upprepad)\nCelldestruktion\n\n&lt;0\nInget\n0\n\n\n\n\nSamjäsning\n\n\n10-20\nVatten, alkohol, CO2\n\n\n\n\n\n\nTemperaturoptimum varierar något mellan olika studier och olika fenolämnen extraheras respektive förstörs vid olika temperaturer, men temperaturer kring 60C tycks vara optimalt i flera olika metoder, men temperaturer så låga som 30C var lika effektivt i vissa studier. Högre temperatur ökar mängden “soluble solids” och turbiditet i musten. En mild uppvärmning tycks inte påverka smaken negativt (https://www.mdpi.com/2227-9717/9/3/502).\n\n\n\nMer\nBlogginlägg om använding av skal i musten: https://pricklycider.com/2021/02/13/apple-peels-the-missing-ingredient-of-hard-cider/\nDiskussion i Google Groups Cider workshop: https://groups.google.com/g/cider-workshop/c/7_NN2VNYqIE?pli=1\nEn del om, smak beroende på maceration, pressning etc: https://www.mdpi.com/2227-9717/9/3/502 &gt; “Juice extraction was more efficient when microwave treatment was applied [143]. Moreover, microwave treatment at 40 °C and 60 °C increased the extraction of phenolic and flavonoid compounds. The soluble solids and the degree of turbidity also increased with the increase of the temperature of the apple puree. No sensory differences were encountered between the tested methods. Therefore, microwave treatment on apple pulp and peel may lead to a higher-quality juice with a high content of the aforementioned compounds. Heating to 60 °C had the best results, with maximum yields in the extraction of juice and phenolic compounds”\n\n“Prolonged maceration is not the right way - tannins are quickly”lost” due to oxidation” https://groups.google.com/g/cider-workshop/c/7_NN2VNYqIE. “One way of increasing the extracion of tannins is to heat the pulp before pressing:” “One way is to have multiple freeze-thaw cycles. Freezing breaks the skin cells, then during a thaw, the phenolic compounds can migrate to the juice.” “I reckon some tannin will migrate in two directions, (i) from pulp to juice due to extraction and (ii) from juice to pulp due to”tanning”. The pulp can be regarded as a counterproductive tannin sponge.” https://www.sciencedirect.com/science/article/pii/S0023643803002172\n\n\n” 3 kg of apple mash at a depth of 0.016 m heated in the microwave oven using 1500 W for 4.0 min, 7.1 min, 10.9 min, and 16.2 min were the optimum parameters to achieve bulk temperatures of 40°C, 50°C, 60°C, and 70°C, respectively.” “These results also showed that heating the apple mash to 60°C is the optimum temperature for improving juice quality and yield.” https://www.sciencedirect.com/science/article/pii/S0023643803002172\n\nTanke: Tillsätt Winter cider? https://drive.google.com/file/d/15HFs2TvGbEf58nrCpT4OLwGyTCSbygzS/view\nPressresterna innehåller ca 10 gånger mer polyfenoler än musten (när man jämför torrvikter, skillnaden blir ännu större om spädningseffekten i musten beaktas). Extraktion av polyfenoler från pressrester kan därför tänkas vara ett sätt att öka fenolhalten i musten.\nLösningmedlets koncentration: “The solvent concentration also has a significant impact on the optimal extraction temperature [16,41]. Cacace and Mazza [16] studied the impact of ethanol concentration on the optimal extraction temperature of polyphenols from blackcurrants. They found that extraction could be performed at lower temperatures when low ethanol concentration was used. For example, at 85% ethanol concentration (wt basis), the maximum anthocyanin extraction is between 30–35 °C, while at 20% ethanol (wt basis), the highest anthocyanin yield was observed at 25 °C.”\npH: “The pH of the extraction media also plays an important role in determining the effect of temperature. Havlíková and Míková [65] investigated the stability of anthocyanins under various pH and temperatures. At lower temperatures (50–60 °C), pH plays a significant role in anthocyanin’s thermal stability, but at temperatures above 70 °C, the pH does not have a significant effect.”\nMust från cideräpplen har ett polyfenolinehåll på ca 1.5-3 (mg?) GAE/g torrvikt (ca 2 mg/100g FW?) och dessertäpplen av typen “sharp” kring 0.2-0.6 GAE/g. Hela färska dessertäpplen tycks innehålla kring 6-22 mg GAE/g, torkade pressrester kan extraheras med varmt vatten till ca 6 mg GAE/g och med mikrovågsugn till ca 12 mg/g, vilket då kanske motsvarar ungefär 30-60% av GAE i det färska äpplet?\nDet mesta ev detta tycks kunna extraheras med effektiva metoder [cite: 3].\nSlutsats: Använd 10 delar vatten/must till 1 del (fuktig) pressrest? Ev 20% etanol vid 25C? Ev mikro 300W?\nEx: Målet är 1 mg/g GAE i musten (jfr kingston). Musten från ett matäple har kanske 0.5 g/g. Dess pomace 5g/g torrvikt (antag 4 g/g fuktig vikt?). Om extraktionsmetoden är 30% effektiv får vi kanske 1.2g GAE/g pomace. Om pomace är ca 50% av färskvikten för äpplet blir det ungefär 1g/g GAE i must + extrakt. Man skulle kanske kunna hetta upp pomace + vatten till 60C, pressa, sedan ev extrahera i 20% etanol vid 25C? Problemet är nog spädningen med vatten, som antagligen ger mindre smak/syra/socker. Alt mikrovåg och sedan jäsa med musten?\nWater 20-24 TPC, ethanol 40% 21-32 “optimum conditions extracted 50% more phenolic compounds” https://www.sciencedirect.com/science/article/pii/S0926669018307878 The extraction temperature (80 °C) was the independent variable that most influenced the extraction of the natural bioactive compounds\n“HPLC analysis indicated that main polyphenols existed in fractions eluted between 40% and 50% aqueous ethanol.” https://www.sciencedirect.com/science/article/pii/S0021967309001046\nComparison of extraction methods Apple pomace: https://www.sciencedirect.com/science/article/pii/S0926669020301667 “The content of free polyphenolic compounds in aqueous-methanol extracts was 5.56 mg gallic acid equivalents (GAE)/g dry weight (DW) pomace”\n“The results showed that the optimal conditions were as follows: microwave power 650.4 W, extraction time 53.7 s, ethanol concentration 62.1% and ratio of solvent to raw material 22.9:1. Validation tests indicated that the actual yield of polyphenols was 62.68±0.35 mg gallic acid equivalents per 100 g dry apple pomace” https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/jssc.201000430\nWater as solvent: https://link.springer.com/article/10.1007/s11356-024-34637-4 - Pomace is approx 25% of initial apple weight - Total polyphenolic content in fresh apples 6-22 mg GAE/g - Apples contain 50-85% moisture - Biomass to solvent ratio 1:10-1:30, 1:30 gav mindre (!? kanske pga långsammare uppvärmning?) vid TSE (“thermal stirred”)\n- Temp 30-60C verkade inte göra någon skillnad. - Mikrovågsugn 200-400W gav dubbla halten (12 mg/g) jfr TSE (5.5 mgGAE/g DW), effekten ingen större skillnad - 5 minuters extraktion användes\n- Good yield even at 1:20 and 30C - TSE optimum: 30C, 1:10, 10 min; Microwave 300W, 1:20, 5 min\n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n 0.1400  0.2575  0.3900  0.4673  0.6050  1.6500 \n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  4.900   6.375   8.000   8.107   9.100  14.300 \n\n\n\n“Halten av fenolämnen är oftast 10–20 gånger högre i pressresterna jämfört med i musten, redan innan man korrigerat för spädningseffekten. Detta innebär att faktorer som påverkar proportionerna mellan skal och fruktkött kan ha en stor inverkan på halten fenoler i musten. Det kan exempelvis vara så att små frukter ger en mera fenolrik must än stora frukter av samma sort” https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf\n\n\n“Merparten av de speciella cidersorterna producerar must med 1,5–3,0 mg GAE/g torrvikt” https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Polyfenoler</span>"
+    ]
+  },
+  {
+    "objectID": "polyphenols.html#resurser-fenoler",
+    "href": "polyphenols.html#resurser-fenoler",
+    "title": "6  Polyfenoler",
+    "section": "6.2 Resurser (fenoler)",
+    "text": "6.2 Resurser (fenoler)\nThe phenolics of ciders: Bitterness and astringency: https://scijournals.onlinelibrary.wiley.com/doi/10.1002/jsfa.2740290512\nPolyfenoler i vin: https://www.wineanorak.com/polyphenols_in_wine.htm\nPhenolics in different fruits: https://pmc.ncbi.nlm.nih.gov/articles/PMC4665438/\nPhenolics in cider apple (AL): http://www.cider.org.uk/phenolics_in_cider_apples.pdf\nPhenol Explorer, Phenol conetent in foods: http://phenol-explorer.eu/\n\n\n\n\n1. Lees GL, Suttill NH, Wall KM, Beveridge TH. Localization of condensed tannins in apple fruit peel, pulp, and seeds. Canadian Journal of Botany [Internet]. 1995 Dec [cited 2024 Oct 20];73(12):1897–904. Available from: https://cdnsciencepub.com/doi/10.1139/b95-202\n\n\n2. Antony A, Farid M. Effect of Temperatures on Polyphenols during Extraction. Applied Sciences [Internet]. 2022 Jan [cited 2024 Oct 20];12(4):2107. Available from: https://www.mdpi.com/2076-3417/12/4/2107\n\n\n3. Pollini L, Cossignani L, Juan C, Mañes J. Extraction of Phenolic Compounds from Fresh Apple Pomace by Different Non-Conventional Techniques. Molecules [Internet]. 2021 Jul [cited 2024 Oct 20];26(14):4272. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC8307736/",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Polyfenoler</span>"
+    ]
+  },
+  {
     "objectID": "sugar.html",
     "href": "sugar.html",
     "title": "7  Socker",
     "section": "",
-    "text": "20 g/L Dry, some sweetness, mousse\n\n\n\n\n\n\nSocker g/L\nSG (*1/3)\nBar (*1/4)\nAlk (*1/20)\n\n\n\n\n4\n+1.33\n+ 1\n+ 0.2?\n\n\n10\n+3.33\n+ 2.5\n+ 0.5\n\n\n15\n+5\n+ 3.75\n+ 0.75\n\n\n20\n6.66\n+ 5\n\n\n\n24\n+8\n+ 6\n+ 1.3?\n\n\n30\n+10\n+ 7.5\n+ 1.4\n\n\n\n\n\nTabell 7.1. Effekt av socker. Multiplarna är sockermängd * multipel = effekt.",
+    "text": "7.1 Sötma efter jäsning\nEftersom musten slutjäser om den ej stillas blir sockerhalten nära 0 efter jäsning. För att jäsningen skall stanna med restsocker kvar behöver näringsämnena utarmas (genom “Keeving” eller många omtappningar) eller jäsningen stannas med tex pastörisering. Ett annat alternativ är tillsats av icke-fermenterbart socker, tex sorbitol eller xylitol.\nSeveral fruits are naturally high in sorbitol, a type of sugar alcohol commonly found in fruits from the Rosaceae family. Here are some fruits with high sorbitol content:\nOther fruits like blackberries and raspberries contain smaller amounts of sorbitol. People with sorbitol intolerance or sensitive digestion should be cautious about consuming large quantities of these fruits.\nNote: Plums have low citrate. Phenols 1-5% (predominantly in skin)\n20 g/L Dry, some sweetness, mousse",
+    "crumbs": [
+      "Must",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Socker</span>"
+    ]
+  },
+  {
+    "objectID": "sugar.html#sötma-efter-jäsning",
+    "href": "sugar.html#sötma-efter-jäsning",
+    "title": "7  Socker",
+    "section": "",
+    "text": "Plums – One of the highest sources of sorbitol, especially dried plums (prunes).\nApples – Particularly in certain varieties like Granny Smith.\nPears – High levels, especially in the skin.\nPeaches – Moderate to high sorbitol content.\nCherries – Sweet varieties contain more sorbitol than sour ones.\nApricots – Contain a significant amount of sorbitol.\nNectarines – Related to peaches, also containing notable levels of sorbitol.",
     "crumbs": [
       "Must",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Socker</span>"
@@ -112,67 +233,111 @@
   {
     "objectID": "yeast.html",
     "href": "yeast.html",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "",
-    "text": "8.1 Jästens biologi\nFigur 8.1 visar jästens tillväxtfaser och resulterande förändringar av syrgas, sockerhalt (SG), och pH i musten. P är jästpopulationen.\nmaximum yeast growth and metabolism occurring between 20 and 25C. (Merwin2007?)",
+    "text": "8.1 Jästens biologi\nFigur 8.1 visar jästens tillväxtfaser och resulterande förändringar av syrgas, sockerhalt (SG), och pH i musten. P är jästpopulationen.\nmaximum yeast growth and metabolism occurring between 20 and 25C. [Merwin2007?]",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#jästens-biologi",
     "href": "yeast.html#jästens-biologi",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "",
     "text": "Figur 8.1. Jästpoulationens tillväxtfaser",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#pitching",
     "href": "yeast.html#pitching",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "8.2 Pitching",
     "text": "8.2 Pitching",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#hydrering",
     "href": "yeast.html#hydrering",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "8.3 Hydrering",
     "text": "8.3 Hydrering",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#jästsorter",
     "href": "yeast.html#jästsorter",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "8.4 Jästsorter",
-    "text": "8.4 Jästsorter",
+    "text": "8.4 Jästsorter\nYeast: S. cerevisiae strain EC1118, robust fermenter, and aromatically ‘neutral’ strain “Lalvin EC-1118 is the original ‘prise de mousse’. It was isolated in Champagne and its use is validated by the Comité Interprofessionnel du Vin de Champagne (CIVC). Its strong competitive character, its ability to ferment at low temperature, good flocculation and excellent alcohol tolerance, make Lalvin EC-1118 an excellent strain to be used in a wide range of applications (such as sparkling wines, fruit wines and ciders).Alcohol tolerance: 18 % Optimum fermentation temperature: 10–30 °C”",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
     "objectID": "yeast.html#effekter-av-jäsning",
     "href": "yeast.html#effekter-av-jäsning",
-    "title": "8  title: Jäst",
+    "title": "8  Jäst",
     "section": "8.5 Effekter av jäsning",
     "text": "8.5 Effekter av jäsning\n“Bottle Conditioned Cider Guide Alex Simmens, Llanblethian Orchards Fermentation and production of CO2: During fermentation yeast converts sugar to alcohol and CO2 as well as other metabolic products and new yeast cells. Pasteur studied it and produced the following relation: 100 grams of sugar yields:\n\n48.6g ethanol\n46.6g carbon dioxide\n3.2g glycerin\n0.6g succinic acid\n1.2g yeast cells\n\nLater studies showed 48g ethanol and 47g CO2 per 100g sugar to be a more correct figure” https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf",
     "crumbs": [
       "Jäsning",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>title: Jäst</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#introduktion",
+    "href": "yeast.html#introduktion",
+    "title": "8  Jäst",
+    "section": "9.1 Introduktion",
+    "text": "9.1 Introduktion\nThesis: Systems biology of yeast metabolism: https://research.chalmers.se/publication/525069/file/525069_Fulltext.pdf\nSorten av jäst påverkar smaken.\nLägg till figur jästens faser.\nSe [[https://www.amazon.com/Yeast-Practical-Fermentation-Brewing-Elements/dp/0937381969][Practical fermentation]]\nYeast Quick reference chart (egenskaper) : https://admin.lallemandwine.com/wp-content/uploads/2017/12/Quick-Yeast-References-Chart_2018_LR.pdf\nYeast comparison, acid reduction: https://groups.google.com/g/cider-workshop/c/JCNfHQfkMlA 71B reduced acid by 20-30%\n” In practice it’s quite a bit more complicated than that. If you want to know more, check out Linda Bisson’s work at UC Davis. Her lecture notes on yeast and sulphur taints can be found online.”\nBy the way, would you be aware of a study on the rate of YAN use through &gt; the fermentation - we know most of it is used in the beginning to build &gt; the yeast population, but would all of it be used then, or would there &gt; be some left and used during the later stages of the fermentation. I &gt; wish I had a graph showing the yeast population, YAN amount, and sugar &gt; content plotted against the time for a typical slow cider fermentation…\nSuch a study was done by Challinor and Burroughs over 60 years ago and was reported in the Long Ashton Annual Report for 1948. It was also described in this review paper by Challinor in 1955 http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2672.1955.tb02079.x/abstract [1]\nClaude, fermentation model for cider: www.chelseagreen.com/model\n\nMain phases of cider fermentation\n\n\n\n\n\n\n\n\n\n\n\nName\nT range\nT optimum\nTime\nSG\nHeadspace\nNote\n\n\n\n\nYeast quantity\n\n\n\n\n\n0.2-0.4 g/L. Too little gives more cell division which may produce off flavors (really?)\n\n\nPre-culture*\n\n28\n20 min\n\n\nStart up the yeast in water and sugar. Why?\n\n\nHydration\n\n28\n20 min\n\n\nWhy?\n\n\nGrowth\n12-25\n20\n1-2 d\n40-60\n\nOxygen access benifical. Yeast multiplies logarithmically and visible CO2 bubbles appear.\n\n\nFermentation\n12-20\n20\n(3-)6-12 w\n\n10-20%\nStarts when oxygen is depleted. Loose lid until foaming subsides. Then use airlock.\n\n\nFlocculation\n\n\n\n\n\n\n\n\nSedimanetation\n\n\n\n\n\n\n\n\nAutolysis\n\n\n\n\n\n\n\n\n\nRationale: Older yeast cells are larger and have an increased tendency to flocculate (and then sediment). Therefore, racking will reduce the proportion of older yeast cells compared with middle-aged and younger ones (“age selection”). Virgin cells are slower to begin utilizing sugar.\nYeast cell age and fermentation: https://academic.oup.com/femsyr/article/3/2/149/590373, “Individual cells of the yeast Saccharomyces cerevisiae exhibit a finite replicative lifespan, which is widely believed to be a function of the number of divisions undertaken. As a consequence of ageing, yeast cells undergo constant modifications in terms of physiology, morphology and gene expression. Such characteristics play an important role in the performance of yeast during alcoholic beverage production, influencing sugar uptake, alcohol and flavour production and also the flocculation properties of the yeast strain.”\nGrowth phase: 1-3 doublings typical in industrial settings. Flavor, alcohol, CO2 and heat is produced.\n“When cultured for the fermentation of beer, yeast cells in culture follow a predictable pattern of growth that can easily be divided into four phases: (1) lag; (2) log; (3) deceleration; and (4) stationary. During the lag phase, no growth occurs as newly pitched yeast mature and acclimate to the environment. This is followed by the log phase, where cells are rapidly growing and dividing. Nutrients are in excess relative to cell number and waste is being sufficiently diluted as to be insignificant. The growth rate in this phase will follow first order kinetics. As cell numbers increase, cell growth begins to slow as various parameters (e.g., substrate and waste), each with saturation effects, become significant. Eventually the yeast cells reach the stationary phase, where no growth occurs due to high waste concentration or complete substrate consumption” https://www.agilent.com/cs/library/applications/monitoring-growth-of-saccharomyces-cerevisiae-5994-3284EN-agilent.pdf\n“Two types of brewing yeast were originally classified based on flocculation behaviour: top fermenting (ale and weiss yeast) (Jentsch et al., 2007) and bottom fermenting (lager yeast). Their behaviour is so distinct that the two main classes of beer types (ales and lagers) are based on the two yeast types.” https://academic.oup.com/femsyr/article/8/7/1018/491220. “serial repitching and cropping result in the deterioration of the yeast. This deterioration could be hygiene related (cross-contamination with other brewing cultures, wild yeast or bacteria), selection of crops with specific characteristics (trub enriched, increased flocculance, age and cell size) and yeast quality related (genetic changes, petite mutants and physiological changes due to stress)”\nOxygen curves and more: https://beerandbrewing.com/identifying-issues-with-your-yeast-a-look-at-fermentation-data-curves/\nFlocculation:\n“Flocculation refers to the ability of yeast to aggregate and form large flocs and then drop out of suspension. The definition of flocculation is, “reversible, asexual, and calcium-dependent process by which cells adhere to form flocs. Ideally, yeast will stay non-flocculent and in suspension until the desired final gravity is reached and then become flocculent and drop out of solution.”” https://wyeastlab.com/resource/professional-clarification-flocculation/\nLife of brewers yeast curve: https://www.whitelabs.com/news-update-detail?id=37\nSugar consumption modeling: https://www.researchgate.net/figure/Sugar-concentration-and-fermentation-rate-calculated-by-taking-the-1st-derivative-of-the_fig3_350353318\nGeneration time (2.5 h at 20C, 1h at 30C) and lag phase (6h at 20C, 3h at 25C, flat thereafter) dependent on temp: https://onlinelibrary.wiley.com/doi/pdf/10.1002/j.2050-0416.1966.tb02977.x",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#jästsorter-1",
+    "href": "yeast.html#jästsorter-1",
+    "title": "8  Jäst",
+    "section": "9.2 Jästsorter",
+    "text": "9.2 Jästsorter\nOlika jästsorter har olika egenskaper, till exempel i fråga om vilken alkoholhalt de tål, vilken temperatur de jäser i, hur mycket de omvandlar citrat till laktat, och i vilken mån de konkurrerar ut annan jäst.\nFör must med hög syrlighet kan malatreducerande jäst (tex 71B) vara önskvärt, emedan det vid jäsning av päronmust kan vara en nackdel, då syranivån i allmänhet är lägre och man vill undvika senare malolaktisk järning (som då gynnas ifall pH stiger ytterligare).\nVill man undvika malolaktisk jäsning kan det vara en fördel med en jäst som producerar en de SO2, tex EC1118 (måttlig produktion).\n“If you are planning a malolactic fermentation, do NOT use EC 1118. EC-1118 produces SO2 that can interfere with a malolactic fermentation.”\nOlika jäst: https://pricklycider.com/2023/09/23/cider-question-what-is-the-best-yeast-to-use-for-making-cider/\nJästsorter och effekt på smak: https://www.northernbrewer.com/blogs/wine-cider-and-mead-making/exploring-diversity-of-cider-profiles-through-the-selection-of-new-yeast-strains?srsltid=AfmBOopHWuwDKU-i5OtuuqUXOqe2ja88KJSO5AJOiHW0GzAKmm9uaP2u",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#dosering-av-jäst",
+    "href": "yeast.html#dosering-av-jäst",
+    "title": "8  Jäst",
+    "section": "9.3 Dosering av jäst",
+    "text": "9.3 Dosering av jäst\nhttps://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf\nA packet of Lalvin EC-1118 is 5g in weight - Each gramme of dry yeast contains 20 billion yeast cells, not all of which will be active. - 6 billion active yeast cells per gramme is a good minimum estimate. - If the yeast is not rehydrated as per the packet before use half the active cells will die. - After rehydrating for 15 mins use within 30 mins. - Use tap water not distilled or deionised water to rehydrate else some cells will die. - After two years you would expect only a 10% drop in active cell count in the packet\nFrom the earlier facts we can deduce an equation to calculate the number of active yeast cells in any quantity of dry yeast after rehydration as follows: - Viable cell count = grammes dry yeast * 6 billion. - i.e. Lalvin EC-1118 5g packet = 5g * 6 billion = 30 billion viable cells per packet. If we rehydrate a yeast of known quantity in a known quantity of water we can calculate viable cell count per ml of starter as in the below equation: - Viable cells per ml starter = (grammes dry yeast * 6 billion) / ml water - i.e. 5g lalvin EC-1118 in 100ml water = (5 * 6 billion) / 100ml = 300 milion viable cells/ml\nCider ~100,000 cells/ml\n#+begin_src R :session :exports none\n\n\n       m n_cells_giga n_cells_active_giga litres_cider_start\n [1,]  1           20                   6                  6\n [2,]  2           40                  12                 12\n [3,]  3           60                  18                 18\n [4,]  4           80                  24                 24\n [5,]  5          100                  30                 30\n [6,]  6          120                  36                 36\n [7,]  7          140                  42                 42\n [8,]  8          160                  48                 48\n [9,]  9          180                  54                 54\n[10,] 10          200                  60                 60\n      litres_cider_conditioning g_nitrogen g_dap\n [1,]                        60        0.1   0.5\n [2,]                       120        0.2   1.0\n [3,]                       180        0.3   1.5\n [4,]                       240        0.4   2.0\n [5,]                       300        0.5   2.5\n [6,]                       360        0.6   3.0\n [7,]                       420        0.7   3.5\n [8,]                       480        0.8   4.0\n [9,]                       540        0.9   4.5\n[10,]                       600        1.0   5.0\n\n\n\nFWIW, when I was at Long Ashton back in the 1970’s, our standard pitching rate for both cider and white grape wine was to achieve 5 * 10^6 cells / ml in the sulphited juice. Independent of pH, TA and SG. https://groups.google.com/g/cider-workshop/c/B7rIRb_0aas\n\n\nif the juice contains 100 ppm of YAN (or 0.1 g/L), this amount of nutrients will permit building 1 g/L of yeast biomass. Add to this the pitched rate or 0.25 g/L, and you get a maximum total biomass of 1.25 g/L, corresponding to approximately 20 to 25 million cells per mL.\n\n+end_src\n+RESULTS: | 1 | 20 | 6 | 6 | 60 | 0.1 | 0.5 | | 2 | 40 | 12 | 12 | 120 | 0.2 | 1 | | 3 | 60 | 18 | 18 | 180 | 0.3 | 1.5 | | 4 | 80 | 24 | 24 | 240 | 0.4 | 2 | | 5 | 100 | 30 | 30 | 300 | 0.5 | 2.5 | | 6 | 120 | 36 | 36 | 360 | 0.6 | 3 | | 7 | 140 | 42 | 42 | 420 | 0.7 | 3.5 | | 8 | 160 | 48 | 48 | 480 | 0.8 | 4 | | 9 | 180 | 54 | 54 | 540 | 0.9 | 4.5 | | 10 | 200 | 60 | 60 | 600 | 1 | 5 |\nYeast quick reference chart:\nhttps://admin.lallemandwine.com/wp-content/uploads/2017/12/Quick-Yeast-References-Chart_2018_LR.pdf\n*** Lalvin 71B, Cervisiae\nSaccharomyces cerevisiae var. cerevisiae\nrehydrerades i fingervarmt vatten 20 min, 1g för 4L = 0.25 ml/L. 1 ml jäst till 3L funkade bra.\nLalvin 71B, 5 g “En vinjäst från Lalvin (Lallemand). Denna stam av Sacharomyces cerevisiae har isolerats i Narbonne av Institut National de Recherche en Agriculture (INRA). Utvald för att gynna en fruktig karaktär. Hette förut “Lalvin 71B-1122”. Rekommenderas allmänt för unga vita och röda viner, även vin nouveau. Ger mycket estrar och högre alkoholer men låga mängder fenoler, vilket passar för viner som ska drickas unga.\nAlkoholtolerans: 14 % Jästemperatur: 15 - 30 °C Tillverkare: Lallemand”\nShort lag phase and moderately vigorous fermentation Low relative nitrogen demand (under controlled laboratory conditions) Low H2S production Alcohol tolerance 14% v/v (depending on fermentation conditions) Low SO2 production High relative glycerol production Fermentation temperature: 15 - 30 °C (59 - 86 °F) Competitive killer factor: no, Lalvin 71B™ is a sensitive strain Malolactic-bacteria compatibility: very high Malic acid consumption: high Medium foam producer MICROBIOLOGICAL PROPERTIES\nUSAGE DOSAGE RATE: 0.2 - 0.4g/L 1. Rehydrate the yeast in 50ml of water, at a temperature between 35 - 37°C (95 - 99°F). 2. Dissolve by gently stirring and wait for 20 minutes. 3. Add the must. The difference in temperature between the must to be inoculated and the rehydration medium should not be higher than 10°C (if necessary, acclimatize the temperature of the medium by slowly adding must). 4. The total rehydration time should not exceed 45 minutes. 5. It is crucial that a clean container is used to rehydrate the yeast. 6. Rehydration in must is not recommended\nThe yeast will rapidly lose activity after exposure to air.\nIt is recommended to store Lalvin 71B™ yeast in dry conditions, between 4 and 15°C, for optimal viability and product performance.\nFruity and “Nouveau” styles\n*** EC 1118\nhttps://shop.humle.se/shop/11011/files/Lallemand/Lalvin-EC-1118.pdf?_gl=11u2bznu_up*MQ..&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0JXi5_xoRcefU6GNuVRRRAtnNd5h4RZjZWtkNfOkOlICJLZIR1IQBoCqgQQAvD_BwE Se figur med kinetik etc\nThe EC-1118 yeast has been isolated in Champagne and its use is validated by the Comité Interprofessionnel du Vin de Champagne (CIVC). Its strong competitive character, its ability to ferment at low temperature, good flocculation and excellent alcohol tolerance, make the EC-1118 an excellent strain to be used in a wide range of applications (such as sparkling wines, fruit wines and ciders).\nSaccharomyces cerevisiae bayanus Competitive factor High alcohol tolerance up to 18% Short lag phase Fast fermentation rate in a wide pH range Wide range of temperatures for fermentation including low temperatures (Optimal between 15°C to 25°C) Low requirement in assimilable nitrogen Low O2 requirement (especially at low T°) Low to average production of volatile acidity Average SO2 production Low H2 S production Low foam formation\nDosage:\nWhite, red and rosé winemaking: 25 to 40 g/hl Secondary bottle fermentation 50g/hl To restart stuck fermentation 40g/hl Note: dosage range is based on the must sugar content and sanitary state of the grapes and winery\nRehydration:\nRehydrate EC-1118 in 5 times its weight of potable water at 40°C. Let stand for at least 20 minutes then gently stir occasionally to break up any clumps. Add to the must. - THE TOTAL REHYDRATION DURATION SHOULD NEVER EXCEED 45 MINUTES - AVOID COLD SHOCKING THE YEAST. THE TEMPERATURE DROP BETWEEN THE MUST TO BE INOCULATED AND THE REHYDRATION MEDIUM SHOULD NEVER BE &gt;10°C (if any doubt, please contact your supplier or Lallemand) - IT IS ESSENTIAL TO REHYDRATE THE YEAST IN A CLEAN CONTAINER. - INITIAL REHYDRATION IN MUST IS NOT ADVISABLE.\n*** SafCider TF-6\nVery high aromatic intensity and complexity towards fresh fruity notes (apple, banana-pear, red, citrus and exotic fruits) combined with interesting elaborated fruit notes (applesauce).\nSweet and round mouthfeel strengthening candy like sensation.\nPlease note that those observations are based on French cider recipe trials.\nDosage/Temperature\n– 20 to 40 g/hl for first fermentation\n– Broad fermentation temperature spectrum: 10-30°C (50-86°F). Usage\nFor sweet ciders from fresh apple juices.\nRegular slow kinetic Broad fermentation temperature spectrum: 10-30°C (50-86°F), ideally 15-25°C (59-77°F) High nitrogen requirements: Ratio YAN**(mg/L)/Sugar(g/L) &gt;0.9 Medium assimilation of fructose Maximum initial SO2 level recommended: 50mg/L. Very low production of acetaldehyde and SO2. High malic acid consumption (up to 1.4g/L) Medium 2-phenylethanol and very high isoamyl acetate (candy-banana) producer\nRehydration procedure:\nDirect inoculation:\nPour the yeast on the surface at least 10 times their weight of must (possibly directly on the top of the tank or during tank filling after clarification). Gently stir to avoid or break clumps. Immediately transfer into the tank via a pumping over with aeration (or homogenize tank volume).\nWith prior rehydration:\nPour the yeast on the surface of 10 times their weight of tap water at room temperature. Gently stir to avoid or break clumps. Wait for 20 minutes and transfer into the tank via a pumping over with aeration.\n** Jästnäring\nNäring: Tiamin (upp till 0.2 mg/L), ammoniumsulfat/fosfat (upp till 300 mg/L)\nDAP:\n1 tsk ca 3g Dosering 0.125-0.19 g/L\nFermaid O:\nFermaid O contains approximately 6,5 % N (nitrogen). The normal dosage is 3 - 4 gram per 10 liters. For optimal results, add half the dosage immediately after having added the yeast, and the remainder after 1/3 to 1/2 of the fermentation process.\nNitrogen is the main element here. When yeast population grows, available nitrogen is used by the yeast. N is roughly 20% of DAP and 10% of dry yeast in weight. For example, if you have 100 grams of dry yeast biomass, 10 of these grams are N and have been taken from the available nutrients. Similarly, adding 50 grams of DAP can provide an increase of yeast biomass of 100 grams. So when the yeast population is established, there is no more available nutrients left - all has been used to grow the population. When yeast cells die, there is an autolysis and the N is gradually released back to the cider, it will be reused for feeding the yeast population.”\n** Omstart av jäsningen\nFör att omstarta jäsningen: Addera tiamin och sedan om det behövs (provjäs först) diammoniumsulfat. Ev tillsätt mkt litet jäst.\n** Förkultur och återvinning av jäst\nGörs oftast inte.",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
+    ]
+  },
+  {
+    "objectID": "yeast.html#vildjäsning",
+    "href": "yeast.html#vildjäsning",
+    "title": "8  Jäst",
+    "section": "9.4 Vildjäsning",
+    "text": "9.4 Vildjäsning\nSpontanjäsning: “Spontaneous fermentation begins within a few hours if the temperature of the must rises above 10 °C. This process is usually slow requiring at least 2–3 weeks for the main fermentation and several months for the maturation. Maturation takes place in wooden, polyester or stainless-steel casks at a controlled temperature of 3 °C–12 °C. The entire process can take from 1–6 months depending on the country.”\n\n\n\n\n1. Challinor SW. Cider Yeasts and the Fermentation of Apple Juice. Journal of Applied Bacteriology [Internet]. 1955 [cited 2024 Sep 26];18(1):212–23. Available from: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x",
+    "crumbs": [
+      "Jäsning",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Jäst</span>"
     ]
   },
   {
@@ -180,153 +345,461 @@
     "href": "carbonation.html",
     "title": "9  Kolsyrning",
     "section": "",
-    "text": "“A gentler mousse can be coaxed out at between four and five atmospheres.”\n48g ethanol and 47g CO2 per 100g sugar",
+    "text": "“A gentler mousse can be coaxed out at between four and five atmospheres.”\n48g ethanol and 47g CO2 per 100g sugar\n\n\n\nSocker g/L\nEtikett\n\n\n\n\n0-3\nBrut Nature\n\n\n0-6\nExtra Brut\n\n\n0-12\nBrut\n\n\n12-17\nExtra Sec\n\n\n17-32\nSec\n\n\n32-50\nDemi-Sec\n\n\n50+\nDoux\n\n\n\n\n\n\nDensitet\nSocker g/L\nSyfte\nRisk\n\n\n\n\n3\n\n\n\n\n\n6\n\n\n\n\n\n8\n\nDisgorge\n\n\n\n12\n\nAncestral\nÖverkarbonering\n\n\n18\n\n\n\n\n\n32\n\n\n\n\n\n40\n85\n\n\n\n\n50\n111\n\n\n\n\n100\n238\n\n\n\n\n\n\n\n\n\n\n\nKolsyrejäsning 4-5 poäng ger “nice fizz”, 6p nära “gushing”.\nAlternativ vid stabilisering vid högre SG: 10 ppm DAP plus 5 ppm dry yeast för att få lagom karbonering (CJ).\n10 g/L sugar gives 5g/L CO2 which at 15C will give you 1.5 bar pressure which is a gentle petillance. (Depends somewhat on how much CO2 is left in solution from the primary yeast fermentation.). If you drink it from the fridge at 5C it will give you less than 1 bar pressure.\n“normal Ancestral method where the cider is bottled at a SG of typically 1.012 to 1.014, and it stops around 1.007 to 1.010. And since I like the cider to be well clarified prior to bottling, I get very little sediment in the bottles - for me it is not worth the trouble to go through the disgorgment process. I would strongly recommend you do a keeving of your juice prior to fermentation, as this will help a lot in stabilizing the fermentation and preventing excessive in-bottle refermetnation.”\nIf you bottle at 1.010 and your cider ferments to dry then you might just about get away with it but any higher and you will probably end up over carbonated. If you just want a dry cider and you are planning to disgorge then just ferment to about 1.008-1.009 before bottling.\nClaude: ” aim for a drop of 4 to 5 SG points in bottle to obtain a nice fizz. It can be a bit more - 6 points gives more sparkle, but is getting close to the limit where you start to have some gushing at opening.\nAs of the ideal SG at bottling, it depends on if you want a bone dry cider or one that retains some residual sugar. For my part, I like my ciders to finish at around SG 1.006 to 1.008. Hence I’ll bottle at around 1.010 to 1.012. For this I’ll make sure the cider is well stabilized at that SG by doing rackings until the nutrients are exhausted. I also want the cider to be well clarified as to minimize the amount of deposits in the bottle, and I may do a fining (same Chitosan and Kieselsol) if necessary. I don’t add sugar, but I do add a micro-dosage of DAP and/or dry yeast. For example, 10 ppm DAP plus 5 ppm dry yeast usually works fine to provide just the right fizz and not too much.”\nChampagnecider kan buteljeras vid SG30\n“From the UC Davis course”Introduction to Winemaking”: The amount of sugar that is added will determine both the final CO2 pressure and the amount of additional alcohol that will be produced. (Approximately 1 atmosphere of pressure will be generated by 4g of sugar per liter). Thus to produce 6 atmospheres of CO2 will require 24g sugar per liter of wine. This much sugar will result in an additional 1.3% alcohol (2.4% sugar x 0.55).” https://www.homebrewtalk.com/threads/how-to-calculate-the-final-psi-for-sparkling-drinks.28332/ One volume means that 1 liter of CO2 is dissolved in 1 liter of beer. one atmosphere nearly equal to one bar",
     "crumbs": [
       "Jäsning",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Kolsyrning</span>"
     ]
   },
   {
+    "objectID": "racking.html",
+    "href": "racking.html",
+    "title": "10  Omtappning",
+    "section": "",
+    "text": "10.1 Headspace\nHur mycket i olika faser. VAd fyller man upp med.\nHeadspace: 10-20 % av volymen vid primärjäsning, för att undvika överflöde av skum.\nStormjäsning 20%, för att få plats med skummet och undvika överflöde. Syresättning ej något problem initialt då jästen använder syre för cellväggarna och därefter rikligt flöde av CO2 som fyller upp en stor headspace.\nEfter omtappning 1-2 in? Så litet headspace som möjligt för att undvika syresättnig, eftersom det förändrar smaken genom oxidering och medför ökad risk för oönskad mikrobiell tillväxt som ger udda smaker. Behövs en viss headspace för skum?? Troligen ej. Headspace ökar något under fortsatt fermentering.\nEfter buteljering? ” There has to be at least half an inch (12 mm) of airspace in the bottle under the stopper, otherwise the pressure might become excessive if the bottle were left at a higher stor- age temperature. For my part, I prefer to keep this airspace to the minimum, as this limits the quantity of oxygen in the bottle. However, some cider makers leave larger airspaces, apparently without any ill effect.”\nTänk på att headspace krymper när temperaturen går upp. Hur mkt?\nVerkar bra, beskriver praktiskt: https://www.chelseagreen.com/2024/basics-of-cider-making-cider-preparation/?srsltid=AfmBOooOygCNoVkhNGFTHrwpCc7vlNQNILYl05pavEMMGRz_CUutyeg1\nKolla SG en gång per månad.",
+    "crumbs": [
+      "Hantering",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Omtappning</span>"
+    ]
+  },
+  {
+    "objectID": "racking.html#sec-racking-headspace",
+    "href": "racking.html#sec-racking-headspace",
+    "title": "10  Omtappning",
+    "section": "",
+    "text": "1. Lea A. Craft cider making. 3rd ed. The Crowood Press; 2015.",
+    "crumbs": [
+      "Hantering",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Omtappning</span>"
+    ]
+  },
+  {
+    "objectID": "maturation.html",
+    "href": "maturation.html",
+    "title": "11  Mognad",
+    "section": "",
+    "text": "Mognad: När jäsningen upphört helt (provjäsning i varmare temp med DAP?). Toppa upp med vatten eller cider (helt?). Förslut helt. Låt mogna veckor-månader. Kontrollera vattenlåset 1 gång/vecka. Fyll på det vid behov. Ev karamelllfärg i vattnet för att se bubblorna bättre. Autolys av den jästfällning som bildas här ger nutrienter till MLF.",
+    "crumbs": [
+      "Hantering",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mognad</span>"
+    ]
+  },
+  {
+    "objectID": "bottling.html",
+    "href": "bottling.html",
+    "title": "12  Buteljering",
+    "section": "",
+    "text": "När helt färdigjäst är SG 0996-1000. Notera att det finns CO2 i drycken även vid jäsningens slut (2-6 g/L).",
+    "crumbs": [
+      "Hantering",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Buteljering</span>"
+    ]
+  },
+  {
+    "objectID": "pasteurization.html",
+    "href": "pasteurization.html",
+    "title": "13  Pastörisering",
+    "section": "",
+    "text": "13.1 Temperatur och tid",
+    "crumbs": [
+      "Tekniker",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Pastörisering</span>"
+    ]
+  },
+  {
+    "objectID": "pasteurization.html#dosering",
+    "href": "pasteurization.html#dosering",
+    "title": "13  Pastörisering",
+    "section": "13.2 Dosering",
+    "text": "13.2 Dosering\nFärdigjäst (klar eller relativt klar) cider: 50 PU.\nPäron / högt pH? Högre\nOjäst must: Mycket högre.",
+    "crumbs": [
+      "Tekniker",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Pastörisering</span>"
+    ]
+  },
+  {
+    "objectID": "sulphiting.html",
+    "href": "sulphiting.html",
+    "title": "14  Svavling",
+    "section": "",
+    "text": "Varför? Missgynna andra mikroorganismer. Minska maillardreaktionen vid pastörisering. Minska oxidering.\nWell it’s impossible to say exactly. So much depends on the type of yeast and its history, and the nutrient availability. But pretty much all winemaking strains of Saccharomyces can tolerate 1 ppm of molecular SO2, and many up to 4 times that AFAIR.\nTo translate 1 ppm of molecular SO2 to free SO2 at any given pH, see the various charts and spreadsheets all over the Internet, including mine http://www.cider.org.uk/sulphite.html\nFor example at pH 3.5 in a cider, 1 ppm of molecular SO2 equates to about 50 ppm of free SO2. When binding to cider carbonyls is taken into account, you need a total addition of around about 120 ppm of SO2.\nSvaveldioxid 5 g till 50 ml H20 ger 5% lösning. 1 ml/L ger då 50 ppm.\nYes, 20 to 30 ppm looks good to me. Yesterday I just opened a first bottle of a perry I bottled mid December. This was an earlier season perry with Thorn and Ure pears, which fermented very fast. I was able to stabilize it at SG1.011 after multiple rackings and bottled with 30 ppm of sulfite, 8 g/L of sugar (which raised SG to 1.0135) and 10 ppm of dry yeast. It is very clean, with a perfect sparkle, no off flavor. For my part, I tend to use sulfite only on early batches as it is warmer for the beginning of fermentation, which leaves the door open for other unpleasant organisms - in particular I have had some brett proliferation in 2021 and (to a lesser extend) in 2022, which can give a quite nasty funk. But this only happened on early batches, and we had a very warm fall in 2021. The bulk of my batches are started when temperatures are colder and don’t get this sort of problem even if no sulfite is used (either before fermentation or at bottling).\ncider clarifying as it relates to bottle conditioning : https://groups.google.com/g/cider-workshop/c/-i8jPG-FZ8c",
+    "crumbs": [
+      "Tekniker",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Svavling</span>"
+    ]
+  },
+  {
     "objectID": "options.html",
     "href": "options.html",
-    "title": "14  Alternativ",
+    "title": "15  Alternativ",
     "section": "",
-    "text": "14.1 Alternativ\nHär listas i ordningsföljd de möjliga steg som man kan lägga till för att påverka förloppet. De är i tidsordning.",
+    "text": "15.1 Steg i ciderbryggningsprocessen\nHär listas i ordningsföljd de möjliga steg som man kan lägga till i ciderbryggningsprocessen för att påverka förloppet. De är i tidsordning. De flesta är inte nödvändiga, men kan användas för att påverka förloppet på olika sätt.\nFörkortningar: SG, Specifig gravitation; PE, pastöriseringsenheter; SO_{2}, svaveldioxid från metabisulfit; ppm, parts per million; PME: Pektinmetylesteras. Skiljer sig från pektinasblanidngar som används för klarning. Det måste innehålla endaset PME, annars bildas ingen pektinhätta vid keeving.\nFetstil = Obligatoriskt\nJustering: Musten bör ha pH 3.2 till 3.8, TA 0.3 till 0.7, sockerhalt SG minst 1045 (högre sockerhalt ger mer alkohol). pH &gt;4 i musten kan ge senare smakproblem pga mikrobiell tillväxt (tex acetobacter). För att sänka pH tillsätts då malat 1 g/L (0.1%) eller en andel syrligare must från andra äppelsorter. Är pH för lågt kan musten blandas ut (med vatten), eller genomgå malolaktisk jäsning. Äppeljuicekoncentrat?\nSvavling: Doseras efter pressing beroende på pH och vilken effekt som önskas. Vid viljäsning kan en låg dos gynna vildjästen i jämförelse med andra mikroorganismer. När bryggerijäst används önskar man ibland att mer kraftigt hämma övriga mikroorganismer inklusive vildjäst och då används högre doser. Svavling över en viss nivå motverkar malolaktisk fermentering, vilket ibland är önskvärt. Svavlingen bör då upprepas vid omtappning. Det minskar även effekten av maillardreaktionen vid pastörisering som annars kan ge en kokt smak som ibland är oönskad. Likaså minskar oxidering vid omtappning. Det fria svavlet minskar med tiden och binds till andra ämnen i musten, varför svavling i tidigt skede ej påverkar smaken.\nBlandning: Kan göras initialt genom att blanda äppelsorter före pressning. Om blandningen istället görs efter huvudjäsning bör man tänka på att jäsningen kan ta fart igen, även om jäsningen i alla komponenterna har avstannat.\nOxidation: Lågt pH hämmar oxidationen. I syrefattig miljö kan den bruna färgen revertera. Oxidation ger mörkare färg och binder sedan en del av tanninerna till moset.",
     "crumbs": [
       "Variationer",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Alternativ</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Alternativ</span>"
+    ]
+  },
+  {
+    "objectID": "options.html#sec-detailed",
+    "href": "options.html#sec-detailed",
+    "title": "15  Alternativ",
+    "section": "",
+    "text": "Steg\nTemp\nTid\nSocker\nEv tillsats\nVad händer\n\n\n\n\nSkörd\nKylig dag?\n\n45-70\nJodtest av mognad\nMogna frukter. Kan lagras 2-4v (pektinhalten ökar då)\n\n\nSweating\n\n1-2-4v\n\nFörvara luftigt\nFrukten “mognar” av trädet, blir lättare att pressa\n\n\nRensning\n\n\n\nVattenbad (rutten frukt sjunker)\nTag bort rutten frukt. Färska fallmärken är ok\n\n\nTvättning\n\n\n\nVatten\nTag bort smuts och damm\n\n\nKrossning\n\n\n\nPektinas ökar utbytet\nKrossa utan att förstöra kärnorna\n\n\nMacerering\n20\n6-24h\n&gt;05\nVatten, pektinas\nOxidation, lättare press, tanniner, aromer\n\n\nPressning\n\n\n12-14%\nPektinas 12h, vatten\nKorgpress saknar kanaler för vätskan och kan ge slime\n\n\nOmpressning\nSvalt\n24h?\n\nLiten mängd vatten\nResterna från första presningen tas tillvara och kan tillsättas\n\n\nSvavling\n\nDirekt\n\nSO_{2} 30-50 ppm beroende på pH\nLåg dos vid vildjäsning. Hindrar mikroorganismer. Motverkar oxidation\n\n\nSilning\n\n\n\n\nGrovsila\n\n\nKeeving\n5\n7d\n\nKalciumklorid (4g/100L), PME\nReducera pektin och näring. Brun hätta. Omtappning\n\n\nKylning\n\n12h\n\nKyl\nValfritt. Snabbar upp sedimentering. Omtappas\n\n\nPastörisering\n63\n20m\n\nVärme x tid avgör effekten\nMikroorganismer avdödas vid 30-50 PE. Maillardreaktion ändrar smaken\n\n\nHydrering av jäst\n\n\n\nVatten\nJästen hydreras, då överlever dubbelt så många celler\n\n\nJustering\n\n\n&gt;45\nSO2, näring, pektinas, syra\nJustera av pH och sockerhalt (13g/L höjer med 5)\n\n\nFörkultur\n\n\n\nSocker, vatten, luft\nStarta jästen\n\n\nUppstart\n(12-)20(-25)\n24-48h\n\nBryggerijäst. Med lufttillgång\nJästen gynnas och tillväxer. Syret förbrukas. Jäsrör efter\n\n\nVilofas\n\n6h-7d el mer\n\nHögre temp kortar tiden\nTid innan jäsningen syns. Tiden beror på jäst och temperatur\n\n\nTurbulent jäsning\n\n5d\n\n\nRejält tempo. Skummet som bildas försvinner efter 1-2v\n\n\nOmtappning 1\n\nefter 3d vila\n&lt;15-20\nMät SG när skummet försvunnit\nBottensats och hätta tas bort\n\n\nFyll upp\n\n\n\nSockerlösning, juice, cider\nFyll upp (nästan?) helt\n\n\nHuvudjäsning\n(8)-12(-20)\n(3-)6-12v\n\nJästnäring, jäsrör, socker\nToppa upp. Jäsrör på. Klart när det slutar bubbla\n\n\nOmtappning 2\n\n2-3v efter\n&lt;06-08\nPumphävert. Undvik syresättning\nBottensatsen tas bort. Klarare cider. Minskad näring. Kan upprepas\n\n\nFyll upp\n\nVid omtapp\n\nSockerlösning, juice, cider\nFyll upp (nästan?) helt efter varje omtappning\n\n\nSvavling\n\nVid omtapp\n\nSO_{2} 30 ppm\n\n\n\nBlandning\n\n\n\nTanniner?\nBlanda olika satser för att ändra smak. Behöver sedan fortsätta jäsa\n\n\nTesta färdigjäsning\n20+\n2v\n&lt;06\nDAP, jäst\nTesta att slutjäsa några dl för att avgöra minsta möjliga SG\n\n\nMognad\n15-20 ok?\n1-3-4 m\n\nTanniner? (tex ek)\nFår rundare smak\n\n\nMalolaktisk jäsning\n&gt;17\nmån\n\nMjölksyrebakterier\nÄppelyra omvandlas till mildare mjölksyra. pH &gt;4 krävs\n\n\nEftersötning\n\n\n\nEv icke-fermenterbart socker\nÖkar smakkomplexitet. Följs av passivisering (alt icke-ferment)\n\n\nPassivisering\n\n\n\nKaliumsulfit & -sorbat el pasteur\nJästen passiviseras. Går då ej att kolsyrejäsa\n\n\nKöldstabilisering\n-5 till -1\n1-2v\n\n\nTartratkristaller bildas, för att undvika dessa i flaskan\n\n\nOmtappning\n\n\n\n\nInför buteljering\n\n\nSvavling\n\nVid butelj\n\nSO_{2} 30 ppm\n\n\n\nButeljering\nSvalt\n\n00-05\nPastörisering, SO2\nSockret “slut”. Sval temp behåller mer kolsyra\n\n\nPastörisering\n63\n20m\n\nI flaska\nFlaskkorken på glänt för att undvika explosion. Kan då ej kolsyrejäsa\n\n\nKolsyrejäsning\n20\n1-2v\n6g/L\nSocker, tiamin?, Liq. tirage\nSluten flaska. Kolsyran stannar. Tirage 24g/L för champagne\n\n\nDegorgement\n\n\n00\nLiqueur d´expedition (0-50g/L)\nFlaskan kyls, halsen fryses, proppen får flyga\n\n\nLagring\nSvalt\n12-18m\n-5\n\nMinst 2 m. Optimal smak 12m efter pressning, därefter sämre",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Alternativ</span>"
+    ]
+  },
+  {
+    "objectID": "options.html#långsam-jäsning",
+    "href": "options.html#långsam-jäsning",
+    "title": "15  Alternativ",
+    "section": "15.2 Långsam jäsning",
+    "text": "15.2 Långsam jäsning\nStyrning av jäsningen genom att utarma näring “Svältjäsning”\nNormalt fortskrider jäsningen tills allt socker förbrukats och upphör sedan när jästen inte längre har tillgång till socker att fermentera. Ett alternativt sätt att stanna upp jäsningen är att istället skapa brist på andra näringsämnen (främst kväve och tiamin). För att uppnå detta kan man använda “Keeving” i början av processen och/eller göra många omtappningar.\nVid varje omtappning tas sedimentet bort och eftersom det innehåller döda jästceller som tagit upp kväve och tiamin minskar man successivt tillgången på dessa näringsämnen i musten. Jäsningen stannar då upp trots att socker finns kvar. Man får då en söt cider med kvarvarande socker. För att få bubblig cider kan man istället för socker tillsätta kväve (i form av diammoniumfosfat) i kontrollerad mängd vid buteljering, vilket gör att kolsyra produceras i flaskan.\nEffekter av långsam jäsning: Generationerna av jäst hinner genomgå autolys och återför då närning till de nya generationerna av jäst, vlket kan undvika överbefolkning och sedan stressade jästceller pga näringsbrist.\nAtt bromsa jästakten: - Temperatur - SO2, tex 100 ppm efter 10-12 poängs fermentering och omtappning - Kvävebrist (via keeving, omtappning, eller initial jäsning i grunt kärl som ger mer syre vilket stimulerar proliferation men hämmar fermentering och därför leder till en tät population som sedan omtappas till syrefattig miljö där kvävet då förbrukats) - Vildjäst",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Alternativ</span>"
+    ]
+  },
+  {
+    "objectID": "options.html#keeving",
+    "href": "options.html#keeving",
+    "title": "15  Alternativ",
+    "section": "15.3 Keeving",
+    "text": "15.3 Keeving\nCuvage (“Keeving”) kan göras för att reducera pektin och näringsämnen (kalcium, tiamin, aminokväve, och jästceller binds till pektinhättan). Man får då en klarare cider och näringsbristen gör jäsningen låmgsammare. En långsam jäsning i näringsfatting sider kan göra att man efter buteljering i slutet av mognaden ger viss kolsyra utan att jäsningen startas om. Pektinmetylesteraserna som ger keeving-effekten är effektivare vid lågt pH (?). Kalciumklorid underlättar, liksom att satsen står svalt (4-5 grader). Ibland sker stormjäsning istället och då kan man fortsätta bryggningen utan keeving-effekten på pektin och näringsämnen. En brun hätta av pektin mm bildas och stiger till ytan när jäsning sker apikalt under den (“Brown cap”). Keevingen är klar när hättan börjar spricka?, efter ca 24 tim?. Första omtappning vid 1030 (eller när det sjunkit med 10) och en senare omtappning ser till att jäsningen fortskrider långsamt och upphör med viss bevarad sockerhalt Mot slutet &lt;1 enhet/vecka (max 2 per 3v). Flaskning vid 1010-1015.\nIde: Apelsinskal (det vita) innehåller pektinmetylesteraser. Kanske kan användas för att underlätta detta? Dock troligen fler sorters pektinaser däri. Rabarber innehåller kalcium (låg bioavailability) och malat. Spenat innehåller kväve och vitamin B (koka först?).\nProperly keeved cider can be bottled at higher gravities (1.020 has been found in trial-and-error by many producers to be optimum when starting at around 1.050). –The same finishing gravity can lead to dangerous overpressure in an unkeeved cider! https://www.homebrewersassociation.org/attachments/0000/4800/Exploring_Cider-Gary_Awdey.pdf\n** Keeving med klercidre kit\nMethod of operation to obtain best results\nIntroduction / General\nThe vessel used for the separation should:\nHave vertical sides to allow the brown [residues] to descend during draining without breaking itself.\nBe Translucent and should be open, to intervene at the time of adding the CaCl2 and to be able to observe the different stages.\nBe above floor level, to encourage the tapping of the clear juice from the bottom of the vat / fermentation vessel.\nI /\n\nAdd the enzymes as early as possible to the must in the vessel To encourage the yeasts will require 25 to 35 ml of Concentrated PECTIN ESTERASE CPE (PME) for 10 hectolitres.\n\nControl the temperature of the must to maintain it between 8 and 10°C, up to 12°C maximum: the more the temperature is raised, the more swiftly the reactions take place. Beyond 12°C, the yeasts threaten the process of separation, since the cellesei are more active than the enzymes at these temperatures.\nll /\n\nMonitor the progress of the enzymes in order to determine the best moment to add the CaCI2 (see above). (you can test this on a small volume taken out of the vessel).\n\nWhen the fermentation vessel is ready, measure out exactly a liter of the must enzyme into a transparent [test] container and add, while agitating the must in the test container, 0.9 ml of liquid CaCI2 (powdered CaCl2 mixed into distilled or drinking water at a rate of 520 g / litre);\nContinue stirring for 2 minutes, using a bright light to watch for the pectins granulating (looking like semolina granules) and leaving a clear juice;\nThis granulation may appear as a cloud of fine particles in suspension or as coloured grains (like semolina) or as translucent grains (like tapioca).\nIf this happens within a minute of the test beginning in your test container it is time to add the CaCI2 to the fermentation vessel.\nIf not, try the test again, and again, at regular intervals until this reaction occurs. This may take 3, 6 or 12 hours, depending on the temperature of the must.\nIll /\n\nHaving made the bulk CaCI2 solution at 520 g / litre, add 854 ml to the fermentation vessel: equivalent to 1.180 kg for 10 hectoliters.\n\nStir the mixing vessel before adding to the fermentation vessel’s must, and mix this stirred liquid strongly into the must, diluting 2 or 3 times its volume with drinkable water, and carry on [stirring?] for 5, 10, or 20 minutes according to the quantity of must, using a sustained agitation with firm circles.\nIV /\nA brown cap will gradually form. Through adding the CaCI2 to the vessel, the granulation of the pectins occurs. A firm and continuous stirring of the contents at this time will encourage the separation of granules from the clear juice, while at the same time stimulating the yeasts.\nAt this stage it is the yeasts, by beginning the fermentation, that begin to produce the carbon dioxide which by starting the pectin’s agglomeration will encourage it to gather on the surface of the vessel: These gathered pectins form the brown cap.\nIf the yeasts are not very active, the process can stretch over hours, or even days\nFrån https://groups.google.com/g/cider-workshop/c/1-C1RyzkPGg\nAL: I do feel their time-scales are somewhat optimistic - in my experience it takes days for the chapeau to be raised, though it can certainly start to form in the bulk of juice before it appears on the surface.\nClause: I have had successful keeves with quite acidic juice (up to 1% TA as Tartaric or 0.9% as Malic). Acidity (or lack of) might not be such an important factor. And slightly too high temperature should not be a factor that would empeach the formation of the brown hat - the only thing is that at higher temperature, fermentation could start before formation of the brown hat. You could delay the starting of fermentation by adding a bit of sulfite, this could give a bit more time to the brown hat.",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Alternativ</span>"
     ]
   },
   {
     "objectID": "flavor.html",
     "href": "flavor.html",
-    "title": "15  Att påverka smaken",
+    "title": "16  Att påverka smaken",
     "section": "",
-    "text": "Smaker:\nAstringency, strävhet (tanniner)\nSyrlighet\nFyllighet\nSötma",
+    "text": "16.1 Smaker\nAstringency, strävhet (tanniner)\nSyrlighet\nFyllighet\nSötma\nTOREAD: [1] Microorganisms in Fermented Apple Beverages: Current Knowledge and Future Directions (påverkan på smak)\nDåliga smaker:\n“Acetic acid has a very sharp aroma and so will be obvious as “volatile acidity” in the way that malate, citrate or lactate are not because they are “non-volatile” acids and they have no aroma. Citric acid does not smell “citrussy” in any way (i.e. not like lemon or orange).” https://groups.google.com/g/cider-workshop/c/cK2DP7vQmcE\nAt the same time, there are many wild species and strains of lactic acid bacteria with many different side-reactions which can accompany the main acid conversions). Amongst these are the formation of diacetyl (buttery), tetrahydropyridines (bready or mousy), or ethyl phenols (horsey or disinfectant-like depending on structure).\nOlika smaker och deras orsaker: https://www.bjcp.org/exam-certification/cider-judge-program/cider-exam/6-balance-in-cider/",
     "crumbs": [
       "Variationer",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Att påverka smaken</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Att påverka smaken</span>"
+    ]
+  },
+  {
+    "objectID": "flavor.html#att-reducera-syrlighet",
+    "href": "flavor.html#att-reducera-syrlighet",
+    "title": "16  Att påverka smaken",
+    "section": "16.2 Att reducera syrlighet",
+    "text": "16.2 Att reducera syrlighet\nMetoder för att reducera syrlighet i den färdiga cidern:\n\nSpäd musten med vatten\nBlanda must med olika egenskaper\nAnvänd jäst som reducerar malat (tex 71B)\nMalolaktisk jäsning\nTillsats av klaciumkarbonat eller liknande\nSötning minskar upplevelsen av syra\nMognad\nLägre kolsyrehalt\nLägre serveringstemperatur\n\nDessertäpplen ger ofta syrlig smak. Syrligheten framträder när sockret jäst bort.",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Att påverka smaken</span>"
+    ]
+  },
+  {
+    "objectID": "flavor.html#att-öka-fyllighetkomplexitet",
+    "href": "flavor.html#att-öka-fyllighetkomplexitet",
+    "title": "16  Att påverka smaken",
+    "section": "16.3 Att öka fyllighet/komplexitet",
+    "text": "16.3 Att öka fyllighet/komplexitet\nFör att öka fylligheten: Sötning, kolsyra, högre alkoholhalt, jäs länge på fine lees, tillsätt tanniner (extrakt, the, bärvin). Tillsats av tanniner anses dock sällan vara lyckat i cider. (°Brix) 10–12 eller högre ger fylligare smak.\nFör att öka komplexiteten: Jäs längre på Lees [?]. Vildjäsning? Längre lagring?",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Att påverka smaken</span>"
+    ]
+  },
+  {
+    "objectID": "flavor.html#faktorer-som-påverkar-smaken",
+    "href": "flavor.html#faktorer-som-påverkar-smaken",
+    "title": "16  Att påverka smaken",
+    "section": "16.4 Faktorer som påverkar smaken",
+    "text": "16.4 Faktorer som påverkar smaken\n\n\n\n\n\n\n\n\n\nParameter\nCondition\nBiokemi\nEffekt\n\n\n\n\nTemperatur\nLåg (15C)\nMore ethyl esters\nMore fresh and fruity\n\n\nTemperatur\nHög (28C)\n\nMore flowery, banana, and pineapple\n\n\nAlkoholhalt\nLåg\n\n\n\n\nAlkoholhalt\nHög\nLöslighet av vissa ämnen vid smaklökarna\nÖkad förnimmelse av tannin bitterness. Minskad astringency.\n\n\nKolsyrehalt\nLåg\n\n\n\n\nKolsyrehalt\nHög\n\nÖkad förnimmelse av syrlighet\n\n\nSockerhalt\nLåg\n\n\n\n\nSockerhalt\nHög\n\nMinskad syrlighet\n\n\nMaceration\n\nMinskar tannininnehåll (?)\n\n\n\nMognad\n\nPolymerisering av tanniner. Nedbrytning av äppelsyra?\nMjukare smak. Mindre syrlig?\n\n\nFläderbär\n\nAnthocyaniner påverkar mognadsprocessen\nMjukare munkänsla\n\n\nMalolaktisk jäsning\n\nMalat till laktat\nMindre syrligt\n\n\nOmtappning Gross lees\n\nMinskar apple solids, då mindre LAB och acetobacter\nMindre risk för udda/vinägersmak\n\n\nOmtappning Gross lees\n\nLångsammare jäsning, mindre förlust av aromer\nMer aromatisk, fruktig cider\n\n\nLämna Fine lees\n\nLAB gynnas, tanniner, polyfenoler\nMer tannin/polyfenol?\n\n\nServeringstemperatur\n\n\nMed kall cider funkar hög syra bättre\n\n\n\n“Higher ethanol levels increase the perception of tannin bitterness (probably by enhancing the solubility of medium chain procyanidin oligomers into the lipid membranes which surround the bitterness receptors on the tongue). However, they also reduce the perception of astringency (probably by inhibiting the binding of longer chain procyanidin oligomers to the proline-rich proteins in the epithelial membranes of the mouth). See eg https://www.sciencedirect.com/science/article/abs/pii/S0950329307001115#:~:text=As%20ethanol%20level%20and%20pH,levels%20(11%E2%80%9315%25). [AL]”\nÖvrigt:\nSmaksättning: Addera fenoler? Tex fläderbär, svarta vinbär?? The??\nAtt få både sötma och bubblor: Använder man en enkel metod för cidertillverkning är det svårt att få både sötma och bubblor. Jäsningen fortskrider nämligen tills allt socker har jäst bort. Avdödar man jästen för att stoppa detta går det inte att kolsyrejäsa sedan.\nThe formation of volatiles in fruit wine process and its impact on wine quality https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11254978/\n\n\n\n\n1. Cousin FJ, Guellec RL, Schlusselhuber M, Dalmasso M, Laplace J-M, Cretenet M. Microorganisms in Fermented Apple Beverages: Current Knowledge and Future Directions. Microorganisms [Internet]. 2017 Jul [cited 2024 Oct 29];5(3):39. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC5620630/",
+    "crumbs": [
+      "Variationer",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Att påverka smaken</span>"
     ]
   },
   {
     "objectID": "style-test.html",
     "href": "style-test.html",
-    "title": "17  Style",
+    "title": "18  Style",
     "section": "",
-    "text": "17.1 Notes on quarto\nDid you know you can ignore files by setting a .quartoignore file?\nCrossref: Section 14.1",
+    "text": "18.1 Notes on quarto\nDid you know you can ignore files by setting a .quartoignore file?\nCrossref: Section 15.1",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#notes-on-quarto",
+    "href": "style-test.html#notes-on-quarto",
+    "title": "18  Style",
+    "section": "",
+    "text": "R\nhttps://quarto.org/docs/computations/r.html\n\nYou can control how data frames are printed by default using the df-print document option\nInstall quarto-mode and Enable poly-quarto-mode in markdown buffer to get ess functionality, code highligting etc",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "style-test.html#org-to-markdown",
+    "href": "style-test.html#org-to-markdown",
+    "title": "18  Style",
+    "section": "18.2 Org to markdown",
+    "text": "18.2 Org to markdown\nIn terminal:\npandoc --from=org --to=gfm org-mode-file.org &gt; markdown.md ## Emacs markdown mode\nhttps://github.com/jrblevin/markdown-mode\n\nTable editing\n\n\n\nvar\nvalue\ncategory\nnote\n\n\n\n\na\n1\nA\nOne\n\n\nd\n4\nD\nFour\n\n\nb\n2\nB\nTwo\n\n\nc\n3\nC\nThree\n\n\ne\n5\nE\nFive\n\n\n\n\n\n\n\n\n\nTAB : Jump\nS-TAB : Jump backwards\nC-c arrow : Moves row/column\nC-c S-arrow : Edit (add, delete) row/column\n-up : Delete row\n-down : Add row above\n-left : Delete col\n-right : Add col left\nC-c C-c ^ - Sort rows by pecified column. Prompts for column number and sort method (alphabetical or numerical, optionally in reverse).\nC-c C-c | - Convert region to table. Attempts to recognize comma, tab, and space separated data.\nC-c C-c t - Transpose table at point.\nC-c C-s t (markdown-insert-table)\nTest convert: hello, this, is my, attempt, at writing, a, csv\n\n\nOther useful markdown things\nIndentation: https://docs.newrelic.com/docs/style-guide/structure/styleguide-markup-indentation/\n\nMarkdown lists\nUse four spaces to indent nested list to get automation:\n\nOne\n\na\nb\n\nTwo",
+    "crumbs": [
+      "Quarto",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#heading-2",
     "href": "style-test.html#heading-2",
-    "title": "17  Style",
-    "section": "17.2 Heading 2",
-    "text": "17.2 Heading 2\nText and footnote\n\nPlockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.\nQuote text here\n\n\n\nArbitrary margin content",
+    "title": "18  Style",
+    "section": "18.3 Heading 2",
+    "text": "18.3 Heading 2\nText and footnote\n\nPlockning och gallring. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.\nKrossning och pressning. Äpplena rives (med äppelkvarn) eller krossas (tex i en hink med hjälp av en stör) till en grov massa. Maler man dem för fint kan det bli en gele som är svår att pressa. Fruktmassan blir snabbt brun men det gör ingenting. Använd en fruktpress för att få fram must. Grovsila därefter musten om det kommit med bitar.\nJustering av musten. Mät sockerhalten och tillsätt eventuellt socker så att SG blir 1040 till 1070 (Tumregel: 30g socker per liter ökar SG med 10). Tillsätt eventuellt pektolas (~1 ml till 4L) för att slippa strimmor av pektin i den färdiga cidern. Tillsätt eventuellt äppelsyra1 för att sänka pH om det är &gt;4 (för att motverka skadliga mikroorganismer).\n\n1 Äppelsyra (malat) kan vara krångligt att få tag på. Använder du citronsyra (citrat) riskerar det att bli dålig smak när den malolaktiska jäsningen sker. Vinsyra (tartrat) kan användas, men kan ge kristallutfällning i flaskan (vilket kan förebyggas genom köldstabilisering). Ett alternativ är att landa in äpplen/must med lågt pH.\nQuote text here\n\n\n\nArbitrary margin content",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#markdown-table",
     "href": "style-test.html#markdown-table",
-    "title": "17  Style",
-    "section": "17.3 Markdown table",
-    "text": "17.3 Markdown table\nSee Tabell 17.1.\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 17.1. Fruit prices\n\n\n\nNote: This table has “.bordered” property.",
+    "title": "18  Style",
+    "section": "18.4 Markdown table",
+    "text": "18.4 Markdown table\nSee Tabell 18.1.\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 18.1. Fruit prices\n\n\n\nNote: This table has “.bordered” property.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#markdown-table-in-margin",
     "href": "style-test.html#markdown-table-in-margin",
-    "title": "17  Style",
-    "section": "17.4 Markdown table in margin",
-    "text": "17.4 Markdown table in margin\nSee ?tbl-fruits.\n\n\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 17.2. Fruit prices\n\n\n\nNote: This table works but gives warning: “FloatRefTarget elements should not be the only content in a div with column classes. This will not render as expected. Consider moving the floatref targets to their own divs and using the offset attribute.”\nA citation(Lea, 2015)",
+    "title": "18  Style",
+    "section": "18.5 Markdown table in margin",
+    "text": "18.5 Markdown table in margin\nSee ?tbl-fruits.\n\n\n\n\n\n\n\n\n\n\n\n\nfruit\nprice\n\n\n\n\napple\n2.05\n\n\npear\n1.37\n\n\norange\n3.09\n\n\n\n\n\nTabell 18.2. Fruit prices\n\n\n\nNote: This table works but gives warning: “FloatRefTarget elements should not be the only content in a div with column classes. This will not render as expected. Consider moving the floatref targets to their own divs and using the offset attribute.”\nA citation[1]",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#knitr-table",
     "href": "style-test.html#knitr-table",
-    "title": "17  Style",
-    "section": "17.5 Knitr table",
-    "text": "17.5 Knitr table\n\nSee Tabell 17.3.\n\n\n\n\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10\n\n\n\n\n\nTabell 17.3. Cars\n\n\n\nPROBLEM: This table gives error. MWE works, so probably clashes with yaml options. Very curiously, the same error in MWE when citation-location: margin is enabled, but in the book, removing this does not fix the error. However, when adding a citation (!) to the document, the r code for producing a kable table does not give an error. Dont know how to explain this. SOLUTION: 1) include a citation (!) AND 2) disable citation-location: margin\nNO HACK: To remove stripes. 1) use html &gt; html-table-processing: none in yaml. AND 2) add to css tr.odd background-color AND 3) use output: asis. DOES NOT WORK (only adds color over the stripes\nNOTE: Should probably try to use GT, seems to have a workaround.",
+    "title": "18  Style",
+    "section": "18.6 Knitr table",
+    "text": "18.6 Knitr table\n\nSee Tabell 18.3.\n\n\n\n\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10\n\n\n\n\n\nTabell 18.3. Cars\n\n\n\nPROBLEM: This table gives error. MWE works, so probably clashes with yaml options. Very curiously, the same error in MWE when citation-location: margin is enabled, but in the book, removing this does not fix the error. However, when adding a citation (!) to the document, the r code for producing a kable table does not give an error. Dont know how to explain this. SOLUTION: 1) include a citation (!) AND 2) disable citation-location: margin\nNO HACK: To remove stripes. 1) use html &gt; html-table-processing: none in yaml. AND 2) add to css tr.odd background-color AND 3) use output: asis. DOES NOT WORK (only adds color over the stripes\nNOTE: Should probably try to use GT, seems to have a workaround.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#grid-table",
     "href": "style-test.html#grid-table",
-    "title": "17  Style",
-    "section": "17.6 Grid table",
-    "text": "17.6 Grid table\nHow to crossref grid tables? Maybe put in a labeled div.\nSee ?tbl-gridt\n\nSample grid table.{#tbl-gridt}\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty",
+    "title": "18  Style",
+    "section": "18.7 Grid table",
+    "text": "18.7 Grid table\nHow to crossref grid tables? Maybe put in a labeled div.\nSee ?tbl-gridt\n\nSample grid table.{#tbl-gridt}\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#margin-figures",
     "href": "style-test.html#margin-figures",
-    "title": "17  Style",
-    "section": "17.8 Margin Figures",
-    "text": "17.8 Margin Figures\nSee Figur 17.1.\n\n\n\n\n\n\n\n\n\nFigur 17.1. MPG vs horsepower, colored by transmission.",
+    "title": "18  Style",
+    "section": "18.9 Margin Figures",
+    "text": "18.9 Margin Figures\nSee Figur 18.1.\n\n\n\n\n\n\n\n\n\nFigur 18.1. MPG vs horsepower, colored by transmission.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#image",
     "href": "style-test.html#image",
-    "title": "17  Style",
-    "section": "17.9 Image",
-    "text": "17.9 Image\nSe Figur 17.2.\n\n\n\n\n\n\nFigur 17.2. Yeast metabolic network\n\n\n\n\nUsing symlink to images in root dir.",
+    "title": "18  Style",
+    "section": "18.10 Image",
+    "text": "18.10 Image\nSe Figur 18.2.\n\n\n\n\n\n\nFigur 18.2. Yeast metabolic network\n\n\n\n\nUsing symlink to images in root dir.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#arbitrary-margin-content",
     "href": "style-test.html#arbitrary-margin-content",
-    "title": "17  Style",
-    "section": "17.10 Arbitrary Margin Content",
-    "text": "17.10 Arbitrary Margin Content\nYou can include anything in the margin by places the class .column-margin on the element. See an example on the right about the first fundamental theorem of calculus.\n\n\nWe know from the first fundamental theorem of calculus that for \\(x\\) in \\([a, b]\\):\n\\[\\frac{d}{dx}\\left( \\int_{a}^{x} f(u)\\,du\\right)=f(x).\\]",
+    "title": "18  Style",
+    "section": "18.11 Arbitrary Margin Content",
+    "text": "18.11 Arbitrary Margin Content\nYou can include anything in the margin by places the class .column-margin on the element. See an example on the right about the first fundamental theorem of calculus.\n\n\nWe know from the first fundamental theorem of calculus that for \\(x\\) in \\([a, b]\\):\n\\[\\frac{d}{dx}\\left( \\int_{a}^{x} f(u)\\,du\\right)=f(x).\\]",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#asides",
     "href": "style-test.html#asides",
-    "title": "17  Style",
-    "section": "17.11 Asides",
-    "text": "17.11 Asides\nAsides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).\nThis is a span that has the class aside which places it in the margin without a footnote number.",
+    "title": "18  Style",
+    "section": "18.12 Asides",
+    "text": "18.12 Asides\nAsides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).\nThis is a span that has the class aside which places it in the margin without a footnote number.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
     ]
   },
   {
     "objectID": "style-test.html#lists",
     "href": "style-test.html#lists",
-    "title": "17  Style",
-    "section": "17.12 Lists",
-    "text": "17.12 Lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nTask 1\nTask 2\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\nterm\n\ndefinition\n\n\n\n\n\n\nLea, A., 2015. Craft cider making, 3rd ed. The Crowood Press.",
+    "title": "18  Style",
+    "section": "18.13 Lists",
+    "text": "18.13 Lists\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nTask 1\nTask 2\n\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\nterm\n\ndefinition\n\n\n\n\n\n\n1. Lea A. Craft cider making. 3rd ed. The Crowood Press; 2015.",
     "crumbs": [
       "Quarto",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Style</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Style</span>"
+    ]
+  },
+  {
+    "objectID": "perry.html",
+    "href": "perry.html",
+    "title": "19  Päroncider",
+    "section": "",
+    "text": "19.1 Päronsorter\nFråga MArkCider om ciderpäron? https://markcider.se/om-markcider/",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Päroncider</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html",
+    "href": "fruitwine.html",
+    "title": "20  Fruktvin",
+    "section": "",
+    "text": "20.1 Principer\nMost yeast strains can tolerate an alcohol concentration of 10–15% before being killed.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#principer",
+    "href": "fruitwine.html#principer",
+    "title": "20  Fruktvin",
+    "section": "",
+    "text": "Sockerhalt vid start och slutjäsning\n“Normally you would want a starting specific gravity between 1.070 and 1.100 for wine.”\nSockerhalten vid start bör vara SG 1.070 till SG 1100 (ABV 10-15%). Kan således vara lämpligt att sikta på 1090.\nSlutlig SG efter färdigjäsning kan vara 0.990-1.000. Det betyder att buteljering vid 1.000 riskerar att ge flaskbomber eller i alla fall en överdrivet bubblig dryck. Därför rekommenderas slutjäsningstest.\n“Start Gravity should be 1.070 (normal finished ABV will be 10.5%) to 1.090(normal finished ABV will be 13%). Finish Gravity should be 0.990 (for dry wines) to 1.005 (for sweet wines). Normally you would want a starting specific gravity between 1.070 and 1.100 for wine. Just try to keep your wine’s starting specific gravity above 1.075. 1.09x is a good place to start, I shoot for 1.092 to 1.094” aim for 90-100? FG: 1.0000-0.996. 0.990?\nÖnskas ett sött vin kan tillräckligt med socker tillsättas så att socker finns kvar när jästen hämmas av alkoholhalten. De flesta jästsorter klarar alkoholhalt upp till 10-15%. Således kan man beräkna mängden socker som behövs för att uppnå 15% alkohol (SG 1.100-1.110 beroende på om man räknar med slutlig SG 0.99-1), torrjäsa drycken, och sedan tillsätta socker för sötning.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#fruktvin-från-olika-bär",
+    "href": "fruitwine.html#fruktvin-från-olika-bär",
+    "title": "20  Fruktvin",
+    "section": "20.2 Fruktvin från olika bär",
+    "text": "20.2 Fruktvin från olika bär",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#fläderbär",
+    "href": "fruitwine.html#fläderbär",
+    "title": "20  Fruktvin",
+    "section": "20.3 Fläderbär",
+    "text": "20.3 Fläderbär\nHög halt tanniner. Ger rödvinsliknande dryck. Vinner på lång lagring (minst 1 år).\nSäkerhet: Ffa stjälken och i viss mån gröna bär innehåller cyanid. Bör därför tas bort. Vissa rekommenderar att sedan koka bären (långsamt 20 min) för att ta bort cyaniden, men oklart om det behövs.\nKrossning: Kan vara svårt att krossa små bär?\nEv köld-maceration?\nEn del häller het socker-vattenlösning över bären\nOm bären/skalen får vara med i början av jäsningen ökar sannolikt tanninhalten (tex 2v)\n“When too few berries are used, the wine is thin and unlikely to improve. When too many berries are used, the tannins and other flavor constituents may overpower the palate and require dilution, blending or prolonged aging to mellow. Between these extremes are wines that often offer exceptional enjoyment. These wines accept oak well and small amounts (3–7%) blended into lesser grape wines often improves them considerably.” https://winemakermag.com/article/841-elderberry-wine [Bra sida]\n“The composition of elderberries is complex. They contain 7.5% sugars, mostly sucrose, glucose and fructose. Citric acid is the most abundant acid, but they also contain malic, shikimic and fumaric acids. They also contain 3% tannins, at least three flavonoid glycosides and several anthocyanin glycosides and diglycosides. Elderberries exhibit up to 34 identified aroma compounds. The berries are rich in vitamin C, and contain lots of anthocyanins, which are antioxidants. They are also a good source of vitamins B1, B2 and B6 and contain the anti-inflammatory agents ursolic and oleanolic acids.”\nsome but not all elderberries may emit a greenish substance during fermentation. This goo coats the walls of your primary vessel and defies conventional clean-up strategies. It is referred to by various unkind names, but “elderberry goo” or “gunk” a The goo cannot be cleaned with water or soap or cleansers or solvents or spirits. However, it is easily cut with vegetable oil and cleanly wiped from the primary. The oil is then washed away with a liquid soap containing a degreaser. Rinse well and then sanitize with sulfite solution.\nAs the fruit matures, it begins to droop, and when inverted they are absolutely ready to harvest. However, you may have to harvest a bit earlier if you don’t have the plants netted and birds begin claiming the crop.\nUppvärmning til 82C för att bli av med cyaniden?\nObservationer Fläderbär: Gröna: Små, omogna. Sållas bort av vatten (flyter) Rödgröna: Större. Syrliga. Sjunker Vinröda: Något syrliga, ganska goda. Svarta: Låg syra, låg beska. Russin: Sjunker. Ingen smak alls. Några är mer övermogna och har antydan av dålig smak.\nObs innehåller citrat, så risk för acetifiering vid MLF? Svavla?\n\nPlockning\nSÄKERHET\nTänk på att skilja äkta från falsk fläder. Den falska flädern har röda bär och är giftig.\nÄkta fläder innehåller cyanid (cyanogena glykosider), främst i bladen, stjälkarna och i viss mån i omogna (gröna) bär. Dessa kan ge magsmärtor, illamående, och kräkningar. Nivåerna även i omogna bär är dock låga och orsakar troligen inga besvär om de konsumeras [cite: 1]. Det är alltså starkt rekommenderat att plocka bort stjälkar och blad. Som försiktighetsåtgärd kan man även rensa bort gröna bär. Vill man vara ännu försiktigare kan man värma upp musten något, och eftersom eventuell cyanid är flyktigt försvinner det då.\n\n“Cyanide is very volatile (evaporates at slightly above room temperature)” Cyanogenic Glycoside Analysis in American Elderberry: “Concentration levels in all tissues were generally low and at a level that poses no threat to consumers of fresh and processed AE products.”\n\nPlocka bären när de är ordentligt mogna. Bären på ett träd mognar vid olika tillfällen, och kan variera både mellan klasar och inom klasar (beroende på när de blommat). En strategi kan vara att lämna klasar som har omogna bär i sig. Övermogna bör blir russinlika, men smakar ingenting så kan tas med.\nFrysning av bärklasarna gör det enkelt att sedan lossa bären från dem. Särskilt om du plockar fläderbär då och då kan det vara smart att samla klasarna i påsar i frysen. När du samlat tillräckligt, gnugga klasarna initi påsarna så lossnar de flesta av bären. Rensa sedan bort stammarna noggrannt.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecept fläderbärsvin\nMitt recept:\n\n1 kg bär\n1 kg vatten (1-2.3 kg i olika recept)\nSocker 300-450 g per liter vatten (?). 450 g/L vatten (SG 150) torde ge SG kring 90 när det blandas med lika del must.\nPektolas (valfritt)\nJäst som klarar hög socker/alkoholhalt\nJästnäring. Kanske inte behövs. Vid test jäste musten från SG 100 till 0 på några dagar i 15C och aktiviteten fortsatte.\nSO2 40 ppm (valfritt men kan vara bra för att hindra MLF)\nSyratillskott (vinsyra, äppelsyra, citronsyra?). Valfritt men pH vid test var 3.8 så syratillskott kan vara lämpligt. Citronsyra kan ge acetifiering vid MLF men finns redan i fläderbär.\n\nGör såhär:\n\nKrossa. Funkade bra att krama sönder med händerna.\nEnl vissa recept värms bären/musten. Uppvärming till tex 63C i 20 min ger sannolikt pastöriseringseffekt om det önskas. Uppvärmning kan ge bättre extraktion av färgämnen och minska örttoner (gröna smaker). Det tycks också minska volatila syror något. Därutöver tar det bort eventuell cyanid och underlättar mustningen. Ett alternativ kan vara att koka upp vattnet och hälla över bären.\nTillsätt vatten och socker.\nPektolas\nSvavla med 40-50 ppm SO2. Vänta sedan minst 24h utan lock men med duk över för att svavlet skall dunsta\nTillsätt jäst som rehydrerats enl förpackningen\nTillsätt ev Jästnäring\nRör om dagligen. Alternativt använd nätpåse som sänks i musten.\nEfter 1v (3-14d i olika recpt) sila bort bären. Låt massan droppa av men pressa ej (varför?). Massan kan omjäsas till en ripasso.\nTappa om, fyll upp, ev svavling?, sätt på jäsrör\nFärdigjäs till SG xx\nMogna 3-4 mån i mörkt utrymme (bevarar färgen)\nButeljera, eventuellt med tillsatt svavel tex 20 ppm.\nFlaskmogna minst ett år i mörkt utrymme\n\nFLÄDERBÄRSVIN RECEPT 2\n1.5 kg rensade bär 1 kg socker (Alt sikta på SG 100) 3.5L vatten 2 tsk acid blend 1 tsk jästnäring 1/2 tsk pektolas SO2 Vinjäst som klarar hög socker/alkoholhalt\nVariant:\nhttps://homebrewanswers.com/elderberry-wine-recipe/\n\n\nNoter\nVilken jäst: https://www.winemakingtalk.com/threads/which-yeast-for-elderberry.45889/\nEnl visaa recept Maceration (“cold soaking”) med pektolas och SO2. Lagring: Ek?\nenl vissa sockerlag kokas och hällas över bären. Låt då svalna innan jästen tillsätts.\nJustering: Brix mål 25 (21-27)\nBär vatten 1:2.3 - 1:0.6 så ratio 1 kg bär och 0.5 till 2 kg vatten verkar rimligt. Kan vara bra att spara en del av vattenmängden för att tillsätta resterna?\n5 kg bär + 3L vatten Rör om dagligen alt använd nätpåse som sänks? Omtappa efter 1-2 veckor, låt då resterna droppa ur men pressa ej. Lagra &gt;1å\nUpp till 4.5 kg vatten (2 kg i något recept, 0.6 i något, dvs range adderat vatten 60-200% av bärens vikt. Någon nämner att fläderbär har mycket smak och anger 1-3 L vatten per kg bär. Vill man ha vinet för blandning kanske bättre att ha kraftigare vin? Skall man ompressa och lägga ihop se till att den första inte blir för tunn? Att toppa med sockervatten vid första omtappningen är ju också en fördel att kunna göra. Därför troligen lämpligt att ta en liten eller måttlig spädning i början.)\nHur mycket socker? 1 kg socker (i något recept 0.5 kg socker, i ett annat 0.6), beror på hur mkt vatten man har i. 1 kg var till 4.5 kg vatten per kg bär?\n\n\n[1] 95\n\n\n[1] 450\n\n\nTestat:\nNot 2024: XIII: Fläderbär, mosade 4 L. Vatten ca 3L. Sötades till SG 100. Restsatsen efter omtappning dag 4 (13 okt) blev ca 2.5 L bär och 1.5L saft, dvs ungefär ursprungliga volymen bärmos. + 1L sockervatten med SG 80. Jäste snabbt på 4 dagar till sg 0 med fortsatt aktivitet.\n\n\nArtiklar\n“To the best of our knowledge, only three articles on elderberry wine have been published so far. Schmitzer et al. (2010) focused on chemical composition, some individual phenolic compounds and antioxidant activity. On the other hand, in the work of Rupasinghe and Clegg (2007), elderberry wine was analyzed for total phenolic compound content, antioxidant activity and elemental analysis, while Elez Garofulić et al. (2012) carried out analyzes of the total phenolic content and sensory properties.” [cite: 2]\n“Techniques in Home Winemaking by Pembranchi is authoritative, but hits like a college level textbook and is organized as such rather than in a technique-application-recipe format, so you kinda have to have a specific technical query in mind to pick through it.”",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#rönnbär",
+    "href": "fruitwine.html#rönnbär",
+    "title": "20  Fruktvin",
+    "section": "20.4 Rönnbär",
+    "text": "20.4 Rönnbär\nThe Chemical Composition of Rowanberries (dried): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10536293/ Compositional diversity in fruits of rowanberry (Sorbus aucuparia L.) genotypes originating from seeds [cite: 3]\nSe även:\nMIKULIC-PETKOVSEK, M., J., SAMOTICHA, K., ELER, F., STAMPAR, R., VEBERIC (2015): Traditional elderflower beverages: a rich source of phenolic compounds with high antioxidant activity. J. Agric. Food Chem., 63(5):1477-1487.\nMIKULIC-PETKOVSEK, M., B., KRSKA, B., KIPROVSKI, R., VEBERIC (2017): Bioactive components and antioxidant capacity of fruits from nine Sorbus genotypes. J. Food Sci., 82:647-658. [cite: 4]\n\n\n\n\n\n\nparameter\nunit\nmdn\nmin\nmax\n\n\n\n\nMalic\ng/100g\n21.0\n17.51\n26.22\n\n\nCitric\ng/100g\n4.6\n2.25\n7.15\n\n\nTartaric\ng/100g\n1.6\n1.15\n2.04\n\n\nGlucose\ng/100g\n39.0\n36.11\n48.45\n\n\nFructose\ng/100g\n32.0\n25.82\n39.56\n\n\nSorbitol\ng/100g\n23.0\n18.25\n27.18\n\n\nSucrose\ng/100g\n2.0\n1.04\n2.87\n\n\nVitamin C\nmg/100g\n32.0\n25.60\n40.20\n\n\nTotal phenolic content\nGAE/100g\n150.0\n123.00\n189.00\n\n\nTotal anthocyanin\nmg/100g\n29.0\n18.00\n57.00\n\n\nFRAP\nmM TE/100g\n5.0\n3.36\n6.92\n\n\n\n\n\n\n[1] 0.0015\n\n\n\nRecept rönnbärsvin\nRÖNNBÄRSVIN\nKälla: Modifierat från [5].\n\n1 kg rönnbär, krossas/mixas\n1.5 kg vatten (möjligen mindre för att undvika att den blir tunn??)\n0.2 kg socker (behövde sötas med ca 120 g/L för att nå SG [100?]). Ev koka sockerlag av vatten + socker.\n1 citron (zest + juice), alt tartrat 1g/L??, Beräkna 1/2 tsk vinsyra per kg bär eller liter saft. 1 g vinsyra motsvarar 1 krm. Används för att justera syran i viner på frukt och bär. 10 gram per 10 liter vin höjer syranivån med 1 gram per liter\nPektolas\nJästnäring\nJäst\nSO2 (valfritt). Vänta då 24h innan jästen tillsätts.\n\nTag 1 kg vatten för att ha utrymme att späda senare om sockernivån blir för hög?\nRör om dagligen i 1 vecka. Omtappa sedan. Sila av moset?\nOmtappa var 4:e månad tills färdigjäst.\nLagra &gt; 1å\nNot: Blev mycket bärmassa som flöt upp efter 3 dagar, svårt att omtappa. Så troligen bra att ha viss mängd vatten och blanda om regelbundet snarare än omtappa för tidigt. Jäsningen hade ej heller startat. Kanske jästen fångats i pektinet som flöt upp med bären??",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#plommon",
+    "href": "fruitwine.html#plommon",
+    "title": "20  Fruktvin",
+    "section": "20.5 Plommon",
+    "text": "20.5 Plommon\nKan sakna fyllighet, så ibland görs det med russsin tillsatt, men det behövs troligen ej om stor andel plommin används.\nKan ta lång tid att klarna. Använd dubbel dos pektolas? Omtappa x flera.\nMogna 6 månader och smaka, därefter ev 6 månader till eller upp till flera år.\nFör ett sött vin kan mer socker användas och hälften tillsätts då efter ca 30 dagars jäsning.\n\n1 kg plommon\n0.25 kg vatten\n0.25 kg socker (600g eller mer om sött vin önskas)\nPektolas\nSyra\nTannin (russin, tanninpulver)\n\nGör såhär\n\nTag ur kärnor och hacka frukten\nHäll över kokande vatten\ntillsätt sockret\nLåt svalna\nTillsätt jäst, pektolas, jästnäring, tannin\nExtrahera 1v, rör dagligen.\nOmtappa varje månad tills det klarnar och sedan ytterligare en gång vid buteljering.\nFlaskmogna minst 6 månader.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#körsbär",
+    "href": "fruitwine.html#körsbär",
+    "title": "20  Fruktvin",
+    "section": "20.6 Körsbär",
+    "text": "20.6 Körsbär\n1 kg bär 1.5 L vatten Syra, tannin, pektolas Socker\nKrossa bären utan att krossa kärnorna Extrahera en till två veckor Omtappa efter ytterligare tvp veckor och därefter två gånger med två månaders mellanrum",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#svartvinbär",
+    "href": "fruitwine.html#svartvinbär",
+    "title": "20  Fruktvin",
+    "section": "20.7 Svartvinbär",
+    "text": "20.7 Svartvinbär\n“Black currants have a pretty tough skin and must be crushed, heated or broken down with a food processor (on lowest setting) in order to extract the very flavorful juice.” “Both raisins and bananas are used to increase body.”\n1 kg bär 3-4 kg vatten 0.75 kg russin 2 kg bananer Socker Syra, tannin, pektolas Etrahera 3d Omtappa var 30:e dag Kyl 3-5d innan buteljering Lagra upp till 3å",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#rabarber",
+    "href": "fruitwine.html#rabarber",
+    "title": "20  Fruktvin",
+    "section": "20.8 Rabarber",
+    "text": "20.8 Rabarber\nOxalat balanseras (minskas?) med Kalcium. Extrahera 3d. Köldstabilisera 30 d. Bra för blending. Kan drickas direkt.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#hagtorn",
+    "href": "fruitwine.html#hagtorn",
+    "title": "20  Fruktvin",
+    "section": "20.9 Hagtorn",
+    "text": "20.9 Hagtorn\nCa 3 L något övermogna hagtornsbär plockades efter frost 241023 från grannens häck (se bilder). Bären var mjöliga, sötma 3-4, beska 2, syra 2, arom 2. Målsättningen var att bevara så mycket tanniner som möjligt för att kunna blanda med cider.\nTips: Vill man gallra bort kärnorna kan det göras när man överför mot samlingkärl till jäskärl, efersom kärnorna sjunker till botten och resten flyter.\nEget recept, improviserat:\n\n1 kg hagtornsbär\n1.5 kg vatten (troligen öka detta då det blev väldigt mycket krafs som fyllde kärlet och litet vätska under, men får prova hur stark aromen blir efter extraktion?)\n1 dl ren etanol (valfritt, underlättar troligen extraktion av tanniner)\n\n3L gav 2 kg rensade bär. Dessa mosades enkelt med potatisstomp. 1 kg/kg vatten tillsattes, samt 5% alkohol. Massan extraherades i mikro 500W i 12 min (vilket gav temp ca 50C). Rör om efter halva tiden. Tillsatte sedan resten av vattnet (totalt 1.5 kg/kg). Lät svalna och tillsatte sedan socker och jäst (71B). Hälldes i två st 5L glasburkar.\nExtraktets egenskaper (avsilat): pH 3.7, SG 1.022 (med vatten tillsatt). Sötades till SG 92. Färgen rödorange, grumlighet 2, beska 3, strävhet 2-3, syra 2, sötma 2, arom 3 (hagtornssmak).\nAdderade SO2 (150 ppm). Ev bör man ha mer för att bättre hämma laktobaciller med tanke på höga citratnivåer?\nAdderade pektolas.\nNot: Råkade tillsätta Lalvin 71B (innan SO2 så den kanske hämmas), men EC1118 är nog bättre då den antagligen ej reducerar malat lika mycke",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "fruitwine.html#iscider",
+    "href": "fruitwine.html#iscider",
+    "title": "20  Fruktvin",
+    "section": "20.10 Iscider",
+    "text": "20.10 Iscider\nhttps://drive.google.com/file/d/15HFs2TvGbEf58nrCpT4OLwGyTCSbygzS/view\n\n\n\n\n1. Appenteng MK, Krueger R, Johnson MC, Ingold H, Bell R, Thomas AL, et al. Cyanogenic Glycoside Analysis in American Elderberry. Molecules [Internet]. 2021 Mar [cited 2024 Oct 9];26(5):1384. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7961730/\n\n\n2. Terzić M, Majkić T, Beara I, Zengin G, Miljić U, Đurović S, et al. Elderberry (Sambucus nigra L.) wine as a novel potential functional food product. Food Bioscience [Internet]. 2022 Dec [cited 2024 Oct 9];50:102047. Available from: https://www.sciencedirect.com/science/article/pii/S2212429222005077\n\n\n3. Bozhuyuk MR, Ercisli S, Ayed RB, Jurikova T, Fidan H, Ilhan G, et al. Compositional diversity in fruits of rowanberry (Sorbus aucuparia L.) genotypes originating from seeds. Genetika [Internet]. 2020 [cited 2024 Oct 13];52(1):55–65. Available from: https://doiserbia.nb.rs/Article.aspx?id=0534-00122001055B\n\n\n4. Mikulic-Petkovsek M, Krska B, Kiprovski B, Veberic R. Bioactive Components and Antioxidant Capacity of Fruits from Nine Sorbus Genotypes. Journal of Food Science. 2017 Mar;82(3):647–58. \n\n\n5. Keller J. JACK KELLER’s REQUESTED RECIPES. 1994.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Fruktvin</span>"
+    ]
+  },
+  {
+    "objectID": "applejuice.html",
+    "href": "applejuice.html",
+    "title": "21  Äppeljuice",
+    "section": "",
+    "text": "Jässtopp:\nKaliumdisulfit 0.1-0.2 g/L (motsv SO2 ppm 50-100) Kaliumsorbat ( 1 msk = 7g, 1 tsk ~2g) 0.1-0.2 g/L\nRipasso 3L (?)+ 1 stor citron (saft + skalstrimlor) + 1 msk socker blev gott.",
+    "crumbs": [
+      "Annat",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Äppeljuice</span>"
     ]
   },
   {
@@ -334,7 +807,7 @@
     "href": "tables.html",
     "title": "Appendix A — Tabeller",
     "section": "",
-    "text": "Här finns mer utförliga och detaljerade tabeller samt en del figurer.",
+    "text": "A.1 Äppelsorter\nSort\nSG\nTA\nFenoler\nKategori\n\n\n\n\nMuscadet de Dieppe\n56\n4.2\n6.030\nbittersweet\n\n\nHarry Masters\n57\n2.9\n4.640\nbittersweet\n\n\nFiona\n57\n8.3\n4.420\nbittersharp\n\n\nFrequin Rouge\n43\n2.9\n4.400\nbittersweet\n\n\nFoxwhelp\n51\n17.1\n4.000\nbittersharp\n\n\nJane\n45\n2.1\n3.610\nbittersweet\n\n\nBrown Snout\n65\n3.6\n3.320\nbittersweet\n\n\nThree Counties\n55\n2.3\n3.270\nbittersweet\n\n\nAngela\n48\n9.4\n2.430\nbittersharp\n\n\nVilberie\n59\n3.2\n2.350\nbittersweet\n\n\nHarry Masters\n65\n3.2\n2.180\nbittersweet\n\n\nPrince William\n56\n1.9\n2.180\nbittersweet\n\n\nDabinett\n61\n1.4\n2.140\nbittersweet\n\n\nLizzy\n47\n4.4\n1.690\nsweet\n\n\nKingston Black\n51\n5.0\n1.650\nsharp\n\n\nSweet Alford\n61\n2.5\n1.560\nsweet\n\n\nYarlington Mill\n65\n3.0\n1.450\nsweet\n\n\nJudeline\n58\n10.7\n1.320\nsharp\n\n\nBrowns Apple\n58\n7.9\n1.210\nsharp\n\n\nDebbie\n59\n13.8\n1.120\nsharp\n\n\nBelle de Boskoop\n62\n10.1\n0.840\nsharp\n\n\nCoxs Pomona\n50\n5.8\n0.750\nsharp\n\n\nQuinte\n38\n9.4\n0.730\nsharp\n\n\nBramley\n50\n12.6\n0.690\nsharp\n\n\nAlice\n47\n8.6\n0.680\nsharp\n\n\nBorsdorfer\n64\n6.9\n0.680\nsharp\n\n\nKatja\n48\n8.3\n0.680\nsharp\n\n\nFrida\n57\n8.7\n0.670\nsharp\n\n\nRubinola\n56\n7.8\n0.640\nsharp\n\n\nCharlamovsky\n42\n10.2\n0.630\nsharp\n\n\nFredrik\n55\n8.5\n0.620\nsharp\n\n\nDiscovery\n42\n5.5\n0.600\nsharp\n\n\nSpässerud\n42\n9.0\n0.570\nsharp\n\n\nRibston\n48\n11.9\n0.566\nsharp\n\n\nRöd astrakan\n47\n9.6\n0.560\nsharp\n\n\nFolke\n49\n8.7\n0.550\nsharp\n\n\nDomö favorit\n51\n11.0\n0.510\nsharp\n\n\nVeseäpple\n42\n7.4\n0.500\nsharp\n\n\nIngrid Marie\n54\n6.6\n0.470\nsharp\n\n\nFrederick\n59\n14.3\n0.470\nsharp\n\n\nMaglemer\n46\n8.0\n0.450\nsharp\n\n\nSävstaholm\n46\n7.2\n0.440\nsharp\n\n\nGuldparmän\n47\n7.9\n0.420\nsharp\n\n\nFullerö\n49\n7.8\n0.400\nsharp\n\n\nVittsjö\n36\n10.2\n0.400\nsharp\n\n\nClose\n40\n12.1\n0.390\nsharp\n\n\nFilippa\n52\n9.4\n0.390\nsharp\n\n\nEva-Lotta\n43\n6.3\n0.380\nsharp\n\n\nStenkyrke\n54\n5.5\n0.370\nsharp\n\n\nVitgylling\n47\n11.2\n0.370\nsharp\n\n\nKim\n50\n8.1\n0.340\nsharp\n\n\nNyckelby\n40\n6.4\n0.340\nsharp\n\n\nÅkerö\n47\n5.8\n0.340\nsharp\n\n\nTrogsta\n39\n6.9\n0.330\nsharp\n\n\nSilva\n35\n8.3\n0.300\nsharp\n\n\nLandskronaäpple\n47\n8.6\n0.290\nsharp\n\n\nRingstad\n43\n5.4\n0.290\nsharp\n\n\nMio\n39\n6.0\n0.280\nsharp\n\n\nAroma\n43\n8.5\n0.270\nsharp\n\n\nSnövit\n43\n8.0\n0.270\nsharp\n\n\nOranie\n42\n6.1\n0.260\nsharp\n\n\nRisäter\n43\n9.6\n0.250\nsharp\n\n\nAspa\n42\n9.0\n0.240\nsharp\n\n\nGalloway\n49\n6.5\n0.240\nsharp\n\n\nPrinsessäpple\n49\n5.5\n0.240\nsharp\n\n\nStäringe Karin\n45\n8.3\n0.240\nsharp\n\n\nKavlås\n37\n8.8\n0.220\nsharp\n\n\nGolden Delicious\n48\n5.3\n0.210\nsharp\n\n\nCoxs Orange\n53\n6.0\n0.200\nsharp\n\n\nJames Grieve\n48\n6.7\n0.190\nsharp\n\n\nStinas äpple\n48\n4.9\n0.190\nsharp\n\n\nHimmelstalund\n46\n5.8\n0.180\nsharp\n\n\nBirgit Bonnier\n51\n6.4\n0.170\nsharp\n\n\nRödluvan\n43\n8.8\n0.160\nsharp\n\n\nJonathan\n47\n7.1\n0.140\nsharp\n\n\nLobo\n46\n5.7\n0.140\nsharp\nData från: SLU, mm",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Tabeller</span>"
@@ -349,6 +822,17 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Ordbok</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Appendix C — Resurser",
+    "section": "",
+    "text": "[[https://fruitid.com/#main][FruitID.com]] : Identifiering av sorter.\nVinolab calculator: https://www.vinolab.hr/calculator/en4\nAdvanced tips: https://www.bjcp.org/exam-certification/cider-judge-program/cider-exam/13-advanced-topics-in-cider-making/ This section explores these advanced (and generally optional) topics, including malolactic fermentation, keeving, oaking, stabilization, clarifying, aging, and blending.\nhttps://www.bbcgoodfood.com/howto/guide/how-to-make-cider https://www.fstvs.se/matdryck/recept-att-brygga-cider/ https://shop.humle.se/gor-egen-cider https://eldoga.wordpress.com/2010/03/23/jasning-av-appelcider/\nThe Wittenham Cider Pages, ingående om cider: http://www.cider.org.uk/frameset.htm\n[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5620630/][Microorganisms in Fermented Apple Beverages: Current Knowledge and Future Directions]] [Artikel, se Fig 1 för ciderprocessen]\n[[https://www.researchgate.net/publication/263010717_Cider_Apples_and_Cider-Making_Techniques_in_Europe_and_North_America][Cider Apples and Cider-Making Techniques in Europe and North America]] [Artikel, detaljerad beskrivning]\nPriming Sugar Calculator for Cider Carbonation: https://www.homecidermaking.com/cider-priming-sugar-calculator/\nData: https://groups.google.com/g/cider-workshop/c/PzcYMJKpZ3s/m/EcbotaKuAQAJ\nMathematics and Wine: https://www.math.unipd.it/~demarchi/papers/PaperMathWine.pdf",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Resurser</span>"
     ]
   },
   {
@@ -367,7 +851,7 @@
     "href": "bibliography.html#references",
     "title": "Appendix D — Bibliografi",
     "section": "",
-    "text": "Lea, A., 2015. Craft cider making, 3rd ed. The Crowood Press.\n\n\nMolina, A.M., Swiegers, J.H., Varela, C., Pretorius, I.S., Agosin, E.,\n2007. Influence of wine fermentation temperature on the synthesis of\nyeast-derived volatile aroma compounds. Applied Microbiology and\nBiotechnology 77, 675–687. doi:10.1007/s00253-007-1194-3",
+    "text": "1. Molina AM, Swiegers JH, Varela C, Pretorius IS,\nAgosin E. Influence\nof wine fermentation temperature on the synthesis of yeast-derived\nvolatile aroma compounds. Applied Microbiology and Biotechnology.\n2007 Dec;77(3):675–87. \n\n\n2. Challinor SW. Cider Yeasts and the\nFermentation of Apple Juice.\nJournal of Applied Bacteriology [Internet]. 1955 [cited 2024 Sep\n26];18(1):212–23. Available from: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x\n\n\n3. Charley V. TEST.\nJournal of the Institute of Brewing. 1935 Apr;41:62–71. \n\n\n4. Karl\nAD, Zakalik DL, Cook BS, Krishna Kumar S, Peck GM. The biochemical and\nphysiological basis for hard cider apple fruit quality. PLANTS, PEOPLE,\nPLANET [Internet]. 2023 [cited 2024 Sep 30];5(2):178–89. Available from:\nhttps://onlinelibrary.wiley.com/doi/abs/10.1002/ppp3.10317\n\n\n5. Lea\nA. Craft cider making. 3rd ed. The Crowood Press; 2015. \n\n\n6. Terzić M, Majkić T, Beara I, Zengin G, Miljić\nU, Đurović S, et al. Elderberry (Sambucus nigra\nL.) wine as a novel potential functional food product. Food\nBioscience [Internet]. 2022 Dec [cited 2024 Oct 9];50:102047. Available\nfrom: https://www.sciencedirect.com/science/article/pii/S2212429222005077\n\n\n7. Appenteng MK, Krueger R, Johnson MC, Ingold H,\nBell R, Thomas AL, et al. Cyanogenic Glycoside\nAnalysis in American Elderberry.\nMolecules [Internet]. 2021 Mar [cited 2024 Oct 9];26(5):1384. Available\nfrom: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7961730/\n\n\n8. Keller J. JACK KELLER’s REQUESTED RECIPES.\n1994. \n\n\n9. Bozhuyuk MR, Ercisli S, Ayed RB, Jurikova T,\nFidan H, Ilhan G, et al. Compositional diversity in fruits of rowanberry\n(Sorbus aucuparia L.) genotypes originating\nfrom seeds. Genetika [Internet]. 2020 [cited 2024 Oct 13];52(1):55–65.\nAvailable from: https://doiserbia.nb.rs/Article.aspx?id=0534-00122001055B\n\n\n10. Mikulic-Petkovsek M, Krska B, Kiprovski B,\nVeberic R. Bioactive\nComponents and Antioxidant\nCapacity of Fruits from Nine\nSorbus Genotypes. Journal of Food Science.\n2017 Mar;82(3):647–58. \n\n\n11. Lees GL, Suttill NH, Wall KM, Beveridge TH.\nLocalization of condensed tannins in apple fruit peel, pulp, and seeds.\nCanadian Journal of Botany [Internet]. 1995 Dec [cited 2024 Oct\n20];73(12):1897–904. Available from: https://cdnsciencepub.com/doi/10.1139/b95-202\n\n\n12. Antony A, Farid M. Effect of\nTemperatures on Polyphenols during\nExtraction. Applied Sciences [Internet]. 2022 Jan [cited\n2024 Oct 20];12(4):2107. Available from: https://www.mdpi.com/2076-3417/12/4/2107\n\n\n13. Pollini L, Cossignani L, Juan C, Mañes J.\nExtraction of Phenolic Compounds from\nFresh Apple Pomace by\nDifferent Non-Conventional\nTechniques. Molecules [Internet]. 2021 Jul [cited 2024 Oct\n20];26(14):4272. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC8307736/\n\n\n14. Cousin FJ, Guellec RL, Schlusselhuber M,\nDalmasso M, Laplace J-M, Cretenet M. Microorganisms in\nFermented Apple Beverages:\nCurrent Knowledge and Future\nDirections. Microorganisms [Internet]. 2017 Jul [cited 2024\nOct 29];5(3):39. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC5620630/",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>D</span>  <span class='chapter-title'>Bibliografi</span>"
@@ -400,7 +884,7 @@
     "href": "index.html",
     "title": "Ciderkollen",
     "section": "",
-    "text": "1 Prolog\nAnteckningar om att göra äppelcider och “Perry” (päroncider). Även en del om andra fruktviner.\nOrd i texten som är kursiverade återfinns i avsnittet Ordbok.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÄppelträd ‘Särsö’",
+    "text": "1 Prolog\nAnteckningar om att göra äppelcider och “Perry” (päroncider). Även en del om andra fruktviner.",
     "crumbs": [
       "Prolog"
     ]
@@ -430,9 +914,39 @@
     "href": "fermentation.html#att-påverka-jäsningen",
     "title": "Jäsning",
     "section": "Att påverka jäsningen",
-    "text": "Att påverka jäsningen\nJästens tillväxt och den följande jäsningens hastighet påverkas av faktorer såsom tremperatur, näringstillgång, alkoholhalt, typ av jäst, mm. Jäsningens hastighet påverkar i sin tur hur smakerna i cidern utvecklas.\nSe 8  title: Jäst för grunderna i hur jäst fungerar.\n\n\n\n\n\n\nFaktor\nKategori\nEffekt\n\n\n\n\nJästsort\nVildjäst\nLångsammare\n\n\n\nBryggerijäst\nSnabbare\n\n\nTemperatur\nLägre\nLångsammare\n\n\n\nHögre\nSnabbare\n\n\nSocker\nLägre\n\n\n\n\nHögre\n\n\n\nNäring\nLägre\n\n\n\n\nHögre\n\n\n\nAlkohol\nLägre\n\n\n\n\nHögre\nLångsammare\n\n\n\n\n\nTabell 1. Faktorer som påverkar jäsningen\n\n\n\n\nTemperatur\nTemperaturen påverkar hur snabbt jästen tillväxer i början och sedan hur snabbt jäsningen sker. Den påverkar också hur smaken utvecklas(Merwin2007?). En tidig “överbefolkning” av jäst som sedan stressas pga brist på näring eller andra effekter av den täta populationen kan troligen öka risken för oönskade smaker. Vid långsammare\nTemperaturspannet för jäsning är 10-32°C men görs vanligen i 15-25°C. Ofta rekommenderas en temperatur i lägre delen av detta intervall, men det beror också på vilken typ av smak som önskas. Man brukar avråda från jäsning i temperatur över 20°C [?].\nLägre temperatur (kring 15C, eller långsammare jäsning pga begränsad kvävetillgång) ger mer friska, fuktiga aromer. Vid vinjäsning ger höga temperaturer mer blommiga aromer samt aromer som påminner om banan eller ananas(Molina et al., 2007), vilket möjligen kan vara liknande i cider. En temperatur över 22°C ökar produktionen av vissa estrar, vilket kan ge försämrad smak. Dock finns studier som talar för att jäsning vid 20°C kan ge den smak som de flesta föredrar. Temperaturoptimum är sannolikt beroende av tex vilken jästsort som används.\nEn temperatur över °C ökar sannolikheten att malolaktisk jäsning sker.\n\n\n\n\n\n\nTemp (°C)\nEffekt\n\n\n\n\n4\nVissa (apiculata) jästsorter kan fermentera\n\n\n&lt;10\nMånga sorter av bryggerijäst avstannar\n\n\n10-14\nAnses bäst av vissa\n\n\n20\nOptimum enligt någon studie\n\n\n&gt;20\nÖkad risk för dålig smak (?)\n\n\n22\nMaximal rekommenderad temperatur\n\n\n&gt;25\nJäsningen kan avstanna\n\n\n\n\n\nTabell 2. Temperatur vid jäsning\n\n\n\n\n\n\n\n\n\n\n\nTemperature affects retention of fermentation volatiles and yeast biochemistry.\nYeast: S. cerevisiae strain EC1118, robust fermenter, and aromatically ‘neutral’ strain “Lalvin EC-1118 is the original ‘prise de mousse’. It was isolated in Champagne and its use is validated by the Comité Interprofessionnel du Vin de Champagne (CIVC). Its strong competitive character, its ability to ferment at low temperature, good flocculation and excellent alcohol tolerance, make Lalvin EC-1118 an excellent strain to be used in a wide range of applications (such as sparkling wines, fruit wines and ciders).Alcohol tolerance: 18 % Optimum fermentation temperature: 10–30 °C”\n\n\nNäring\n\n\nSocker\nCorrelation table* of the different measurements of the sugar concentration in musts: https://laffort.com/wp-content/uploads/EN_Table_Convertisseur.pdf\n\n\nLufttillgång\nI början vs senare\n\n\n\n\nMolina, A.M., Swiegers, J.H., Varela, C., Pretorius, I.S., Agosin, E., 2007. Influence of wine fermentation temperature on the synthesis of yeast-derived volatile aroma compounds. Applied Microbiology and Biotechnology 77, 675–687. doi:10.1007/s00253-007-1194-3",
+    "text": "Att påverka jäsningen\nJästens tillväxt och den följande jäsningens hastighet påverkas av faktorer såsom tremperatur, näringstillgång, alkoholhalt, typ av jäst, mm. Jäsningens hastighet påverkar i sin tur hur smakerna i cidern utvecklas.\nSe 8  Jäst för grunderna i hur jäst fungerar.\n\n\n\n\n\n\nFaktor\nKategori\nEffekt\n\n\n\n\nJästsort\nVildjäst\nLångsammare\n\n\n\nBryggerijäst\nSnabbare\n\n\nTemperatur\nLägre\nLångsammare\n\n\n\nHögre\nSnabbare\n\n\nSocker\nLägre\n\n\n\n\nHögre\n\n\n\nNäring\nLägre\n\n\n\n\nHögre\n\n\n\nAlkohol\nLägre\n\n\n\n\nHögre\nLångsammare\n\n\n\n\n\nTabell 1. Faktorer som påverkar jäsningen\n\n\n\n\nTemperatur\nTemperaturen påverkar hur snabbt jästen tillväxer i början och sedan hur snabbt jäsningen sker. Den påverkar också hur smaken utvecklas[Merwin2007?]. En tidig “överbefolkning” av jäst som sedan stressas pga brist på näring eller andra effekter av den täta populationen kan troligen öka risken för oönskade smaker.\nTemperaturspannet för jäsning är 10-32°C men görs vanligen i 15-25°C. Ofta rekommenderas en temperatur i lägre delen av detta intervall, men det beror också på vilken typ av smak som önskas. Man brukar avråda från jäsning i temperatur över 20°C [?].\nLägre temperatur (kring 15C, eller långsammare jäsning pga begränsad kvävetillgång) ger mer friska, fuktiga aromer. Troligen behålls mer flyktiga aromer. Vid vinjäsning ger högre temperaturer mer blommiga aromer samt aromer som påminner om banan eller ananas[1], vilket möjligen kan vara liknande i cider. En temperatur över 22°C ökar dock produktionen av vissa estrar, vilket kan ge försämrad smak. Å andra sidan finns studier som talar för att jäsning vid 20°C kan ge den smak som de flesta föredrar[2]. Temperaturoptimum är sannolikt beroende av vilken jästsort som används.\nEn temperatur över °C ökar sannolikheten att malolaktisk jäsning sker.\n\n\n\n\n\n\nTemp (°C)\nEffekt\n\n\n\n\n4\nVissa (apiculata) jästsorter kan fermentera\n\n\n&lt;10\nMånga sorter av bryggerijäst avstannar\n\n\n10-14\nAnses bäst av vissa\n\n\n&gt;17\nTillåter malolaktisk jäsning (efter huvudjäsning)\n\n\n20\nOptimum enligt någon studie\n\n\n&gt;20\nÖkad risk för dålig smak (?)\n\n\n22\nMaximal rekommenderad temperatur\n\n\n&gt;25\nJäsningen kan avstanna\n\n\n\n\n\nTabell 2. Temperatur vid jäsning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNäring\n\n\nSocker\nCorrelation table* of the different measurements of the sugar concentration in musts: https://laffort.com/wp-content/uploads/EN_Table_Convertisseur.pdf\n\n\nLufttillgång\nI början vs senare",
     "crumbs": [
       "Jäsning"
+    ]
+  },
+  {
+    "objectID": "fermentation.html#malolaktisk-jäsning",
+    "href": "fermentation.html#malolaktisk-jäsning",
+    "title": "Jäsning",
+    "section": "Malolaktisk jäsning",
+    "text": "Malolaktisk jäsning\nMalolaktisk jäsning: Mjölksyrebakterier tar över. Noteras som återupptaget bubblande utan turbiditet. Gynnas av kvarvarande bottensats? Sker vid temperatur &gt; 17?\nMalolaktisk jäsning kan vara önskvärt för att reducera syrligheten (endast vissa LAB?). Dock ej när musten innehåller citrat.\nMLF: Ger ej grumling (små celler) i motsats till om jästcellerna tillväxer igen. Syrahalten sjunker med ca 50%.\nBe sure not to use any SO2 at racking if you want MLF to occur.\n\n\n\n\n1. Molina AM, Swiegers JH, Varela C, Pretorius IS, Agosin E. Influence of wine fermentation temperature on the synthesis of yeast-derived volatile aroma compounds. Applied Microbiology and Biotechnology. 2007 Dec;77(3):675–87. \n\n\n2. Cousin FJ, Guellec RL, Schlusselhuber M, Dalmasso M, Laplace J-M, Cretenet M. Microorganisms in Fermented Apple Beverages: Current Knowledge and Future Directions. Microorganisms [Internet]. 2017 Jul [cited 2024 Oct 29];5(3):39. Available from: https://pmc.ncbi.nlm.nih.gov/articles/PMC5620630/",
+    "crumbs": [
+      "Jäsning"
+    ]
+  },
+  {
+    "objectID": "techniques.html",
+    "href": "techniques.html",
+    "title": "Tekniker",
+    "section": "",
+    "text": "Refraktometer",
+    "crumbs": [
+      "Tekniker"
+    ]
+  },
+  {
+    "objectID": "techniques.html#sec-techniques-iodinetest",
+    "href": "techniques.html#sec-techniques-iodinetest",
+    "title": "Tekniker",
+    "section": "Jodtest",
+    "text": "Jodtest\nJodtest: “Hur mogen frukten är kan avgöras genom att doppa skivor av ett äpple i en jodlösning som färgar stärkelsen mörkblå. Omogen frukt innehåller fortfarande mycket stärkelse och äppleskivorna blir då jämnblå. Efterhand som frukten mognar, bryts allt mer av stärkelsen ner till socker, och äppleskivorna blir därför ljusare. Vanligen utvärderar man mängden blå färg efter en skala med 9 steg, där 1 är mycket omogen och 9 är helt övermogen” https://pub.epsilon.slu.se/14769/1/LTV-rapport%202017-17%20Hilde%20Nybom-2.pdf",
+    "crumbs": [
+      "Tekniker"
     ]
   },
   {
@@ -453,16 +967,6 @@
     "text": "Omtappning, mognad på batch, buteljering, mognad på flaska, lagring",
     "crumbs": [
       "Hantering"
-    ]
-  },
-  {
-    "objectID": "techniques.html",
-    "href": "techniques.html",
-    "title": "Tekniker",
-    "section": "",
-    "text": "Refraktometer",
-    "crumbs": [
-      "Tekniker"
     ]
   },
   {

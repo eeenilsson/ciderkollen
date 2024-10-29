@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./bottling.html" rel="next">
+<link href="./maturation.html" rel="next">
 <link href="./handling.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -145,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./constituents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sammansättning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Beståndsdelar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./yeast.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">title: Jäst</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Jäst</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -214,8 +233,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./maturation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mognad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./bottling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Buteljering</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,13 +257,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pasteurization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pastörisering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sulphiting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Sulphiting</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Svavling</span></span></a>
   </div>
 </li>
       </ul>
@@ -255,13 +280,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Alternativ</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./flavor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Att påverka smaken</span></span></a>
   </div>
 </li>
       </ul>
@@ -278,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tosort.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Att sortera</span></span></a>
   </div>
 </li>
       </ul>
@@ -295,20 +320,49 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./style-test.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Style</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Style</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
- <span class="menu-text">Appendices</span></a>
+            <a href="./other.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annat</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./perry.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Päroncider</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fruitwine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Fruktvin</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./applejuice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Äppeljuice</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tables.html" class="sidebar-item-text sidebar-link">
@@ -337,7 +391,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-    
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="-1">
+    <h2 id="toc-title">Denna sida</h2>
+   
+  <ul>
+  <li><a href="#sec-racking-headspace" id="toc-sec-racking-headspace" class="nav-link active" data-scroll-target="#sec-racking-headspace"><span class="header-section-number">10.1</span> Headspace</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -348,7 +408,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./handling.html">Hantering</a></li><li class="breadcrumb-item"><a href="./racking.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Omtappning</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Omtappning</span></h1>
+<h1 class="title"><span id="sec-racking" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Omtappning</span></span></h1>
 </div>
 
 
@@ -365,8 +425,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Omtappning reducerar näringsinnehållet och fårlångsammar jäsningen. Det klarnar också cidern. Omtappning är inte strikt nödvändigt, men en första omtappning för att ta bort den “grova fällningen” innan fyra veckor har förlupit rekommenderas i allmänhet. Upprepad omtappning kan även användas för att reducera innehållet av näringsämnen som är bundna i sedimentet, pektin, fruktjorn, och jästceller. Detta ger en långsammare jäsning.</p>
+<p>Eftersom de äldre jästcellerna, som är större, finns i högre andel i botten av musten kommer en större andel av dessa att tas bort. Vilken effekt detta har är dock oklart.</p>
+<p>Första omtappningen görs tex vid SG 1005 (?) <span class="citation" data-cites="Lea2015">[cite: <a href="bibliography.html#ref-Lea2015" role="doc-biblioref">1</a>]</span>, eller efter 2-4 veckor. Sätt därefter på ett jäslås, som skall vara kvar och fyllas på regelbundet tills jäsningen bekräftats ha upphört helt. Den första omtappningen bör troligen ske inom 4 veckor för att undvika udda smak som sägs uppstå när drycken ligger kvar på en grov fällning för länge, eventuellt pga autolys av jästen. Detta sker förvisso även senare med en finare fällning, och kan vara önskvärt för att göra smaken mer komplex, men en tumregel är ändå att omtappa från den grova fällningen. Kanske är det även andra komponenter i denna som påverkar. Undvik i möjlig mån syresättning vid omtappningen (det ger oxidering och ökad risk för acetobacter). Ev tillsätt SO2 (50 ppm?) (minskar oxidation, hindrar mikrobiell tillväxt inkl MLF).</p>
+<p>Verkar bra: https://pricklycider.com/2023/01/07/cider-question-when-should-i-rack-my-cider/</p>
+<blockquote class="blockquote">
+<p>Want a fruitier hard cider? You should rack your juice. Juice with fewer solids and other compounds like pectin will ferment slower. That means you will lose fewer aromatic compounds from the vigorous release of CO2. Juice with high amounts of apple solids provide an excellent place for lactic and acetic acidic bacteria to reside and reproduce. It provides them a protected environment where they can produce undesirable (think vinegar and farmyard) aromas. Letting your juice sit overnight, I add pectic enzymes and cold crash mine, and then racking the clear juice off the sediment, will create a juice that ferments less vigorously (you won’t need to keep cleaning out the airlocks) and produces a more aromatic cider that has fruity notes. Racking your juice also reduces the nutrients, making it more likely that you could produce a naturally sweet cider.</p>
+</blockquote>
+<ul>
+<li>Must med mindre pektin och fruktkorn jäser långsammare.</li>
+<li>Långsammare jäsning innebär att färre aromatiska ämnen förloras med CO2-produktionen (?), cidern blir då mer aromatisk och fruktig.</li>
+<li>Must med hög andel äppelkorn (apple solids) ger mer tillväxt av laktobaciller och acetobacter som kan ge vinägerliknande smak.</li>
+</ul>
+<blockquote class="blockquote">
+<p>It is usually recommended to rack the cider off these gross lees within 1-2 weeks from the fermentation completing to prevent these organisms from starting become active. Cider will usually still be cloudy at this point but most of the large particles and solids will have precipitated out into the sediment layer. What is left is what will make the “fine lees”. Fine lees usually contain mostly yeast. These are organisms that are usually alive and have resisted flocculating and dropping out.</p>
+</blockquote>
+<p>Om gross lees: https://www.smartwinemaking.com/post/2018/01/14/making-better-wine-by-managing-the-lees</p>
+<blockquote class="blockquote">
+<p>Your cider becomes clear and you get a smaller or finer layer of sediment in the bottom of the container. These yeast were alive but with time, they can start to die and go through autolysis, providing a nutrient rich layer for mostly lactic acid bacteria to utilize. Acetic acid bacteria requires oxygen so how you are racking and storing your cider (barrels, plastic, corks, stainless, glass) will impact how much oxygen is available for it to become active. However, lactic acid bacteria generally works in an anaerobic environment. If you want to encourage processes like malolactic fermentation (MLF) or evolution of tannins and polyphenols, leaving your cider on the fine lees can aid that process. Racking it off these lees will help prevent those processes from occurring.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“Secondary fermentation is the process of fermenting the remaining ~25% of sugar over a longer slower period, in a smaller fermenter with no headspace. After the initial rapid vigorous primary has slowed down, the yeast are not producing nearly as much CO2. And so in order to protect the cider from oxygen (which feeds spoilage organisms), we rack it from the larger vessel into a smaller one, leaving no room for air.” https://www.reddit.com/r/cider/comments/2wvl05/secondary_fermentation/?share_id=KSNyPUmGHrZ8k7bLbAZ_p&amp;utm_content=2&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_source=share&amp;utm_term=10</p>
+</blockquote>
+<p>Gross lees vs fine lees? Tumregel: Lämna ej på gross lees mer än 4v.</p>
+<p>När?</p>
+<p>Effekter: Klarnar cidern. Minskar näringstillgången (ger långsammare jäsning). Tar bort företrädesvis äldre jästceller och lämnar större andel yngre (som är mer i suspension. Oklart vilken verkan detta har). Minskar pektin (?).</p>
+<p>Hur</p>
+<section id="sec-racking-headspace" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-racking-headspace"><span class="header-section-number">10.1</span> Headspace</h2>
+<p>Hur mycket i olika faser. VAd fyller man upp med.</p>
+<p>Headspace: 10-20 % av volymen vid primärjäsning, för att undvika överflöde av skum.</p>
+<p>Stormjäsning 20%, för att få plats med skummet och undvika överflöde. Syresättning ej något problem initialt då jästen använder syre för cellväggarna och därefter rikligt flöde av CO2 som fyller upp en stor headspace.</p>
+<p>Efter omtappning 1-2 in? Så litet headspace som möjligt för att undvika syresättnig, eftersom det förändrar smaken genom oxidering och medför ökad risk för oönskad mikrobiell tillväxt som ger udda smaker. Behövs en viss headspace för skum?? Troligen ej. Headspace ökar något under fortsatt fermentering.</p>
+<p>Efter buteljering? ” There has to be at least half an inch (12 mm) of airspace in the bottle under the stopper, otherwise the pressure might become excessive if the bottle were left at a higher stor- age temperature. For my part, I prefer to keep this airspace to the minimum, as this limits the quantity of oxygen in the bottle. However, some cider makers leave larger airspaces, apparently without any ill effect.”</p>
+<p>Tänk på att headspace krymper när temperaturen går upp. Hur mkt?</p>
+<p>Verkar bra, beskriver praktiskt: https://www.chelseagreen.com/2024/basics-of-cider-making-cider-preparation/?srsltid=AfmBOooOygCNoVkhNGFTHrwpCc7vlNQNILYl05pavEMMGRz_CUutyeg1</p>
+<p>Kolla SG en gång per månad.</p>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Lea2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Lea A. Craft cider making. 3rd ed. The Crowood Press; 2015. </div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -796,8 +898,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./bottling.html" class="pagination-link" aria-label="Buteljering">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Buteljering</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./maturation.html" class="pagination-link" aria-label="Mognad">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mognad</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
