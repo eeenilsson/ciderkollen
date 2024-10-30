@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -184,8 +150,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./adjustment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Justering</span></span></a>
+  <a href="./balancing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Balansering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -434,40 +400,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">source('prepare.r')</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion</code></pre>
-</div>
-</div>
-<p>Nedan följer en översikt om det grundläggande förloppet när man gör äppelcider. Mer detaljer och fördjupning återfinns i de olika avsnitten som hittas i navigeringslisten ovan. En sammanfattning av olika steg som kan läggas till finns i <a href="options.html#sec-detailed" class="quarto-xref"><span>Section 15.1</span></a></p>
-<!-- Hyperlink: [här](tables.qmd#sec-detailed) -->
-<p>Crossref chapter (tagged sec- on level 1 heading): <a href="basics.html" class="quarto-xref"><span>Chapter 2</span></a></p>
-<p>Crossref section (tagged sec- on level 2 heading): <a href="basics.html#sec-basics-material" class="quarto-xref"><span>Section 2.2</span></a>.</p>
-<p>Crossref Appendix (tagged sec- on level 1 heading): <a href="tables.html" class="quarto-xref"><span>Appendix A</span></a></p>
-<p>Crossref sub section: <a href="basics.html#sec-basics-material-needed" class="quarto-xref"><span>Section 2.2.1</span></a> Note: Seems to work even though subsection numbers are not shown.</p>
-<p>Link: <a href="https://groups.google.com/g/cider-workshop">Cider Workshop on Google groups</a></p>
-<p>De andra avsnitten innehåller:</p>
-<ul>
-<li>Ordbok: Förklaring av begrepp och förkortningar.</li>
-<li>Jäsning: Jäst, Dynamik, långsam jäsning, jästnäring</li>
-<li>Musten: Pressning, maceration, balansering</li>
-<li>Socker: Effekt av socker, sötning.</li>
-<li>Tekniker: Pastörisering, svavling etc</li>
-<li>Hantering: Jäskärl, Omtappning, mognad, butejering</li>
-<li>Smak: Sötma, att påverka smaken, polyfenoler</li>
-<li>Problem</li>
-<li>Äpplen: Sorter, plockning, mognad</li>
-<li>Päron</li>
-<li>Fruktvin</li>
-<li>Tabeller: Referenstabeller (mer utförliga, sökbara) och figurer</li>
-<li>Resurser</li>
-<li>Bibliografi</li>
-<li>Hemsidan: Hur hemsidan är gjord. Quarto.</li>
-<li>Loggbok: Min egen loggbok</li>
-</ul>
+<p>Delarnas innehåll:</p>
+<p><a href="basics.html" class="quarto-xref"><span>Chapter 2</span></a>: Översikt om det grundläggande förloppet.</p>
+<p><span class="quarto-unresolved-ref">?sec-must</span>: Framställning av äppelmust för jäsning till cider.</p>
+<p><span class="quarto-unresolved-ref">?sec-fermentation</span>: Hur man påverkar och följer jäsningen.</p>
+<p><span class="quarto-unresolved-ref">?sec-handling</span>: Omtappning, mognad, och buteljering.</p>
+<p><a href="tables.html" class="quarto-xref"><span>Appendix A</span></a>: Sökbara och mer utförliga tabeller.</p>
+<!-- En sammanfattning av olika steg som kan läggas till finns i @sec-detailed -->
+<!-- De andra avsnitten innehåller: -->
+<!-- - Ordbok: Förklaring av begrepp och förkortningar. -->
+<!-- - Jäsning: Jäst, Dynamik, långsam jäsning, jästnäring -->
+<!-- - Musten: Pressning, maceration, balansering -->
+<!-- - Socker: Effekt av socker, sötning.  -->
+<!-- - Tekniker: Pastörisering, svavling etc -->
+<!-- - Hantering: Jäskärl, Omtappning, mognad, butejering -->
+<!-- - Smak: Sötma, att påverka smaken, polyfenoler -->
+<!-- - Problem -->
+<!-- - Äpplen: Sorter, plockning, mognad -->
+<!-- - Päron -->
+<!-- - Fruktvin -->
+<!-- - Tabeller: Referenstabeller (mer utförliga, sökbara) och figurer -->
+<!-- - Resurser -->
+<!-- - Bibliografi -->
+<!-- - Hemsidan: Hur hemsidan är gjord. Quarto. -->
+<!-- - Loggbok: Min egen loggbok -->
 <blockquote class="blockquote">
 <p>VARNING: Fyll aldrig must i glasflaskor innan du är säker på att jäsningen upphört helt. Konsekvensen kan annars bli farliga “flaskbomber”. Detta gäller även must utan tillsatt jäst.</p>
 </blockquote>

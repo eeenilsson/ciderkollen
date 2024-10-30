@@ -198,8 +198,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./adjustment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Justering</span></span></a>
+  <a href="./balancing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Balansering</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -424,26 +424,27 @@ window.Quarto = {
     <h2 id="toc-title">Denna sida</h2>
    
   <ul>
-  <li><a href="#notes-on-quarto" id="toc-notes-on-quarto" class="nav-link active" data-scroll-target="#notes-on-quarto"><span class="header-section-number">18.1</span> Notes on quarto</a>
+  <li><a href="#crossrefs" id="toc-crossrefs" class="nav-link active" data-scroll-target="#crossrefs"><span class="header-section-number">18.1</span> Crossrefs</a></li>
+  <li><a href="#notes-on-quarto" id="toc-notes-on-quarto" class="nav-link" data-scroll-target="#notes-on-quarto"><span class="header-section-number">18.2</span> Notes on quarto</a>
   <ul class="collapse">
   <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
   </ul></li>
-  <li><a href="#org-to-markdown" id="toc-org-to-markdown" class="nav-link" data-scroll-target="#org-to-markdown"><span class="header-section-number">18.2</span> Org to markdown</a>
+  <li><a href="#org-to-markdown" id="toc-org-to-markdown" class="nav-link" data-scroll-target="#org-to-markdown"><span class="header-section-number">18.3</span> Org to markdown</a>
   <ul class="collapse">
   <li><a href="#table-editing" id="toc-table-editing" class="nav-link" data-scroll-target="#table-editing">Table editing</a></li>
   <li><a href="#other-useful-markdown-things" id="toc-other-useful-markdown-things" class="nav-link" data-scroll-target="#other-useful-markdown-things">Other useful markdown things</a></li>
   </ul></li>
-  <li><a href="#heading-2" id="toc-heading-2" class="nav-link" data-scroll-target="#heading-2"><span class="header-section-number">18.3</span> Heading 2</a></li>
-  <li><a href="#markdown-table" id="toc-markdown-table" class="nav-link" data-scroll-target="#markdown-table"><span class="header-section-number">18.4</span> Markdown table</a></li>
-  <li><a href="#markdown-table-in-margin" id="toc-markdown-table-in-margin" class="nav-link" data-scroll-target="#markdown-table-in-margin"><span class="header-section-number">18.5</span> Markdown table in margin</a></li>
-  <li><a href="#knitr-table" id="toc-knitr-table" class="nav-link" data-scroll-target="#knitr-table"><span class="header-section-number">18.6</span> Knitr table</a></li>
-  <li><a href="#grid-table" id="toc-grid-table" class="nav-link" data-scroll-target="#grid-table"><span class="header-section-number">18.7</span> Grid table</a></li>
-  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">18.8</span> Footnotes</a></li>
-  <li><a href="#margin-figures" id="toc-margin-figures" class="nav-link" data-scroll-target="#margin-figures"><span class="header-section-number">18.9</span> Margin Figures</a></li>
-  <li><a href="#image" id="toc-image" class="nav-link" data-scroll-target="#image"><span class="header-section-number">18.10</span> Image</a></li>
-  <li><a href="#arbitrary-margin-content" id="toc-arbitrary-margin-content" class="nav-link" data-scroll-target="#arbitrary-margin-content"><span class="header-section-number">18.11</span> Arbitrary Margin Content</a></li>
-  <li><a href="#asides" id="toc-asides" class="nav-link" data-scroll-target="#asides"><span class="header-section-number">18.12</span> Asides</a></li>
-  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">18.13</span> Lists</a></li>
+  <li><a href="#heading-2" id="toc-heading-2" class="nav-link" data-scroll-target="#heading-2"><span class="header-section-number">18.4</span> Heading 2</a></li>
+  <li><a href="#markdown-table" id="toc-markdown-table" class="nav-link" data-scroll-target="#markdown-table"><span class="header-section-number">18.5</span> Markdown table</a></li>
+  <li><a href="#markdown-table-in-margin" id="toc-markdown-table-in-margin" class="nav-link" data-scroll-target="#markdown-table-in-margin"><span class="header-section-number">18.6</span> Markdown table in margin</a></li>
+  <li><a href="#knitr-table" id="toc-knitr-table" class="nav-link" data-scroll-target="#knitr-table"><span class="header-section-number">18.7</span> Knitr table</a></li>
+  <li><a href="#grid-table" id="toc-grid-table" class="nav-link" data-scroll-target="#grid-table"><span class="header-section-number">18.8</span> Grid table</a></li>
+  <li><a href="#footnotes" id="toc-footnotes" class="nav-link" data-scroll-target="#footnotes"><span class="header-section-number">18.9</span> Footnotes</a></li>
+  <li><a href="#margin-figures" id="toc-margin-figures" class="nav-link" data-scroll-target="#margin-figures"><span class="header-section-number">18.10</span> Margin Figures</a></li>
+  <li><a href="#image" id="toc-image" class="nav-link" data-scroll-target="#image"><span class="header-section-number">18.11</span> Image</a></li>
+  <li><a href="#arbitrary-margin-content" id="toc-arbitrary-margin-content" class="nav-link" data-scroll-target="#arbitrary-margin-content"><span class="header-section-number">18.12</span> Arbitrary Margin Content</a></li>
+  <li><a href="#asides" id="toc-asides" class="nav-link" data-scroll-target="#asides"><span class="header-section-number">18.13</span> Asides</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">18.14</span> Lists</a></li>
   </ul>
 </nav>
 </nav>
@@ -474,8 +475,17 @@ window.Quarto = {
 
 
 <p><a href="https://quarto.org/">Quarto</a> was used to produce this website. here are some examples of what can be done.</p>
-<section id="notes-on-quarto" class="level2" data-number="18.1">
-<h2 data-number="18.1" class="anchored" data-anchor-id="notes-on-quarto"><span class="header-section-number">18.1</span> Notes on quarto</h2>
+<section id="crossrefs" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="crossrefs"><span class="header-section-number">18.1</span> Crossrefs</h2>
+<!-- Hyperlink: [här](tables.qmd#sec-detailed) -->
+<p>Crossref chapter (tagged sec- on level 1 heading): <a href="basics.html" class="quarto-xref"><span>Chapter 2</span></a></p>
+<p>Crossref section (tagged sec- on level 2 heading): <a href="basics.html#sec-basics-material" class="quarto-xref"><span>Section 2.2</span></a>.</p>
+<p>Crossref Appendix (tagged sec- on level 1 heading): <a href="tables.html" class="quarto-xref"><span>Appendix A</span></a></p>
+<p>Crossref sub section: <a href="basics.html#sec-basics-material-needed" class="quarto-xref"><span>Section 2.2.1</span></a> Note: Seems to work even though subsection numbers are not shown.</p>
+<p>Link: <a href="https://groups.google.com/g/cider-workshop">Cider Workshop on Google groups</a></p>
+</section>
+<section id="notes-on-quarto" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="notes-on-quarto"><span class="header-section-number">18.2</span> Notes on quarto</h2>
 <p>Did you know you can ignore files by setting a .quartoignore file?</p>
 <p>Crossref: <a href="options.html#sec-detailed" class="quarto-xref"><span>Section 15.1</span></a></p>
 <section id="r" class="level3">
@@ -487,8 +497,8 @@ window.Quarto = {
 </ul>
 </section>
 </section>
-<section id="org-to-markdown" class="level2" data-number="18.2">
-<h2 data-number="18.2" class="anchored" data-anchor-id="org-to-markdown"><span class="header-section-number">18.2</span> Org to markdown</h2>
+<section id="org-to-markdown" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="org-to-markdown"><span class="header-section-number">18.3</span> Org to markdown</h2>
 <p>In terminal:</p>
 <p><code>pandoc --from=org --to=gfm org-mode-file.org &gt; markdown.md</code> ## Emacs markdown mode</p>
 <p>https://github.com/jrblevin/markdown-mode</p>
@@ -573,8 +583,8 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="heading-2" class="level2 page-columns page-full" data-number="18.3">
-<h2 data-number="18.3" class="anchored" data-anchor-id="heading-2"><span class="header-section-number">18.3</span> Heading 2</h2>
+<section id="heading-2" class="level2 page-columns page-full" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="heading-2"><span class="header-section-number">18.4</span> Heading 2</h2>
 <p>Text and footnote</p>
 <ol type="1">
 <li><strong>Plockning och gallring</strong>. Vanligen rekommenderas att man plockar mogen men ej övermogen frukt. Ruttna (illaluktande) frukter gallras bort. Fallskador som är relativt färska är inget problem. Är du osäker kan du skära bort en bit. Smuts sköljs bort. Stjälkarna kan sitta kvar.</li>
@@ -588,8 +598,8 @@ window.Quarto = {
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Arbitrary margin content</p>
 </div></div></section>
-<section id="markdown-table" class="level2" data-number="18.4">
-<h2 data-number="18.4" class="anchored" data-anchor-id="markdown-table"><span class="header-section-number">18.4</span> Markdown table</h2>
+<section id="markdown-table" class="level2" data-number="18.5">
+<h2 data-number="18.5" class="anchored" data-anchor-id="markdown-table"><span class="header-section-number">18.5</span> Markdown table</h2>
 <p>See <a href="#tbl-fruits1" class="quarto-xref">Tabell&nbsp;<span>18.1</span></a>.</p>
 <div id="tbl-fruits1" class="bordered hover quarto-float quarto-figure quarto-figure-center anchored" data-tbl-colwidths="[75,25]">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -628,8 +638,8 @@ Tabell&nbsp;18.1. Fruit prices
 </div>
 <p>Note: This table has “.bordered” property.</p>
 </section>
-<section id="markdown-table-in-margin" class="level2 page-columns page-full" data-number="18.5">
-<h2 data-number="18.5" class="anchored" data-anchor-id="markdown-table-in-margin"><span class="header-section-number">18.5</span> Markdown table in margin</h2>
+<section id="markdown-table-in-margin" class="level2 page-columns page-full" data-number="18.6">
+<h2 data-number="18.6" class="anchored" data-anchor-id="markdown-table-in-margin"><span class="header-section-number">18.6</span> Markdown table in margin</h2>
 <p>See <span class="quarto-unresolved-ref">?tbl-fruits</span>.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
@@ -671,8 +681,8 @@ Tabell&nbsp;18.2. Fruit prices
 </div></div><p>Note: This table works but gives warning: “FloatRefTarget elements should not be the only content in a div with column classes. This will not render as expected. Consider moving the floatref targets to their own divs and using the <code>offset</code> attribute.”</p>
 <p>A citation<span class="citation" data-cites="Lea2015">[<a href="bibliography.html#ref-Lea2015" role="doc-biblioref">1</a>]</span></p>
 </section>
-<section id="knitr-table" class="level2" data-number="18.6">
-<h2 data-number="18.6" class="anchored" data-anchor-id="knitr-table"><span class="header-section-number">18.6</span> Knitr table</h2>
+<section id="knitr-table" class="level2" data-number="18.7">
+<h2 data-number="18.7" class="anchored" data-anchor-id="knitr-table"><span class="header-section-number">18.7</span> Knitr table</h2>
 <!-- Note: In order for a table to be cross-referenceable, its label must start with the tbl- prefix. -->
 <p>See <a href="#tbl-knitr" class="quarto-xref">Tabell&nbsp;<span>18.3</span></a>.</p>
 <div id="tbl-knitr" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
@@ -722,8 +732,8 @@ Tabell&nbsp;18.3. Cars
 <p>NO HACK: To remove stripes. 1) use html &gt; html-table-processing: none in yaml. AND 2) add to css tr.odd background-color AND 3) use output: asis. DOES NOT WORK (only adds color over the stripes</p>
 <p>NOTE: Should probably try to use GT, seems to have a workaround.</p>
 </section>
-<section id="grid-table" class="level2" data-number="18.7">
-<h2 data-number="18.7" class="anchored" data-anchor-id="grid-table"><span class="header-section-number">18.7</span> Grid table</h2>
+<section id="grid-table" class="level2" data-number="18.8">
+<h2 data-number="18.8" class="anchored" data-anchor-id="grid-table"><span class="header-section-number">18.8</span> Grid table</h2>
 <p>How to crossref grid tables? Maybe put in a labeled div.</p>
 <p>See <span class="quarto-unresolved-ref">?tbl-gridt</span></p>
 <table class="table">
@@ -761,8 +771,8 @@ Tabell&nbsp;18.3. Cars
 </table>
 </section>
 
-<section id="margin-figures" class="level2 page-columns page-full" data-number="18.9">
-<h2 data-number="18.9" class="anchored" data-anchor-id="margin-figures"><span class="header-section-number">18.9</span> Margin Figures</h2>
+<section id="margin-figures" class="level2 page-columns page-full" data-number="18.10">
+<h2 data-number="18.10" class="anchored" data-anchor-id="margin-figures"><span class="header-section-number">18.10</span> Margin Figures</h2>
 <p>See <a href="#fig-margin" class="quarto-xref">Figur&nbsp;<span>18.1</span></a>.</p>
 <div class="cell page-columns page-full">
 
@@ -779,8 +789,8 @@ Figur&nbsp;18.1. MPG vs horsepower, colored by transmission.
 </div>
 </div></div></div>
 </section>
-<section id="image" class="level2" data-number="18.10">
-<h2 data-number="18.10" class="anchored" data-anchor-id="image"><span class="header-section-number">18.10</span> Image</h2>
+<section id="image" class="level2" data-number="18.11">
+<h2 data-number="18.11" class="anchored" data-anchor-id="image"><span class="header-section-number">18.11</span> Image</h2>
 <p>Se <a href="#fig-yeast-metabolic-network" class="quarto-xref">Figur&nbsp;<span>18.2</span></a>.</p>
 <div id="fig-yeast-metabolic-network" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -795,21 +805,21 @@ Figur&nbsp;18.2. Yeast metabolic network
 <!-- ![Yeast](yeast_metabolic_network.png) -->
 <p>Using symlink to images in root dir.</p>
 </section>
-<section id="arbitrary-margin-content" class="level2 page-columns page-full" data-number="18.11">
-<h2 data-number="18.11" class="anchored" data-anchor-id="arbitrary-margin-content"><span class="header-section-number">18.11</span> Arbitrary Margin Content</h2>
+<section id="arbitrary-margin-content" class="level2 page-columns page-full" data-number="18.12">
+<h2 data-number="18.12" class="anchored" data-anchor-id="arbitrary-margin-content"><span class="header-section-number">18.12</span> Arbitrary Margin Content</h2>
 <p>You can include anything in the margin by places the class <code>.column-margin</code> on the element. See an example on the right about the first fundamental theorem of calculus.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>We know from <em>the first fundamental theorem of calculus</em> that for <span class="math inline">\(x\)</span> in <span class="math inline">\([a, b]\)</span>:</p>
 <p><span class="math display">\[\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).\]</span></p>
 </div></div></section>
-<section id="asides" class="level2 page-columns page-full" data-number="18.12">
-<h2 data-number="18.12" class="anchored" data-anchor-id="asides"><span class="header-section-number">18.12</span> Asides</h2>
+<section id="asides" class="level2 page-columns page-full" data-number="18.13">
+<h2 data-number="18.13" class="anchored" data-anchor-id="asides"><span class="header-section-number">18.13</span> Asides</h2>
 <p>Asides allow you to place content aside from the content it is placed in. Asides look like footnotes, but do not include the footnote mark (the superscript number).</p>
 <div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside">This is a span that has the class <code>aside</code> which places it in the margin without a footnote number.</span></div></div>
 </section>
-<section id="lists" class="level2" data-number="18.13">
-<h2 data-number="18.13" class="anchored" data-anchor-id="lists"><span class="header-section-number">18.13</span> Lists</h2>
+<section id="lists" class="level2" data-number="18.14">
+<h2 data-number="18.14" class="anchored" data-anchor-id="lists"><span class="header-section-number">18.14</span> Lists</h2>
 <ul>
 <li>unordered list
 <ul>
