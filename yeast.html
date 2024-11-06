@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -396,14 +430,15 @@ div.csl-indent {
    
   <ul>
   <li><a href="#jästens-biologi" id="toc-jästens-biologi" class="nav-link active" data-scroll-target="#jästens-biologi"><span class="header-section-number">8.1</span> Jästens biologi</a></li>
-  <li><a href="#pitching" id="toc-pitching" class="nav-link" data-scroll-target="#pitching"><span class="header-section-number">8.2</span> Pitching</a></li>
-  <li><a href="#hydrering" id="toc-hydrering" class="nav-link" data-scroll-target="#hydrering"><span class="header-section-number">8.3</span> Hydrering</a></li>
-  <li><a href="#jästsorter" id="toc-jästsorter" class="nav-link" data-scroll-target="#jästsorter"><span class="header-section-number">8.4</span> Jästsorter</a></li>
-  <li><a href="#effekter-av-jäsning" id="toc-effekter-av-jäsning" class="nav-link" data-scroll-target="#effekter-av-jäsning"><span class="header-section-number">8.5</span> Effekter av jäsning</a></li>
-  <li><a href="#resurser" id="toc-resurser" class="nav-link" data-scroll-target="#resurser"><span class="header-section-number">8.6</span> Resurser</a></li>
-  <li><a href="#jästsorter-1" id="toc-jästsorter-1" class="nav-link" data-scroll-target="#jästsorter-1"><span class="header-section-number">8.7</span> Jästsorter</a></li>
-  <li><a href="#dosering-av-jäst" id="toc-dosering-av-jäst" class="nav-link" data-scroll-target="#dosering-av-jäst"><span class="header-section-number">8.8</span> Dosering av jäst</a></li>
-  <li><a href="#vildjäsning" id="toc-vildjäsning" class="nav-link" data-scroll-target="#vildjäsning"><span class="header-section-number">8.9</span> Vildjäsning</a></li>
+  <li><a href="#modeling-yeast" id="toc-modeling-yeast" class="nav-link" data-scroll-target="#modeling-yeast"><span class="header-section-number">8.2</span> Modeling yeast</a></li>
+  <li><a href="#pitching" id="toc-pitching" class="nav-link" data-scroll-target="#pitching"><span class="header-section-number">8.3</span> Pitching</a></li>
+  <li><a href="#hydrering" id="toc-hydrering" class="nav-link" data-scroll-target="#hydrering"><span class="header-section-number">8.4</span> Hydrering</a></li>
+  <li><a href="#jästsorter" id="toc-jästsorter" class="nav-link" data-scroll-target="#jästsorter"><span class="header-section-number">8.5</span> Jästsorter</a></li>
+  <li><a href="#effekter-av-jäsning" id="toc-effekter-av-jäsning" class="nav-link" data-scroll-target="#effekter-av-jäsning"><span class="header-section-number">8.6</span> Effekter av jäsning</a></li>
+  <li><a href="#resurser" id="toc-resurser" class="nav-link" data-scroll-target="#resurser"><span class="header-section-number">8.7</span> Resurser</a></li>
+  <li><a href="#jästsorter-1" id="toc-jästsorter-1" class="nav-link" data-scroll-target="#jästsorter-1"><span class="header-section-number">8.8</span> Jästsorter</a></li>
+  <li><a href="#dosering-av-jäst" id="toc-dosering-av-jäst" class="nav-link" data-scroll-target="#dosering-av-jäst"><span class="header-section-number">8.9</span> Dosering av jäst</a></li>
+  <li><a href="#vildjäsning" id="toc-vildjäsning" class="nav-link" data-scroll-target="#vildjäsning"><span class="header-section-number">8.10</span> Vildjäsning</a></li>
   </ul>
 </nav>
 </nav>
@@ -447,20 +482,49 @@ Figur&nbsp;8.1. Jästpoulationens tillväxtfaser
 </figure>
 </div>
 <p>maximum yeast growth and metabolism occurring between 20 and 25C. <span class="citation" data-cites="Merwin2007">[<a href="bibliography.html#ref-Merwin2007" role="doc-biblioref"><strong>Merwin2007?</strong></a>]</span></p>
+<p>Biprodukter, metabolism, tillväxt: https://pmc.ncbi.nlm.nih.gov/articles/PMC10034642/ Se figur och referenser.</p>
+<p>“Crabtree-positive”</p>
+<p>“Under aerobic conditions, the alcoholic fermentation process occurs when the glucose concentration exceeds 0.10–0.15 g/L</p>
+<p>“Even under aerobic conditions, the anaerobic metabolic pathway can also be activated when the rate of biological oxygen uptake exceeds the rate of oxygen supply, which is identifiable by the production of glycerol. In the absence of molecular oxygen, S. cerevisiae carries out the anaerobic fermentation process, producing glycerol”</p>
+<p>“Several mechanistic yeast models have been developed using the typical Monod-type expression (𝑆/(𝐾+𝑆)). This mathematical expression considers the limiting substrates as glucose, nitrogen and oxygen. Glucose is particularly important to Saccharomyces cerevisiae, as it is by far the yeast’s preferred carbon source. Yeast cells can sense glucose and utilize it efficiently over a broad range of concentrations, from a few micromolars to even a few molars [9]. Nitrogen is also an essential element in S. cerevisiae’s composition, since it is mandatory for protein synthesis and represents 9% (w/w) of yeast biomass [10].” https://www.mdpi.com/2311-5637/8/12/710#</p>
+<p>“Oxygen is required to regenerate the NAD+ used in the glycolytic pathway of biomass formation, closing the redox balance for the co-enzyme system NAD+/NADH. The oxidation of cytosolic NADH into NAD+ can occur through mitochondrial respiration with external NADH dehydrogenase [8,11]. Oxygen is also important for the synthesis of yeast membrane compounds (sterols and unsaturated fatty acids) [12], though this process could be neglected since the required amount is very weak, between 0.3 and 1.5 mgO2 gDW−1”</p>
+<p>“High contents of saccharides in fermentation medium cause an increase in the osmotic pressure, which has a detrimental effect on yeast cells.”</p>
+<p>“For S. cerevisiae in aerobic conditions,[8] glucose concentrations below 150 mg/L did not result in ethanol production. Above this value, ethanol was formed with rates increasing up to a glucose concentration of 1000 mg/L. Thus, above 150 mg/L glucose the organism exhibited a Crabtree effect.[9]”</p>
 </section>
-<section id="pitching" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="pitching"><span class="header-section-number">8.2</span> Pitching</h2>
+<section id="modeling-yeast" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="modeling-yeast"><span class="header-section-number">8.2</span> Modeling yeast</h2>
+<p>To relate microbial growth rates in an aqueous environment to the concentration of a limiting nutrient, Monod equation: https://en.wikipedia.org/wiki/Monod_equation</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## u = u_max * (s/(kS+s))</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## u : Growth rate of microorganism</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## u_max : Maximum growth rate. Empirical. Varies depending on organism, pH, temp, and medium etc.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## s : Concentration of limiting substrate</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Ks : Half-velocity constant, ie value of s when u/u_max = 0.5</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="do">## rS = uX/Y</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="do">## rS = Rate of substrate utilization. Negative by convention</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="do">## X total biomass (u is normalized to total biomass)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Y yield coefficient</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="do">## In some applications, several terms of the form [S] / (Ks + [S]) are multiplied together where more than one nutrient or growth factor has the potential to be limiting.</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="do">## As with the Michaelis–Menten equation graphical methods may be used to fit the coefficients of the Monod equation, See ref wiki.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="do">## Ref: https://en.wikipedia.org/wiki/Monod_equation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="hydrering" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="hydrering"><span class="header-section-number">8.3</span> Hydrering</h2>
+<section id="pitching" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="pitching"><span class="header-section-number">8.3</span> Pitching</h2>
 </section>
-<section id="jästsorter" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="jästsorter"><span class="header-section-number">8.4</span> Jästsorter</h2>
+<section id="hydrering" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="hydrering"><span class="header-section-number">8.4</span> Hydrering</h2>
+</section>
+<section id="jästsorter" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="jästsorter"><span class="header-section-number">8.5</span> Jästsorter</h2>
 <p>Yeast: S. cerevisiae strain EC1118, robust fermenter, and aromatically ‘neutral’ strain “Lalvin EC-1118 is the original ‘prise de mousse’. It was isolated in Champagne and its use is validated by the Comité Interprofessionnel du Vin de Champagne (CIVC). Its strong competitive character, its ability to ferment at low temperature, good flocculation and excellent alcohol tolerance, make Lalvin EC-1118 an excellent strain to be used in a wide range of applications (such as sparkling wines, fruit wines and ciders).Alcohol tolerance: 18 % Optimum fermentation temperature: 10–30 °C”</p>
 </section>
-<section id="effekter-av-jäsning" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="effekter-av-jäsning"><span class="header-section-number">8.5</span> Effekter av jäsning</h2>
-<p>“Bottle Conditioned Cider Guide Alex Simmens, Llanblethian Orchards Fermentation and production of CO2: During fermentation yeast converts sugar to alcohol and CO2 as well as other metabolic products and new yeast cells. Pasteur studied it and produced the following relation: 100 grams of sugar yields:</p>
+<section id="effekter-av-jäsning" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="effekter-av-jäsning"><span class="header-section-number">8.6</span> Effekter av jäsning</h2>
+<p>“Bottle Conditioned Cider Guide Alex Simmens, Llanblethian Orchards <span class="citation" data-cites="Simmens2018">[<a href="bibliography.html#ref-Simmens2018" role="doc-biblioref">1</a>]</span> 2. Fermentation and production of CO2: During fermentation yeast converts sugar to alcohol and CO2 as well as other metabolic products and new yeast cells. Pasteur studied it and produced the following relation: 100 grams of sugar yields:</p>
 <ul>
 <li>48.6g ethanol</li>
 <li>46.6g carbon dioxide</li>
@@ -468,26 +532,17 @@ Figur&nbsp;8.1. Jästpoulationens tillväxtfaser
 <li>0.6g succinic acid</li>
 <li>1.2g yeast cells</li>
 </ul>
-<p>Later studies showed 48g ethanol and 47g CO2 per 100g sugar to be a more correct figure” https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf</p>
-<p>“Bottle Conditioned Cider Guide Alex Simmens, Llanblethian Orchards 2. Fermentation and production of CO2: During fermentation yeast converts sugar to alcohol and CO2 as well as other metabolic products and new yeast cells. Pasteur studied it and produced the following relation: 100 grams of sugar yields:</p>
-<ul>
-<li>48.6g ethanol</li>
-<li>46.6g carbon dioxide</li>
-<li>3.2g glycerin</li>
-<li>0.6g succinic acid</li>
-<li>1.2g yeast cells</li>
-</ul>
-<p>Later studies showed 48g ethanol and 47g CO2 per 100g sugar to be a more correct figure” https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf</p>
+<p>Later studies showed 48g ethanol and 47g CO2 per 100g sugar to be a more correct figure” <!-- https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf --></p>
 </section>
-<section id="resurser" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="resurser"><span class="header-section-number">8.6</span> Resurser</h2>
+<section id="resurser" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="resurser"><span class="header-section-number">8.7</span> Resurser</h2>
 <p>Thesis: Systems biology of yeast metabolism: https://research.chalmers.se/publication/525069/file/525069_Fulltext.pdf</p>
 <p>Se [[https://www.amazon.com/Yeast-Practical-Fermentation-Brewing-Elements/dp/0937381969][Practical fermentation]]</p>
 <p>Yeast Quick reference chart (egenskaper) : https://admin.lallemandwine.com/wp-content/uploads/2017/12/Quick-Yeast-References-Chart_2018_LR.pdf</p>
 <p>Yeast comparison, acid reduction: https://groups.google.com/g/cider-workshop/c/JCNfHQfkMlA 71B reduced acid by 20-30%</p>
 <p>” In practice it’s quite a bit more complicated than that. If you want to know more, check out Linda Bisson’s work at UC Davis. Her lecture notes on yeast and sulphur taints can be found online.”</p>
 <p>By the way, would you be aware of a study on the rate of YAN use through &gt; the fermentation - we know most of it is used in the beginning to build &gt; the yeast population, but would all of it be used then, or would there &gt; be some left and used during the later stages of the fermentation. I &gt; wish I had a graph showing the yeast population, YAN amount, and sugar &gt; content plotted against the time for a typical slow cider fermentation…</p>
-<p>Such a study was done by Challinor and Burroughs over 60 years ago and was reported in the Long Ashton Annual Report for 1948. It was also described in this review paper by Challinor in 1955 http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2672.1955.tb02079.x/abstract <span class="citation" data-cites="Challinor1955">[<a href="bibliography.html#ref-Challinor1955" role="doc-biblioref">1</a>]</span></p>
+<p>Such a study was done by Challinor and Burroughs over 60 years ago and was reported in the Long Ashton Annual Report for 1948. It was also described in this review paper by Challinor in 1955 http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2672.1955.tb02079.x/abstract <span class="citation" data-cites="Challinor1955">[<a href="bibliography.html#ref-Challinor1955" role="doc-biblioref">2</a>]</span></p>
 <p>Claude, fermentation model for cider: www.chelseagreen.com/model</p>
 <table class="table-hover table">
 <caption>Main phases of cider fermentation</caption>
@@ -598,8 +653,8 @@ Figur&nbsp;8.1. Jästpoulationens tillväxtfaser
 <p>Sugar consumption modeling: https://www.researchgate.net/figure/Sugar-concentration-and-fermentation-rate-calculated-by-taking-the-1st-derivative-of-the_fig3_350353318</p>
 <p>Generation time (2.5 h at 20C, 1h at 30C) and lag phase (6h at 20C, 3h at 25C, flat thereafter) dependent on temp: https://onlinelibrary.wiley.com/doi/pdf/10.1002/j.2050-0416.1966.tb02977.x</p>
 </section>
-<section id="jästsorter-1" class="level2" data-number="8.7">
-<h2 data-number="8.7" class="anchored" data-anchor-id="jästsorter-1"><span class="header-section-number">8.7</span> Jästsorter</h2>
+<section id="jästsorter-1" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="jästsorter-1"><span class="header-section-number">8.8</span> Jästsorter</h2>
 <p>Olika jästsorter har olika egenskaper, till exempel i fråga om vilken alkoholhalt de tål, vilken temperatur de jäser i, hur mycket de omvandlar citrat till laktat, och i vilken mån de konkurrerar ut annan jäst.</p>
 <p>För must med hög syrlighet kan malatreducerande jäst (tex 71B) vara önskvärt, emedan det vid jäsning av päronmust kan vara en nackdel, då syranivån i allmänhet är lägre och man vill undvika senare malolaktisk järning (som då gynnas ifall pH stiger ytterligare).</p>
 <p>Vill man undvika malolaktisk jäsning kan det vara en fördel med en jäst som producerar en de SO2, tex EC1118 (måttlig produktion).</p>
@@ -607,8 +662,8 @@ Figur&nbsp;8.1. Jästpoulationens tillväxtfaser
 <p>Olika jäst: https://pricklycider.com/2023/09/23/cider-question-what-is-the-best-yeast-to-use-for-making-cider/</p>
 <p>Jästsorter och effekt på smak: https://www.northernbrewer.com/blogs/wine-cider-and-mead-making/exploring-diversity-of-cider-profiles-through-the-selection-of-new-yeast-strains?srsltid=AfmBOopHWuwDKU-i5OtuuqUXOqe2ja88KJSO5AJOiHW0GzAKmm9uaP2u</p>
 </section>
-<section id="dosering-av-jäst" class="level2" data-number="8.8">
-<h2 data-number="8.8" class="anchored" data-anchor-id="dosering-av-jäst"><span class="header-section-number">8.8</span> Dosering av jäst</h2>
+<section id="dosering-av-jäst" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="dosering-av-jäst"><span class="header-section-number">8.9</span> Dosering av jäst</h2>
 <p>https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf</p>
 <p>A packet of Lalvin EC-1118 is 5g in weight - Each gramme of dry yeast contains 20 billion yeast cells, not all of which will be active. - 6 billion active yeast cells per gramme is a good minimum estimate. - If the yeast is not rehydrated as per the packet before use half the active cells will die. - After rehydrating for 15 mins use within 30 mins. - Use tap water not distilled or deionised water to rehydrate else some cells will die. - After two years you would expect only a 10% drop in active cell count in the packet</p>
 <p>From the earlier facts we can deduce an equation to calculate the number of active yeast cells in any quantity of dry yeast after rehydration as follows: - Viable cell count = grammes dry yeast * 6 billion. - i.e.&nbsp;Lalvin EC-1118 5g packet = 5g * 6 billion = 30 billion viable cells per packet. If we rehydrate a yeast of known quantity in a known quantity of water we can calculate viable cell count per ml of starter as in the below equation: - Viable cells per ml starter = (grammes dry yeast * 6 billion) / ml water - i.e.&nbsp;5g lalvin EC-1118 in 100ml water = (5 * 6 billion) / 100ml = 300 milion viable cells/ml</p>
@@ -695,14 +750,17 @@ Figur&nbsp;8.1. Jästpoulationens tillväxtfaser
 <p>Görs oftast inte.</p>
 <!-- Förkultur jäst: En förkultur gör du annars på följande krångliga vis: Det tar två dygn, så börja två dagar innan du pressar fram musten. Till en damejeanne på tio liter tas 1 dl fingervarmt vatten som hälls i en literflaska. Häll i jästen och om det är torrjäst får det först stå och dra i en kvart. Därefter tillsätts 1 msk socker och flaskan skakas kraftigt och försluts med en bomullstuss. Efter ett antal timmar vaknar jästen och det börjar bubbla. Tillsätt då 7 dl vatten som blandats med 7 msk socker. Efter två dygn är förkulturen färdig och hälls i musten. En enklare metod som jag prövat för öl, vin och bakning ser ut så här: Häll den flytande jästen eller lägg torrjästen i en skål. Blanda ut med fingervarm must eller vatten och tillsätt 1 tesked socker eller honung. Lägg över med lock eller plastpåse och låt stå i rumstemperatur eller upp till maximalt 37 grader. Detta görs några timmar innan jästen ska ner i damejeannerna. -->
 </section>
-<section id="vildjäsning" class="level2" data-number="8.9">
-<h2 data-number="8.9" class="anchored" data-anchor-id="vildjäsning"><span class="header-section-number">8.9</span> Vildjäsning</h2>
+<section id="vildjäsning" class="level2" data-number="8.10">
+<h2 data-number="8.10" class="anchored" data-anchor-id="vildjäsning"><span class="header-section-number">8.10</span> Vildjäsning</h2>
 <p>Spontanjäsning: “Spontaneous fermentation begins within a few hours if the temperature of the must rises above 10 °C. This process is usually slow requiring at least 2–3 weeks for the main fermentation and several months for the maturation. Maturation takes place in wooden, polyester or stainless-steel casks at a controlled temperature of 3 °C–12 °C. The entire process can take from 1–6 months depending on the country.”</p>
 
 
 <div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-Simmens2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Simmens A. Bottle conditioned cider guide [Internet]. 2018. Available from: <a href="https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf">https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf</a></div>
+</div>
 <div id="ref-Challinor1955" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Challinor SW. Cider <span>Yeasts</span> and the <span>Fermentation</span> of <span>Apple</span> <span>Juice</span>. Journal of Applied Bacteriology [Internet]. 1955 [cited 2024 Sep 26];18(1):212–23. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x">https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x</a></div>
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Challinor SW. Cider <span>Yeasts</span> and the <span>Fermentation</span> of <span>Apple</span> <span>Juice</span>. Journal of Applied Bacteriology [Internet]. 1955 [cited 2024 Sep 26];18(1):212–23. Available from: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x">https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2672.1955.tb02079.x</a></div>
 </div>
 </div>
 </section>
