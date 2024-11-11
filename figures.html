@@ -414,7 +414,12 @@ div.csl-indent {
    
   <ul>
   <li><a href="#carbonation" id="toc-carbonation" class="nav-link active" data-scroll-target="#carbonation"><span class="header-section-number">B.1</span> Carbonation</a></li>
-  <li><a href="#details" id="toc-details" class="nav-link" data-scroll-target="#details"><span class="header-section-number">B.2</span> Details</a></li>
+  <li><a href="#table-with-details" id="toc-table-with-details" class="nav-link" data-scroll-target="#table-with-details"><span class="header-section-number">B.2</span> Table with details</a></li>
+  <li><a href="#details-on-method-for-figure-and-table" id="toc-details-on-method-for-figure-and-table" class="nav-link" data-scroll-target="#details-on-method-for-figure-and-table"><span class="header-section-number">B.3</span> Details on method for figure and table</a>
+  <ul class="collapse">
+  <li><a href="#r-code-for-main-co2-estimation-function" id="toc-r-code-for-main-co2-estimation-function" class="nav-link" data-scroll-target="#r-code-for-main-co2-estimation-function">R code for main CO2 estimation function</a></li>
+  </ul></li>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note"><span class="header-section-number">B.4</span> Note:</a></li>
   </ul>
 </nav>
 </nav>
@@ -481,8 +486,965 @@ Figur&nbsp;B.1. Carbonation
 <p>One might also need to consider potential measurement error from the hydrometer, both regarding current SG and the final SG measured in a test bottle. This might give a quite large discrepancy, although the measurement error can be reduced by multiple and sequential measurements.</p>
 </blockquote>
 </section>
-<section id="details" class="level2" data-number="B.2">
-<h2 data-number="B.2" class="anchored" data-anchor-id="details"><span class="header-section-number">B.2</span> Details</h2>
+<section id="table-with-details" class="level2" data-number="B.2">
+<h2 data-number="B.2" class="anchored" data-anchor-id="table-with-details"><span class="header-section-number">B.2</span> Table with details</h2>
+<div id="tbl-figures-carbination-table" class="cell anchored" data-tbl.cap="Carbonation table">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">sugar_gL</th>
+<th style="text-align: right;">sg_drop</th>
+<th style="text-align: right;">CO2_vol</th>
+<th style="text-align: right;">P_bar_5C</th>
+<th style="text-align: right;">P_bar_10C</th>
+<th style="text-align: right;">P_bar_15C</th>
+<th style="text-align: right;">P_bar_20C</th>
+<th style="text-align: right;">P_bar_25C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-0.4</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">0.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.7</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-1.1</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.6</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">-1.4</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-1.8</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-2.1</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">-2.5</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">2.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">-2.8</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">2.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">-3.2</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">2.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-3.5</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">3.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-3.9</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">3.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">-4.2</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">3.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">-4.6</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">4.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">-4.9</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">3.8</td>
+<td style="text-align: right;">4.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">-5.3</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">-5.6</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">3.8</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">5.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">-6.0</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">5.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">-6.3</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">5.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">-6.7</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">5.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-7.0</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">5.4</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">-7.4</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: right;">5.0</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">-7.7</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">6.9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">-8.1</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">5.4</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">7.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">-8.4</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">7.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">-8.8</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">5.9</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">7.8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">-9.1</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">7.1</td>
+<td style="text-align: right;">8.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">-9.5</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">7.4</td>
+<td style="text-align: right;">8.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">-9.8</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.6</td>
+<td style="text-align: right;">7.6</td>
+<td style="text-align: right;">8.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">-10.2</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">5.9</td>
+<td style="text-align: right;">6.9</td>
+<td style="text-align: right;">7.9</td>
+<td style="text-align: right;">9.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-10.5</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">7.1</td>
+<td style="text-align: right;">8.2</td>
+<td style="text-align: right;">9.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">sugar_gL</th>
+<th style="text-align: right;">sg_drop</th>
+<th style="text-align: right;">CO2_vol</th>
+<th style="text-align: right;">P_bar_30C</th>
+<th style="text-align: right;">P_bar_35C</th>
+<th style="text-align: right;">P_bar_40C</th>
+<th style="text-align: right;">P_bar_45C</th>
+<th style="text-align: right;">P_bar_50C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-0.4</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.7</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-1.1</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">-1.4</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">2.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-1.8</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">2.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-2.1</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">3.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">-2.5</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">4.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">-2.8</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">-3.2</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">5.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-3.5</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-3.9</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">-4.2</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">7.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">-4.6</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">6.7</td>
+<td style="text-align: right;">7.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">-4.9</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: right;">5.0</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">8.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">-5.3</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">5.4</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">6.9</td>
+<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">8.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">-5.6</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">7.4</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">9.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">-6.0</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">6.9</td>
+<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">8.8</td>
+<td style="text-align: right;">9.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">-6.3</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">9.3</td>
+<td style="text-align: right;">10.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">-6.7</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">7.7</td>
+<td style="text-align: right;">8.7</td>
+<td style="text-align: right;">9.8</td>
+<td style="text-align: right;">11.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-7.0</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">7.1</td>
+<td style="text-align: right;">8.1</td>
+<td style="text-align: right;">9.2</td>
+<td style="text-align: right;">10.4</td>
+<td style="text-align: right;">11.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">-7.4</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">7.5</td>
+<td style="text-align: right;">8.5</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">10.9</td>
+<td style="text-align: right;">12.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">-7.7</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">7.9</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">10.1</td>
+<td style="text-align: right;">11.4</td>
+<td style="text-align: right;">12.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">-8.1</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: right;">8.2</td>
+<td style="text-align: right;">9.3</td>
+<td style="text-align: right;">10.6</td>
+<td style="text-align: right;">11.9</td>
+<td style="text-align: right;">13.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">-8.4</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">8.6</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">14.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">-8.8</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">10.1</td>
+<td style="text-align: right;">11.5</td>
+<td style="text-align: right;">13.0</td>
+<td style="text-align: right;">14.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">-9.1</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">9.3</td>
+<td style="text-align: right;">10.6</td>
+<td style="text-align: right;">11.9</td>
+<td style="text-align: right;">13.5</td>
+<td style="text-align: right;">15.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">-9.5</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">9.6</td>
+<td style="text-align: right;">11.0</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">14.0</td>
+<td style="text-align: right;">15.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">-9.8</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">11.4</td>
+<td style="text-align: right;">12.9</td>
+<td style="text-align: right;">14.5</td>
+<td style="text-align: right;">16.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">-10.2</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">10.4</td>
+<td style="text-align: right;">11.8</td>
+<td style="text-align: right;">13.3</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">16.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-10.5</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: right;">12.2</td>
+<td style="text-align: right;">13.8</td>
+<td style="text-align: right;">15.6</td>
+<td style="text-align: right;">17.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">sugar_gL</th>
+<th style="text-align: right;">sg_drop</th>
+<th style="text-align: right;">CO2_vol</th>
+<th style="text-align: right;">P_bar_55C</th>
+<th style="text-align: right;">P_bar_60C</th>
+<th style="text-align: right;">P_bar_65C</th>
+<th style="text-align: right;">P_bar_70C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">-0.4</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">0.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">-0.7</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">1.3</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-1.1</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">2.0</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">2.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">-1.4</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: right;">3.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">-1.8</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">4.0</td>
+<td style="text-align: right;">4.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">-2.1</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">5.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">-2.5</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">5.7</td>
+<td style="text-align: right;">6.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">-2.8</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">7.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">-3.2</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">5.9</td>
+<td style="text-align: right;">6.6</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">8.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-3.5</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">8.1</td>
+<td style="text-align: right;">9.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-3.9</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">7.2</td>
+<td style="text-align: right;">8.0</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">9.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">-4.2</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">8.7</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">10.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">-4.6</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">8.5</td>
+<td style="text-align: right;">9.5</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">11.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">-4.9</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: right;">9.1</td>
+<td style="text-align: right;">10.2</td>
+<td style="text-align: right;">11.3</td>
+<td style="text-align: right;">12.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">-5.3</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">9.8</td>
+<td style="text-align: right;">10.9</td>
+<td style="text-align: right;">12.1</td>
+<td style="text-align: right;">13.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">-5.6</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">10.4</td>
+<td style="text-align: right;">11.6</td>
+<td style="text-align: right;">13.0</td>
+<td style="text-align: right;">14.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">-6.0</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">11.1</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">13.8</td>
+<td style="text-align: right;">15.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">-6.3</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">11.7</td>
+<td style="text-align: right;">13.1</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: right;">16.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">-6.7</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">13.8</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">17.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">-7.0</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">13.0</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: right;">18.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">-7.4</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">13.7</td>
+<td style="text-align: right;">15.3</td>
+<td style="text-align: right;">17.0</td>
+<td style="text-align: right;">18.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">-7.7</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: right;">14.4</td>
+<td style="text-align: right;">16.0</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">19.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">-8.1</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">16.7</td>
+<td style="text-align: right;">18.6</td>
+<td style="text-align: right;">20.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">-8.4</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: right;">17.5</td>
+<td style="text-align: right;">19.4</td>
+<td style="text-align: right;">21.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">-8.8</td>
+<td style="text-align: right;">6.0</td>
+<td style="text-align: right;">16.3</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">20.2</td>
+<td style="text-align: right;">22.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">-9.1</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">17.0</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">21.1</td>
+<td style="text-align: right;">23.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">-9.5</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">17.6</td>
+<td style="text-align: right;">19.7</td>
+<td style="text-align: right;">21.9</td>
+<td style="text-align: right;">24.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">-9.8</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">18.3</td>
+<td style="text-align: right;">20.4</td>
+<td style="text-align: right;">22.7</td>
+<td style="text-align: right;">25.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">-10.2</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">21.1</td>
+<td style="text-align: right;">23.5</td>
+<td style="text-align: right;">26.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">-10.5</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: right;">19.6</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">24.3</td>
+<td style="text-align: right;">26.9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="details-on-method-for-figure-and-table" class="level2" data-number="B.3">
+<h2 data-number="B.3" class="anchored" data-anchor-id="details-on-method-for-figure-and-table"><span class="header-section-number">B.3</span> Details on method for figure and table</h2>
 <p>The assumptions and formulas below were used to compute data for the plot. Essentially:</p>
 <ol type="1">
 <li>Molar concentration of CO2 was calculated from added sugar.</li>
@@ -502,11 +1464,204 @@ Figur&nbsp;B.1. Carbonation
 <blockquote class="blockquote">
 <p>Pressure (bar) = CO2_M/kHT</p>
 </blockquote>
+<section id="r-code-for-main-co2-estimation-function" class="level3">
+<h3 class="anchored" data-anchor-id="r-code-for-main-co2-estimation-function">R code for main CO2 estimation function</h3>
+<p>ferment &lt;- function(x=10, input=“sugar_gL”, temp=20, F=NULL, atm=NULL, ambient_CO2=0.105){ ## Calculate effect of fermentation of glucose (CO2 produced, pressure, etc) ## Can also be used in reverse fashion to calculate eg sugar utilized to produce a certain amount of CO2.</p>
+<pre><code>## Input variables -------------
+## x is value of the "input" variable (eg 10 g/L sugar_gL)    
+## "input" can be one of these: "CO2_gL", "sugar_gL", "P_bar", "P_psi", "CO2_vol", "sg_drop"
+## temp is temperature in celsius.
+## F is temp in Fahrenheit and will override temp.
+## atm != NULL will use 1 atmosphere för STP.
+## ambient_CO2 is used for calculating reidual CO2 left from fermentation.
+## In air CO2 concentration is 0.04 % (400 ppm).
+## If 12% of the 20% oxygen in air is replaced by CO2 in headspace (ie the assumed state before removing airlock), you might set the value to 12 (%).
+## A value of only 0.105 seems to give results in accordance with empirical data.
+## atm : If set to 1, one atmosphere was used for standard pressure instead of 1 bar. Densities for CO2, sugar and ethanol may therefore be slightly off. TODO: Use densities at 1 atm instead if this option is used.
+
+## Convert input to SI units:
+if(is.null(F)){
+    C &lt;- temp
+}else{
+    C &lt;- 5/9*(F-32)  ## Fahrenheit to celsius
+    temp &lt;- C
+    message("Note: F value used for temperature and the value of 'temp' is ignored.\n")
+}
+T = temp+273.15 # Kelvin from celsius
+
+## Assumptions --------
+
+## Values (for eg density) are under the condition of standard temperature and pressure (STP).
+## STP is variably defined as 273 K (0° Celsius or 32° Fahrenheit) and 1 atm pressure, or else at 1 Bar (100 kPa). The latter pressure is recommended after 1982 but not always implemented.
+## The molar volume of gas at 1 atm is 22.4 L (22.7 L if 1 Bar is used).
+## Here, 1 Bar is used for STP.
+## The density of any gas can be estimated by the given equation, density at STP = molar mass (1 mol / 22.4 L)    
+## Note that the "reference temperature" for Henrys Law constant is 298.15 Kelvin, not STP.
+gas_molar_volume = 22.7 # (L)
+T_stp = 273.15 ## Temperature at STP (Kelvin)
+P_stp = 100000 ## Ambient pressure at STP (Pa) ## 1 Atm = 101325 Pa
+if(!is.null(atm)){
+    P_stp=101325
+    gas_molar_volume = 22.4
+    message("Note: One atmosphere was used for standard pressure. Densities for CO2, sugar and ethanol may therefore be slightly off.\n")
+}
+
+## Constants    
+kB = 1.38*10^-23 ## Boltzmann constant (J/K)
+kA = 6.02214076*10^23 ## Avogadros constant (N molecules per mol)
+R = kB*kA ## Universal gas constant
+
+## Values for efficiency of fermentating CO2 from sugar:
+## Note: These are empirical, given as a proportion.
+e_CO2 = 0.96 ## Ie 0.47 g/L CO2 from from 1 g/L sugar [@Simmens2018]    
+e_ethanol = 0.94 ## Ie 0.48 g/L ethanol from from 1 g/L sugar [@Simmens2018]
+## Volume ethanol from 1g sugar: 16.83 is average, and coef can vary 16.5-17.2 depending on yeast.
+
+## Molar masses (g/mol):
+m_CO2 = 44.01
+m_sugar = 180.156 ## Glucose
+m_ethanol = 46.068
+m_water = 18.01528
+## =&gt; CO2_M (mol/L) = CO2_gL / m_CO2
+
+## Desities at STP (g/L): 
+d_CO2 = 1.951*10^3 ## 1.977 is density of CO2 (g/L) at 0C 1 Atm. Also 1.964??
+d_ethanol = 0.8067*10^3
+d_water = 1*10^3 ## Pure water goes to ice at STP and has density = 1g/cm^3 @4°C; 0.9982 @20°C =&gt; Using 1g here.
+d_sugar = 1.58*10^3 ## Table sugar has 1.58 g/cm^3 (1.54 for glucose)
+## Eg: m_CO2/d_CO2 ## Volume of 1 mol CO2 (Litres).
+## Note: kg/m^3 = g/L
+
+## Sugar to Oechsele:
+## Oechsle (deg Oe): mass must - mass water (grams) @20°C. 1 Oe = 1 g difference.    
+## Table sugar has d = 1.58 g/cm^3 (1.54 for glucose)
+## If x grams of sugar is added to water, the mass will increase by x g and the volume by x/d_sugar L, which has to be added to the volume (and mass) of the water comparison
+## To get g sugar needed for 1 Oe, Solve x for 1 Oe in 1 = x - x/1.58:
+## 1 = x - x/1.58 =&gt; 1/x = 1 - 1/1.58 =&gt; 1/x = 0.3670886 =&gt; x = 2.724138 grams sugar per Oe    
+## Using d gives = 1.54: x = 1/(1 - 1/1.54) ## 2.851852
+kO = 1/(1 - d_water/d_sugar) ## coefficient for converting sugar to Oechsele (g sugar/Oe)    
+## sugar_gL/kO = Oe
+
+## Enthalpy of solution and Henrys Law:
+   ## The enthalpy change for the dissolution of carbon dioxide (CO2​) in water at 20 °C and 1 atm is approximately −19 kJ/mol. This is assumed to be approximately valid for the relevant temperature range. [Enthalpy of dissolution] / R = 2400 for CO2 in water.</code></pre>
+<p>## See also: https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/Solutions_and_Mixtures/Solution_Basics/Enthalpy_of_Solution ## Henrys law wiki: https://en.wikipedia.org/wiki/Henry%27s_law ## Formulas from Carbonation table: www.cider.org.uk/carbonation_table.xls ## Those are Validated aginst Sc against Schweppes table up to 30C ed = 19945.33/R # Enthalpy of dissolution for CO2 in water (J/mol) at 298.15 K ## TODO: Derive ed: https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&amp;Mask=10 T_ref=298.15 # Reference temparature for Henry’s law constant kH=3.41<em>10^-4 # Henry’s law constant for solubility in water (mol/m^3 Pa) at reference temperature (298.15 K). Unit = mol </em> m^-3 * Pa^-1. <span class="citation" data-cites="Sander2023">[<a href="bibliography.html#ref-Sander2023" role="doc-biblioref">2</a>]</span> kH = kH<em>P_stp # kH At Standard Pressure ## Select an option: ## kH</em>(P_stp/1000) mol/L at P_stp? ## kH = 1.00301<em>10^−3 # mol/kg</em>Pa kH = kH/1000 ## mol per &gt;&gt;dm^3&lt;&lt; * Pa ## kH = kH<em>101.325 ## mol/(L</em>atm) ## kH = 29.4 barM^-1 ## Note: Henrys volatilty constant KH?<br>
+## Values for Henry’s law constants are: ## … expressed in units of atmospheres for air to moles per cubic meter for water (atm-m3/mol) ## … or in a dimensionless unit described as KH′ = KH/(RT) ## … where KH′ is the dimensionless Henry’s law constant, KH is the Henry’s law constant (atm-m3/mol), R is the ideal gas constant (8.20575 × 10−5 atm-m3/mol-K) and T is the water temperature (K). ## ? Henry’s law constant for CO2 in water is 1.67<em>10^8 Pa at 298K ? ## Values for kH (from wikipedia): ## kH = 0.034 # mol/(L</em>atm) ## kH = 29.4 # ((L<em>atm)/mol) ## kH = 1600 # atm ## kH = 0.83 # dimensionless ## Conversion factors and values för kH: https://acp.copernicus.org/articles/15/4399/2015/acp-15-4399-2015.pdf ## kH</em>0.0409970 # From dimensionless to mol/L atm ## 4.04609<em>10^-7 # From dimensionless to mol/kg Pa ## mol/kgAtm to mol/kgPa = 9.86923</em>10^−6 ## kH = 3.4<em>10^-4 mol/(m<sup>3<em>Pa) ## 3.4</em>10</sup>-4</em>1.00301<em>10^-3 ## mol/(m^3</em>Pa) to mol/kg*Pa ## From google: ## Henry’s law constant for CO2 in water is 1.67×108Pa at 298K ## The molar solubility of carbon dioxide gas is 0.07483 M in water at 25C ## Solubility in water. 1.45 g/L at 25 °C (77 °F), 100 kPa (0.99 atm) ## For CO₂ at 0°C, kH is approximately 0.077 mol/(L·atm). ## Chat GPT: “0.077mol/(L<em>atm)” ## Chat GPT : ”For CO2CO2​ in water at 25°C, kH​ is approximately 3.3×10^−4 mol/(kg</em>Pa)”</p>
+<pre><code>## Unit conversion factors:
+## 1 atm = 1.01325 bar = 1.01325*10^5 Pa
+## 1 bar = 1*10^5 Pa = 0.9869233 atm
+## 1 bar = 14.503774 psi
+## Is this right ? 1 volume CO2 = 1.964 g/L CO2 at 0°C ??
+    
+## Assumptions on fermentation efficiency:
+## In theory 1 mol glucose gives 2 M CO2 and 2M ethanol.
+## However, efficacy is not 100%.
+## Conversion rate is highly yeast dependent and can vary from 16.5-17.2 g/L (average 16.4 g/L; max 17.98) sugar for 1% alcohol
+## See https://www.awri.com.au/wp-content/uploads/2018/04/s1809.pdf
+##     df &lt;- data.frame(
+##     mol = c(1, 2, 2),
+##     weight = c(glucose=m_glucose*1, co2=m_CO2*2, ethanol=m_ethanol*2),
+## )
+## df$prop = df$weight/m_glucose
+## df$efficacy = c(1, 0.47, 0.48)/df$prop ## [@Simmens2018]
+## df$result_weight = df$prop*df$efficacy ## Output w/w of glucose
+
+    ## Alcohol, see: https://www.awri.com.au/wp-content/uploads/2018/04/s1809.pdf
+## See: https://byo.com/article/master-the-action-carbonation/
+
+## Notes ---------------------
+## CO2_vol (volumes) = CO2_gL * 1/1.964
+## CO2_vol = CO2_M * 44 * 0.51 =&gt; = CO2_M * 22.44
+## 1 volume CO2 = CO2 1.964 g/L    
+## Kh=0.034*exp(2400*((1/T)-(1/298))) ## vanhoff(T)
+## alc (% v/v) = sugar_gL/16.83 # 16.83 is average, Coef can vary 16.5-17.2 depending on yeast
+    ## 1 CO2 volume is the space that the CO2 would take up at STP
+
+    ## Temperature dependent CO2 volumes (not used):
+## if(input=="CO2_vol"){CO2_M = CO2_vol/gas_molar_volume} ## At 0C
+## if(input=="CO2_vol"){CO2_M = CO2_vol/mass_volumes(m_CO2, temp)} ## At temp
+## Volumes of CO2 at temp calculated using Ideal gas law (P*V = n*k*T)
+## Eg: =&gt; n = V*P/(kB*T) =&gt; n = d_CO2/m_CO2*kA ## Number of molecules (Moles) in 1 L gas; n = m/m_CO2*kA n for mass m of CO2
+## CO2_vol = ((CO2_M*kB*T)/P )/0.001 ## Volume (L); (1L = 0.001 m^3);</code></pre>
+<p>## temperature correction of SG (is this needed? Hydrometar calibrated probably at 20C): ## https://www.topdownbrew.com/SGCorrection.html ## F to C (32°F − 32) × 5/9 = 0°C ; (0°C × 9/5) + 32 = 32°F ## F = (temp<em>9/5)+32 ## (temp-32) </em> 5/8 ## correction = (1.313454 - 0.132674<em>F + 2.057793e-3</em>F^2 - 2.627634e-6*F^3)/1000 ## SG + correction = corrected sg</p>
+<pre><code>## Calculations ------------    
+
+## Calculate temperature dependent equilibrium constant for CO2 in water (kHT)
+kHT = ( kH * exp(ed * (1/T - 1/T_ref) ) ) 
+## Or using helper: kHT = vanhoff(temp)
+
+## Dissolved CO2 at T=temp and P=standard pressure:    
+## Formula: Sg = kHT*Pg where Sg is gas solubility, kH is Henry's Law constant and Pg is partial pressure of the gaseous solute.
+## The inverse of the Molar Henry's law constant, multiplied by the partial pressure of the gas above the solution, is the molar solubility of the gas.
+## Molar solubility, Sp (the number of moles of the solute that dissolves to form a liter of saturated solution)
+## Sg = kHT*P_stp ## moles per kg water?
+## Sp = 1/kHT * P_stp
+## CO2_eq_gL = Sp/m_CO2
+
+## Calculate residual CO2 from fermentation before adding sugar:
+## Henrys law: C=kH​*P; C is concentration (solubility in mol/kg water); kH is in mol/(kg*Pa); P is partial pressure of CO2 in air (Pa)
+## The mole fraction of CO2 at STP in air is 400 ppm or 0.04%
+ambient_CO2 &lt;- ifelse(is.null(ambient_CO2), 0.04/100, ambient_CO2/100)
+P_co2_air = ambient_CO2*P_stp # Partial pressure of CO2 in air/headspace (Pa)
+C_co2_water=P_co2_air * kHT * 1000/P_stp ## ? Solubility (C) in mol/volume. kHT*1000/P_stp is needed to get correct results since kHT was at standard pressure and per dm^3 ?
+residual_M &lt;- C_co2_water
+residual_gL &lt;- C_co2_water*m_CO2 ## Dissolved CO2 in g/m^3
+residual_vol &lt;- C_co2_water*gas_molar_volume # volumes
+residual_Bar = residual_M/kHT ## Not meaningful, kHT is cancelled out, but should be = pressure at STP (=1)?</code></pre>
+</section>
+</section>
+<section id="note" class="level2" data-number="B.4">
+<h2 data-number="B.4" class="anchored" data-anchor-id="note"><span class="header-section-number">B.4</span> Note:</h2>
+<pre><code>## The level of CO2 dissolved in beer after normal fermentation is between 1.2 and 1.7 volumes, depending on the temperature
+## The partial pressure of headspace gas, especially H2 and CO2 has significant effect on the homoacetogenesis reaction. Theoretical calculation showed that when P_H2 and P_CO2 were 40 kPa and 60 kPa, respectively, the homoacetogenesis reaction was the strongest.
+## Dry atmospheric air contains 78.1% nitrogen (N2) and 20.95% oxygen (O2) by volume. CO2 is 0.04%. It follows that 78.1% of the atmospheric pressure can be attributed to the partial pressure of N2 and 20.95% to the partial pressure of O2.
+## At STP, the partial pressure of CO2​ in air is approximately 0.0004 (or 400 ppm) of the total atmospheric pressure.  With atmospheric pressure at STP being 1.013×105 Pa, the partial pressure of CO2​ can be calculated as: P=0.0004×1.013×105=40.52 Pa
+## Using Henry's law, the solubility of CO2​ in water is: C=kH⋅P=(3.3×10−4)⋅(40.52) =&gt; C≈1.337×10−2mol/kg at STP
+## At pH 3.5, most of the CO2​ remains in the dissolved form, and the solubility calculated above (0.0134 mol/kg) is close to the effective concentration of CO2 in the solution (ie pH has little effect on the calculations in the relevant range 3-4).
+
+## Chat GPT, residual CO2 (Henrys Law), and/or empirical:
+chat_CO2_vol = 82.146226 - 0.5295273*T + 0.000861402 * T^2
+## Note: This does not take headspace concentration of CO2 into account. "These constants were derived from experimental data on the solubility of CO₂ in beer across a range of temperatures commonly encountered during fermentation and storage. Since beer fermentation typically occurs at temperatures between 60°F and 70°F (15°C to 21°C), the constants are calibrated to reflect the relationship between temperature and CO₂ solubility in this range specifically."
+## Note: Setting ambient_CO2=0.105 gives very similar results.
+
+
+## Assign value x to an input variable:    
+assign(input, unname(x))
+
+## Calculate CO2_M (Moles/L) from input:
+if(input=="sugar_gL"){CO2_M = (sugar_gL/m_sugar)*2*e_CO2}
+## if(input=="sg_drop"){CO2_M = sg_drop*kO*e_CO2/m_CO2}
+if(input=="sg_drop"){CO2_M = (sg_drop*kO/m_sugar)*2*e_CO2}
+if(input=="P_bar"){CO2_M = P_bar*kHT} ## Adjusted for temp via kHT
+if(input=="P_psi"){CO2_M = (P_psi/14.503774)*kHT}        
+if(input=="CO2_gL"){CO2_M = CO2_gL/m_CO2}
+if(input=="CO2_vol"){CO2_M = CO2_vol/gas_molar_volume} ## At STP    
+
+## Derive the other variables:
+CO2_gL = CO2_M*m_CO2
+CO2_vol = CO2_M*gas_molar_volume # In volumes CO2 at 0C  
+P_bar = CO2_M/kHT
+P_gauge = P_bar-1
+P_psi = CO2_M/kHT*14.503774 # P_psi = P_bar*14.503774
+sg_drop = CO2_M/(2*e_CO2*kO)*m_sugar # In Oechsele
+sugar_gL = CO2_M*m_sugar/(2*e_CO2)
+alc_prc = sugar_gL/m_sugar*2*e_ethanol*m_ethanol/d_ethanol ## % (v/v)
+F = (temp * 9/5) + 32 ## Fahrenheit
+
+## x &lt;- ifelse(from_sugar, 0.47*x, x) ## calculate CO2 from sugar g/L
+## CO2_gL &lt;- ifelse(input=="P_bar", x*1.964, x)  ## 1 volume CO2 = CO2 1.96 g/L
+## CO2_vol &lt;- ifelse(input=="P_bar", x, x/1.964)
+## CO2_M = CO2_gL/44 # Mol/L
+
+## output (rounded):
+round(c(P_gauge=P_gauge, P_bar=P_bar, P_psi=P_psi, CO2_gL=CO2_gL, CO2_M=CO2_M, CO2_vol=CO2_vol, sugar_gL=sugar_gL, sg_drop=sg_drop, alc_prc=alc_prc, C=C, F=F, residual_M=residual_M, residual_gL=residual_gL, residual_Bar=residual_Bar, residual_vol=residual_vol, chat_CO2_vol=chat_CO2_vol, kHT=kHT, input_value=unname(x)), digits=4)</code></pre>
 
 
 <div id="refs" class="references csl-bib-body" role="list" style="display: none">
 <div id="ref-Simmens2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Simmens A. Bottle conditioned cider guide [Internet]. 2018. Available from: <a href="https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf">https://llancider.wales/wp-content/uploads/2018/09/Bottle-Conditioning-guide.pdf</a></div>
+</div>
+<div id="ref-Sander2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Sander R. <a href="https://doi.org/10.5194/acp-23-10901-2023">Compilation of henry’s law constants (version 5.0.0) for water as solvent</a>. Atmos Chem Phys. 2023;23:10901–2440. </div>
 </div>
 </div>
 </section>
