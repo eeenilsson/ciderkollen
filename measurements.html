@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="quarto_book_tufte.css">
 </head>
@@ -394,7 +423,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Denna sida</h2>
    
   <ul>
-  <li><a href="#hydrometer" id="toc-hydrometer" class="nav-link active" data-scroll-target="#hydrometer"><span class="header-section-number">16.1</span> Hydrometer</a></li>
+  <li><a href="#hydrometer" id="toc-hydrometer" class="nav-link active" data-scroll-target="#hydrometer"><span class="header-section-number">16.1</span> Hydrometer</a>
+  <ul class="collapse">
+  <li><a href="#inverkan-av-temperatur" id="toc-inverkan-av-temperatur" class="nav-link" data-scroll-target="#inverkan-av-temperatur">Inverkan av temperatur</a></li>
+  <li><a href="#inverkan-av-alkoholhalt" id="toc-inverkan-av-alkoholhalt" class="nav-link" data-scroll-target="#inverkan-av-alkoholhalt">Inverkan av alkoholhalt</a></li>
+  </ul></li>
   <li><a href="#sec-techniques-refractometer" id="toc-sec-techniques-refractometer" class="nav-link" data-scroll-target="#sec-techniques-refractometer"><span class="header-section-number">16.2</span> Refraktometer</a></li>
   <li><a href="#ph-mätning" id="toc-ph-mätning" class="nav-link" data-scroll-target="#ph-mätning"><span class="header-section-number">16.3</span> pH-mätning</a></li>
   <li><a href="#sec-techniques-iodinetest" id="toc-sec-techniques-iodinetest" class="nav-link" data-scroll-target="#sec-techniques-iodinetest"><span class="header-section-number">16.4</span> Jodtest</a></li>
@@ -432,6 +465,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="16.1" class="anchored" data-anchor-id="hydrometer"><span class="header-section-number">16.1</span> Hydrometer</h2>
 <p>Densitet. SG.</p>
 <p>A hydrometer can not accurately measure very low levels of sugar. Other tests have to be used to determine precisely how many grams per litre of sugar remain in the wine.</p>
+<section id="inverkan-av-temperatur" class="level3">
+<h3 class="anchored" data-anchor-id="inverkan-av-temperatur">Inverkan av temperatur</h3>
 <p>Hydrometern är vanligen kalibrerad vid antingen 15 °C eller 20 °C. Avläser man vid en annan tempertur kan värdet korrigeras enligt <a href="#fig-measurements-hydrometer-correction-temp" class="quarto-xref">Figur&nbsp;<span>16.1</span></a> nedan.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -448,11 +483,70 @@ Figur&nbsp;16.1. Korrigering ac hydrometervärdet vid temperatur avvikande från
 </div>
 </div>
 </section>
+<section id="inverkan-av-alkoholhalt" class="level3">
+<h3 class="anchored" data-anchor-id="inverkan-av-alkoholhalt">Inverkan av alkoholhalt</h3>
+<p>Alkoholhalten påverkar densiteten (och därför SG), eftersom alkohol är lättare än vatten (se <a href="#fig-sugar-alcohol-sg" class="quarto-xref">Figur&nbsp;<span>16.2</span></a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-sugar-alcohol-sg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sugar-alcohol-sg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="measurements_files/figure-html/fig-sugar-alcohol-sg-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sugar-alcohol-sg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;16.2. Theoretical additional density drop from increased alcohol content. Alcohol level of lowest starting SG used as reference.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Så en must med SG 1.080 vid start bör ge en slutlig SG som är ca .010 lägre än en must som startar på 1.050, pga högre alkoholhalt.</p>
+<p>I teorin…</p>
+<p>Densiteter (g/L) vid 20 °C:</p>
+<p><span class="math display">\[
+d_ethanol = 0.789*10^3
+\]</span></p>
+<p><span class="math display">\[
+d_water = 0.9982*10^3
+\]</span></p>
+<p>Alkoholkoncentration (g/L), ca 7% v/v, ungefär det som erhålls av att fermentera 160 g/L socker eller 50 Oe:</p>
+<p><span class="math display">\[
+c_alc = 65
+\]</span></p>
+<p>Förändringen i relativ densitet pga alkohol blir då:</p>
+<p><span class="math display">\[
+((d_ethanol - d_water)*c_alc/d_ethanol) / d_water
+\]</span></p>
+<p>Vilket är ca -17 Oe skillnad mot samma vätska utan alkohol.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.01726555</code></pre>
+</div>
+</div>
+<p>Mätningen av SG bör därför justeras för alkoholhalt, om syftet är att mäta kvarvarande sockerhalt.</p>
+<p>Figuren <a href="#fig-sugar-alcohol-sg-practical" class="quarto-xref">Figur&nbsp;<span>16.3</span></a> jämför den teoretiska justeringen av SG (Oe) vid olika nivåer av alkohol (% v/v) med densamma där en enklare vedertagen beräkningsmetod används (0.0016 x alkohol %).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-sugar-alcohol-sg-practical" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sugar-alcohol-sg-practical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="measurements_files/figure-html/fig-sugar-alcohol-sg-practical-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sugar-alcohol-sg-practical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;16.3. Korrigering av uppmätt SG vid olika alkoholhalter.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
 <section id="sec-techniques-refractometer" class="level2" data-number="16.2">
 <h2 data-number="16.2" class="anchored" data-anchor-id="sec-techniques-refractometer"><span class="header-section-number">16.2</span> Refraktometer</h2>
 <!-- "I use a refractometer. Boil down the fermenting sample to 50%. Add distilled water to 100%. Measure sample with refractometer. It will give you a more accurate picture on how the sugar density is evolving. " -->
 <!-- "By boiling you do not only eliminate the alcohol, but also the carbon dioxide and the yeast in suspension. The latter if you set the sample to rest for a day in the fridge. Will form a sediment. For the refracto you need only a droplet. For boiling down I use 200 cc, reducing it to 100, adding 100 cc of distilled water. It does not give an exact measurement, for that you need lab conditions, but it gives you a pretty good idea of the density. That density is of course not only caused by sugars, as you know. Main issue is that the alcohol, carbon dioxide and the yeast in suspension can no longer interfere in the results. -->
 <!-- Oe: 0-170, point by point indicated on the refracto scale." -->
+<p>Refraktometern påverkas påtagligt av alkoholhalten, och är därför mindre pålitlig än en hydrometer, som påverkas mindre (?).</p>
 </section>
 <section id="ph-mätning" class="level2" data-number="16.3">
 <h2 data-number="16.3" class="anchored" data-anchor-id="ph-mätning"><span class="header-section-number">16.3</span> pH-mätning</h2>

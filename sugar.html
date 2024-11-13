@@ -502,75 +502,13 @@ Tabell&nbsp;7.1. Effekt av socker. Multiplarna är sockermängd * multipel = eff
 <!-- ## 1g/L sugar gives 0.47 g CO2 ? -->
 <section id="alkohol" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="alkohol"><span class="header-section-number">7.1</span> Alkohol</h2>
-<p>Predicting alcohol levels: https://www.awri.com.au/wp-content/uploads/2018/04/s1809.pdf</p>
 <ul>
 <li>Etanol prodcueras från socker i ungefär samma kvantitet (massa) som koldioxid.</li>
 <li>En del förloras via avdunstning och celltillväxt</li>
 <li>Den faktiska produktionen av etanol är därför ca 90% av den teoretiska</li>
 </ul>
-<p>Alkoholhalten påverkar SG (se <a href="#fig-sugar-alcohol-sg" class="quarto-xref">Figur&nbsp;<span>7.1</span></a>).</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>          P_gauge             P_bar             P_psi            CO2_gL 
-          36.1083           37.1083          538.2097           63.8856 
-            CO2_M           CO2_vol          sugar_gL           sg_drop 
-           1.4516           32.9517          136.2069          -47.7609 
-          alc_prc            alc_gL alc_predicted_prc       sg_drop_alc 
-           7.7923           62.8606            6.2928          -15.0626 
-      glycerol_gL  sg_drop_glycerol                 C                 F 
-           4.3586            0.8994           20.0000           68.0000 
-       residual_M       residual_gL      residual_Bar      residual_vol 
-           0.0411            1.8077            1.0500            0.9324 
-     chat_CO2_vol               kHT          yeast_gL yeast_nitrogen_gL 
-           0.9415            0.0391            1.6345            0.1471 
-      input_value 
-         136.2069 </code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>          P_gauge             P_bar             P_psi            CO2_gL 
-          58.3732           59.3732          861.1355          102.2170 
-            CO2_M           CO2_vol          sugar_gL           sg_drop 
-           2.3226           52.7227          217.9310          -76.4174 
-          alc_prc            alc_gL alc_predicted_prc       sg_drop_alc 
-          12.4677          100.5770           10.4815          -24.1001 
-      glycerol_gL  sg_drop_glycerol                 C                 F 
-           6.9738            1.4390           20.0000           68.0000 
-       residual_M       residual_gL      residual_Bar      residual_vol 
-           0.0411            1.8077            1.0500            0.9324 
-     chat_CO2_vol               kHT          yeast_gL yeast_nitrogen_gL 
-           0.9415            0.0391            2.6152            0.2354 
-      input_value 
-         217.9310 </code></pre>
-</div>
-<div class="cell-output-display">
-<div id="fig-sugar-alcohol-sg" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sugar-alcohol-sg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="sugar_files/figure-html/fig-sugar-alcohol-sg-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sugar-alcohol-sg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;7.1. Density drop from increased alcohol content. Alcohol level of lowest starting SG used as reference.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>Så en must med SG 1.080 vid start bör ge en slutlig SG som är ca .010 lägre än en must som startar på 1.050, pga högre alkoholhalt.</p>
-<p>Figuren <a href="#fig-sugar-alcohol-sg-practical" class="quarto-xref">Figur&nbsp;<span>7.2</span></a> jämför den teoretiska justeringen av SG (Oe) vid olika nivåer av alkohol (% v/v) med densamma där en enklare vedertagen beräkningsmetod används (0.0016 x alkohol %).</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-sugar-alcohol-sg-practical" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sugar-alcohol-sg-practical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="sugar_files/figure-html/fig-sugar-alcohol-sg-practical-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sugar-alcohol-sg-practical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;7.2. Korrigering av uppmätt SG vid olika alkoholhalter.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<p>Alkoholhalten påverkar densiteten (och därför SG), eftersom alkohol är lättare än vatten (se <a href="measurements.html#fig-sugar-alcohol-sg" class="quarto-xref">Figur&nbsp;<span>16.2</span></a>).</p>
+<p><a href="https://www.awri.com.au/wp-content/uploads/2018/04/s1809.pdf">Predicting alcohol levels</a></p>
 </section>
 <section id="sötma-efter-jäsning" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="sötma-efter-jäsning"><span class="header-section-number">7.2</span> Sötma efter jäsning</h2>
