@@ -95,13 +95,13 @@ body {
 /* Nice font for tufte from: https://rstudio.github.io/tufte/envisioned/?_gl=1*1i6iad4*_ga*MTM2MzA4NDQyMC4xNzI5NjM5NDYz*_ga_2C0WZ1JHG0*MTcyOTgwMjY2NC4yLjEuMTcyOTgwMjY5My4wLjAuMA.. */
 /* "Roboto Condensed", Arial, Helvetica, sans-serif */
 
-/* Adds dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #151515;
-        color: #ddd;
-    }
-}
+/* /\* Adds dark mode *\/ */
+/* @media (prefers-color-scheme: dark) { */
+/*     body { */
+/*         background-color: #151515; */
+/*         color: #ddd; */
+/*     } */
+/* } */
 
 /* ---Headings---- */
 

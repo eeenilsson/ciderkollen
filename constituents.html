@@ -275,7 +275,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./measurements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mätning och testning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mätning</span></span></a>
   </div>
 </li>
       </ul>
@@ -416,12 +416,9 @@ div.csl-indent {
   <li><a href="#kväve" id="toc-kväve" class="nav-link active" data-scroll-target="#kväve">Kväve</a></li>
   <li><a href="#oxygen" id="toc-oxygen" class="nav-link" data-scroll-target="#oxygen">Oxygen</a></li>
   <li><a href="#constituents-overview" id="toc-constituents-overview" class="nav-link" data-scroll-target="#constituents-overview">Constituents overview</a></li>
-  <li><a href="#sockerarter" id="toc-sockerarter" class="nav-link" data-scroll-target="#sockerarter"><span class="header-section-number">3.1</span> Sockerarter</a>
-  <ul class="collapse">
-  <li><a href="#sorbitol" id="toc-sorbitol" class="nav-link" data-scroll-target="#sorbitol">Sorbitol</a></li>
-  </ul></li>
-  <li><a href="#organiska-syror" id="toc-organiska-syror" class="nav-link" data-scroll-target="#organiska-syror"><span class="header-section-number">3.2</span> Organiska syror</a></li>
-  <li><a href="#fenoler" id="toc-fenoler" class="nav-link" data-scroll-target="#fenoler"><span class="header-section-number">3.3</span> Fenoler</a></li>
+  <li><a href="#socker" id="toc-socker" class="nav-link" data-scroll-target="#socker">Socker</a></li>
+  <li><a href="#organiska-syror" id="toc-organiska-syror" class="nav-link" data-scroll-target="#organiska-syror"><span class="header-section-number">3.1</span> Organiska syror</a></li>
+  <li><a href="#fenoler" id="toc-fenoler" class="nav-link" data-scroll-target="#fenoler"><span class="header-section-number">3.2</span> Fenoler</a></li>
   </ul>
 </nav>
 </nav>
@@ -474,183 +471,23 @@ div.csl-indent {
 </section>
 <section id="constituents-overview" class="level3">
 <h3 class="anchored" data-anchor-id="constituents-overview">Constituents overview</h3>
-<p>In the whole apple, moisture is the main constitunt, followed by carbohydrates. When moisture is removed, carbohydrates are the main constituent. Protein, fat, and “ash” (minerals and the like) are present in similar proportions (<span class="quarto-unresolved-ref">?fig-constituents-overview</span>).</p>
+<p>In the whole apple, moisture is the main constitunt, followed by carbohydrates. When moisture is removed, carbohydrates are the main constituent. Protein, fat, and “ash” (minerals and the like) are present in similar proportions (<a href="#fig-constituents-overview" class="quarto-xref">Figur&nbsp;<span>3.1</span></a>). Uppgifterna i figurerna nedan är i huvudsak hämtade från <span class="citation" data-cites="Oecd2019">[<a href="bibliography.html#ref-Oecd2019" role="doc-biblioref">3</a>]</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="constituents_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<div id="fig-constituents-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-constituents-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="constituents_files/figure-html/fig-constituents-overview-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-constituents-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;3.1. Overview of Apple constituents
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>Äpplet innehåller således mest fukt och därefter kolhydrater. Vid pressning ansamlas förstås en större andel vätska i musten och kanske hälften av torrsubstansen medföljer:</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 98.934</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 74.36071</code></pre>
-</div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 7%">
-<col style="width: 17%">
-<col style="width: 6%">
-<col style="width: 14%">
-<col style="width: 11%">
-<col style="width: 8%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">constituent</th>
-<th style="text-align: right;">level</th>
-<th style="text-align: left;">group</th>
-<th style="text-align: left;">part</th>
-<th style="text-align: right;">value</th>
-<th style="text-align: left;">unit_new</th>
-<th style="text-align: left;">abbrev</th>
-<th style="text-align: left;">lbl</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Moisture</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">moisture</td>
-<td style="text-align: left;">must</td>
-<td style="text-align: right;">87.6600000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Moisture</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Ash</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">minerals</td>
-<td style="text-align: left;">must</td>
-<td style="text-align: right;">0.2000000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Ash</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Protein</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">proteins</td>
-<td style="text-align: left;">must</td>
-<td style="text-align: right;">0.1000000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Protein</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fat, total</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">fats</td>
-<td style="text-align: left;">must</td>
-<td style="text-align: right;">0.0740002</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Fat</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Carbohydrate</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">carbohydrates</td>
-<td style="text-align: left;">must</td>
-<td style="text-align: right;">10.9000000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Carbohydrate</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 18%">
-<col style="width: 7%">
-<col style="width: 17%">
-<col style="width: 8%">
-<col style="width: 12%">
-<col style="width: 11%">
-<col style="width: 8%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">constituent</th>
-<th style="text-align: right;">level</th>
-<th style="text-align: left;">group</th>
-<th style="text-align: left;">part</th>
-<th style="text-align: right;">value</th>
-<th style="text-align: left;">unit_new</th>
-<th style="text-align: left;">abbrev</th>
-<th style="text-align: left;">lbl</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Moisture</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">moisture</td>
-<td style="text-align: left;">pomace</td>
-<td style="text-align: right;">5.600000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Moisture</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Protein, crude</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">proteins</td>
-<td style="text-align: left;">pomace</td>
-<td style="text-align: right;">6.694286</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Protein</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fat, crude</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">fats</td>
-<td style="text-align: left;">pomace</td>
-<td style="text-align: right;">4.306429</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Fat</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Ash</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">minerals</td>
-<td style="text-align: left;">pomace</td>
-<td style="text-align: right;">2.760000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Ash</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Carbohydrate</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">carbohydrates</td>
-<td style="text-align: left;">pomace</td>
-<td style="text-align: right;">55.000000</td>
-<td style="text-align: left;">g100g</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Carbohydrate</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -658,30 +495,55 @@ div.csl-indent {
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>null device 
-          1 </code></pre>
+</div>
+<p>Innehålet i torrsubstans är främst kolhydrater (sockerarter, pektin, icke-nebrytbara fibrer etc). Musten har en förhållandevis något högre andel kolhydrater (främst sockerarter) än äpplet och pressresterna.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="constituents_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="sockerarter" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sockerarter"><span class="header-section-number">3.1</span> Sockerarter</h2>
-<section id="sorbitol" class="level3">
-<h3 class="anchored" data-anchor-id="sorbitol">Sorbitol</h3>
-<p>Sorbitol är en icke fermenterbar sockerart som finns i liten mängd i äpplen (0.6 %), något rikligare i päron (2%), sur/sötkörsbär (2 %) och plommon (2%). Alla dessa har pektin kring 0.8%.</p>
-<p>“The first is a paper by Whiting at Long Ashton in 1960. He shows that a 1% sorbitol solution contributes 3.5 points of SG” https://groups.google.com/g/cider-workshop/c/2au4slN6GfQ</p>
+<section id="socker" class="level3">
+<h3 class="anchored" data-anchor-id="socker">Socker</h3>
+<p>Av sockerarterna är fruktos den som förekommer mest rikligt, följt av sukros och glukos. Sorbitol (en socker-alkohol) finns i vissa äppelsorter men vanligen i låga nivåer eller inte alls (vanligast är 0-0.3 g/100g). Enstaka äppelsorter och framför allt vildäpplen kan ha något högre nivåer av sorbitol.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="constituents_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<!-- Quantitative determination of fructose, glucose, and sucrose in hard ciders and apple juice by LC–MS/MS [@Thacker2020] -->
+<!-- Sugars in apple [@Aprea2017]: https://www.nature.com/articles/srep44950 Also volatile compounds in headspace nature- Sorbitol 1.3-13 g/kg apple->
+
+Sugar composition of apple juices (pressed): [@Karadeniz2002] 
+
+## Sockerarter
+
+### Sorbitol
+
+Sorbitol är en icke fermenterbar sockerart som finns i liten mängd i äpplen (0.6 %), något rikligare i päron (2%), sur/sötkörsbär (2 %) och plommon (2%). Alla dessa har pektin kring 0.8%.
+
+"The first is a paper by Whiting at Long Ashton in 1960. He shows that a 1% sorbitol solution contributes 3.5 points of SG"
+https://groups.google.com/g/cider-workshop/c/2au4slN6GfQ
+
 <!-- Sorbitol i olika frukter: http://www.cider.org.uk/Schobinger_Sorbitol.pdf -->
 </section>
-</section>
-<section id="organiska-syror" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="organiska-syror"><span class="header-section-number">3.2</span> Organiska syror</h2>
+<section id="organiska-syror" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="organiska-syror"><span class="header-section-number">3.1</span> Organiska syror</h2>
 <p>Icke flyktiga</p>
 <p>“Malic acid and citric acid were the two predominant organic acids in Malus species, whereas the concentrations of other acids were very low or undetectable” <span class="citation" data-cites="Ma2018">[<a href="bibliography.html#ref-Ma2018" role="doc-biblioref">4</a>]</span></p>
 <p>“Malic acid, citric acid, and total organic acid contents exhibited normal distributions with a skew to the right. The total organic acid concentration exhibited significant variation, ranging from 1.72 to 44.63 mg/g fresh weight (FW), with an average of 11.06 mg/g FW (Figure 2; Table S1). Notably, there was almost a 26-fold variation in the total organic acid concentration among the accessions examined. Malic acid was detected in all Malus species, ranging from 1.72 to 29.27 mg/g FW, with an average of 8.90 mg/g FW. Citric acid was predominantly detected in several wild apple species, with content ranging from undetectable to 24.24 mg/g FW. The ratios of malic acid to total organic acid and of citric acid to total organic acid were also calculated (Table S1). In cultivated apple fruits, the ratio of malic acid to total organic acid was as high as100%, indicating that malic acid is the predominant organic acid in cultivated apple. Of 58 wild relatives, 31 (53%) revealed a considerable amount of citric acid, with a content of ≥0.43 mg/g FW; the ratio of citric acid to total organic acid ranged from 5.23% to 60.67%, whilst 27 (47%) showed an extremely low to undetectable concentration of citric acid. This indicated that malic acid and citric acid represent the two predominant organic acids in wild apple species.”</p>
 <p>“Fruit acidity in cultivated apples is majorly determined by malic acid, which accounts for up to 90% of total organic acids [6]. Citric acid also exists in mature apple fruits; however, it exhibits a very low to undetectable concentration in cultivated apple”</p>
 </section>
-<section id="fenoler" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="fenoler"><span class="header-section-number">3.3</span> Fenoler</h2>
+<section id="fenoler" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="fenoler"><span class="header-section-number">3.2</span> Fenoler</h2>
 
 
 <div id="refs" class="references csl-bib-body" role="list" style="display: none">

@@ -275,7 +275,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./measurements.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mätning och testning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mätning</span></span></a>
   </div>
 </li>
       </ul>
@@ -414,12 +414,13 @@ div.csl-indent {
    
   <ul>
   <li><a href="#carbonation" id="toc-carbonation" class="nav-link active" data-scroll-target="#carbonation"><span class="header-section-number">B.1</span> Carbonation</a></li>
-  <li><a href="#table-with-details" id="toc-table-with-details" class="nav-link" data-scroll-target="#table-with-details"><span class="header-section-number">B.2</span> Table with details</a></li>
-  <li><a href="#details-on-method-for-figure-and-table" id="toc-details-on-method-for-figure-and-table" class="nav-link" data-scroll-target="#details-on-method-for-figure-and-table"><span class="header-section-number">B.3</span> Details on method for figure and table</a>
+  <li><a href="#figure-with-more-temperature-lines" id="toc-figure-with-more-temperature-lines" class="nav-link" data-scroll-target="#figure-with-more-temperature-lines"><span class="header-section-number">B.2</span> Figure with more temperature lines</a></li>
+  <li><a href="#table-with-details" id="toc-table-with-details" class="nav-link" data-scroll-target="#table-with-details"><span class="header-section-number">B.3</span> Table with details</a></li>
+  <li><a href="#details-on-method-for-figure-and-table" id="toc-details-on-method-for-figure-and-table" class="nav-link" data-scroll-target="#details-on-method-for-figure-and-table"><span class="header-section-number">B.4</span> Details on method for figure and table</a>
   <ul class="collapse">
   <li><a href="#r-code-for-main-co2-estimation-function" id="toc-r-code-for-main-co2-estimation-function" class="nav-link" data-scroll-target="#r-code-for-main-co2-estimation-function">R code for main CO2 estimation function</a></li>
   </ul></li>
-  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note"><span class="header-section-number">B.4</span> Note:</a></li>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note"><span class="header-section-number">B.5</span> Note:</a></li>
   </ul>
 </nav>
 </nav>
@@ -466,6 +467,7 @@ Figur&nbsp;B.1. Carbonation
 </div>
 </div>
 </div>
+<p><a href="./assets/plot_carbonation.pdf">Figure in pdf format</a></p>
 <p>Residual CO2 already dissolved in the cider from fermentation should be added to the estimate, along wih any fermentable sugar left in the must unless completely stabilized.</p>
 <blockquote class="blockquote">
 <p>Example:</p>
@@ -486,8 +488,21 @@ Figur&nbsp;B.1. Carbonation
 <p>One might also need to consider potential measurement error from the hydrometer, both regarding current SG and the final SG measured in a test bottle. This might give a quite large discrepancy, although the measurement error can be reduced by multiple and sequential measurements.</p>
 </blockquote>
 </section>
-<section id="table-with-details" class="level2" data-number="B.2">
-<h2 data-number="B.2" class="anchored" data-anchor-id="table-with-details"><span class="header-section-number">B.2</span> Table with details</h2>
+<section id="figure-with-more-temperature-lines" class="level2" data-number="B.2">
+<h2 data-number="B.2" class="anchored" data-anchor-id="figure-with-more-temperature-lines"><span class="header-section-number">B.2</span> Figure with more temperature lines</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="figures_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="./assets/plot_carbonation2.pdf">Figure in pdf format</a></p>
+</section>
+<section id="table-with-details" class="level2" data-number="B.3">
+<h2 data-number="B.3" class="anchored" data-anchor-id="table-with-details"><span class="header-section-number">B.3</span> Table with details</h2>
 <div id="tbl-figures-carbination-table" class="cell anchored" data-tbl.cap="Carbonation table">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -1443,8 +1458,8 @@ Figur&nbsp;B.1. Carbonation
 </div>
 </div>
 </section>
-<section id="details-on-method-for-figure-and-table" class="level2" data-number="B.3">
-<h2 data-number="B.3" class="anchored" data-anchor-id="details-on-method-for-figure-and-table"><span class="header-section-number">B.3</span> Details on method for figure and table</h2>
+<section id="details-on-method-for-figure-and-table" class="level2" data-number="B.4">
+<h2 data-number="B.4" class="anchored" data-anchor-id="details-on-method-for-figure-and-table"><span class="header-section-number">B.4</span> Details on method for figure and table</h2>
 <p>The assumptions and formulas below were used to compute data for the plot. Essentially:</p>
 <ol type="1">
 <li>Molar concentration of CO2 was calculated from added sugar.</li>
@@ -1609,8 +1624,8 @@ residual_vol &lt;- C_co2_water*gas_molar_volume # volumes
 residual_Bar = residual_M/kHT ## Not meaningful, kHT is cancelled out, but should be = pressure at STP (=1)?</code></pre>
 </section>
 </section>
-<section id="note" class="level2" data-number="B.4">
-<h2 data-number="B.4" class="anchored" data-anchor-id="note"><span class="header-section-number">B.4</span> Note:</h2>
+<section id="note" class="level2" data-number="B.5">
+<h2 data-number="B.5" class="anchored" data-anchor-id="note"><span class="header-section-number">B.5</span> Note:</h2>
 <pre><code>## The level of CO2 dissolved in beer after normal fermentation is between 1.2 and 1.7 volumes, depending on the temperature
 ## The partial pressure of headspace gas, especially H2 and CO2 has significant effect on the homoacetogenesis reaction. Theoretical calculation showed that when P_H2 and P_CO2 were 40 kPa and 60 kPa, respectively, the homoacetogenesis reaction was the strongest.
 ## Dry atmospheric air contains 78.1% nitrogen (N2) and 20.95% oxygen (O2) by volume. CO2 is 0.04%. It follows that 78.1% of the atmospheric pressure can be attributed to the partial pressure of N2 and 20.95% to the partial pressure of O2.
